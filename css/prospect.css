@@ -1416,3 +1416,8 @@ br.only-m { display: none; }
   .steps { padding: 40px var(--gutter) 28px; }
   .steps .step { background: #f1f3f6; border-color: transparent; }
 }
+
+/* Startseite: alle Abschnitts-Headlines gleich groß und in Versalien (nur der Hero bleibt größer) */
+main .hero ~ * .h2 { font-size: clamp(36px, 3.6vw, 64px); line-height: .95; text-transform: uppercase; }
+/* So funktioniert's: Headline über den vier Schritten statt daneben */
+.steps { grid-template-columns: 1fr; gap: 32px; }
