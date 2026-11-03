@@ -1510,4 +1510,5 @@ main .hero ~ * .h2 { font-size: clamp(36px, 3.6vw, 64px); line-height: .95; text
 }
 @media (max-width: 760px) {
   .cband--light .cband__quote { margin: -14px 0 4px 4px; }
+  .cband--light .cband__cols { margin-top: -8px; }
 }
