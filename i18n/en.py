@@ -104,7 +104,7 @@ TEXT = {
     "Datenschutzerklärung": "privacy policy (in German)",
     "Impressum": "Legal notice (in German)",
     "Datenschutz": "Privacy (in German)",
-    "Fueling Coaching für junge Athleten – abgestimmt auf Training, Schule und Wachstum. Mehr Energie. Bessere Leistung. Ein Schritt näher am Pro.": "Fueling coaching for young athletes – built around training, school and growth. More energy. Better performance. A step closer to pro.",
+    "Dein Fueling Coach für mehr Energie im Training, im Spiel und auf dem Weg zu deinem nächsten Level.": "Your fueling coach for more energy in training, on game day and on the way to your next level.",
     "Am Willen fehlt es selten. Am Tank schon.": "Willpower is rarely the problem. The tank is.",
     "Erschöpfter junger Basketballspieler sitzt mit Handtuch und Trinkflasche in der Halle": "Exhausted young basketball player sitting in a gym with a towel and water bottle",
     "Der Bedarf": "The demand",
