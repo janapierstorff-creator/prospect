@@ -60,6 +60,8 @@ SNIPPETS = {
     '<span>Mit Experten<br>entwickelt</span>': '<span>Developed<br>with experts</span>',
     '<h2 class="h2 upper">Talent braucht<br><span class="accent">Energie.</span></h2>':
         '<h2 class="h2 upper">Talent runs<br>on <span class="accent">fuel.</span></h2>',
+    '<h2 class="h2 upper">Wir denken dran.<br><span class="accent">Du spielst.</span></h2>':
+        '<h2 class="h2 upper">We remember.<br><span class="accent">You play.</span></h2>',
     '<h2 class="h2 upper">Das Richtige <br>zur richtigen Zeit.<br>Ohne dran denken <br>zu müssen.</h2>':
         '<h2 class="h2 upper">The right fuel <br>at the right time.<br>Without having <br>to think about it.</h2>',
     '<h2 class="h2 upper">Vorher. Währenddessen.<br>Danach.</h2>': '<h2 class="h2 upper">Before. During.<br>After.</h2>',
@@ -113,6 +115,8 @@ TEXT = {
     "Das Können ist da. Die Energie nicht.": "The skills are there. The energy isn't.",
     "„Mein Kopf will noch. Aber mein Körper kann nicht mehr.“": "“My head wants to keep going. But my body is done.”",
     "Basketballspieler, 13 Jahre": "Basketball player, 13",
+    "Coach + Produkte": "Coach + products",
+    "Dein Fueling Coach kennt deinen Trainingsplan und erinnert dich rechtzeitig, was du jetzt brauchst. Wo im Alltag etwas fehlt, helfen bald passende Produkte – entwickelt für die Anforderungen junger Athleten.": "Your fueling coach knows your training plan and reminds you in time what you need right now. Where everyday food falls short, matching products will soon help – developed for the demands of young athletes.",
     # Meta und Titel
     "ProspectFuel – Der Trainingsplan steht. Wer plant die Energie dafür?": "ProspectFuel – The training plan is set. Who plans the fuel for it?",
     "Das Fueling System für die nächste Generation: für junge Athleten, ihre Eltern und Coaches. Jetzt auf die Warteliste.": "The fueling system for the next generation: for young athletes, their parents and coaches. Join the waitlist now.",
