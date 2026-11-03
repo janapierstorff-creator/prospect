@@ -14,6 +14,9 @@ SNIPPETS = {
         '<h2 class="h2">Young athletes <br>train like pros.<br>But do they eat like pros?</h2>',
     '<h2 class="h2 upper">Ein System <br class="b-side">für deine <br class="b-stack">Trainingsfenster.</h2>':
         '<h2 class="h2 upper">A system <br class="b-side">for your <br class="b-stack">training windows.</h2>',
+    # Lösungs-Rendering mit englischen App-Screens
+    'data-ph="prospect/system.jpg"><img src="assets/img/prospect/system.jpg"':
+        'data-ph="prospect/system-en.jpg"><img src="assets/img/prospect/system-en.jpg"',
     '<h2 class="h2 upper">Richtige Nährstoffe.<br>Zum richtigen Zeitpunkt.</h2>':
         '<h2 class="h2 upper">The right nutrients.<br>At the right time.</h2>',
     '<p>Energie aufbauen.<br>Bereit sein.</p>': '<p>Build energy.<br>Be ready.</p>',
