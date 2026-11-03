@@ -8,7 +8,9 @@ index.html  athleten.html  eltern.html  coaches.html   – deutsche Seiten
 impressum.html  datenschutz.html                        – Rechtliches (nur Deutsch)
 en/                  – englische Seiten, werden erzeugt (siehe unten)
 css/prospect.css     – das gesamte Design
+css/fonts.css        – Schriften, lokal aus assets/fonts/ (keine Verbindung zu Google)
 js/main.js           – Navigation, Slider, Formulare, „Schick es deinen Eltern“
+js/vendor/           – Icon-Bibliothek Lucide, lokal (keine Verbindung zu unpkg)
 js/config.js         – Supabase-Zugangsdaten (hier eintragen)
 supabase/schema.sql  – Tabelle und Sicherheitsregeln für die Warteliste
 i18n/                – englische Texte und Skript für die englischen Seiten
