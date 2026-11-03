@@ -1401,3 +1401,9 @@ br.only-m { display: none; }
 @media (max-width: 760px) { .cband__quote { transform: rotate(-3deg); margin-top: 20px; } }
 /* Für wen direkt unter dem Hero: etwas mehr Luft zu den dunklen Bereichen */
 .hero + .audience { padding-top: 36px; padding-bottom: 40px; }
+
+/* Header und Heros im selben Seitenrahmen wie alle Bereiche darunter (fluchtet auf jeder Breite) */
+@media (min-width: 761px) {
+  .header-inner, .hero__inner, .ath-hero__inner { max-width: 1264px; padding-left: var(--gutter); padding-right: var(--gutter); }
+  .hero-note { right: max(var(--gutter), calc((100vw - 1264px) / 2 + var(--gutter))); }
+}
