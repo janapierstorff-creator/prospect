@@ -190,7 +190,7 @@ TEXT = {
     "Während des Trainings": "During training",
     "Nach dem Training": "After training",
     "Regenerieren. Den nächsten Tag vorbereiten.": "Recover. Get ready for tomorrow.",
-    "Für wen ist ProspectFuel?": "Who is ProspectFuel for?",
+    "Ein Ziel. Drei Perspektiven.": "One goal. Three perspectives.",
     "Für Athleten": "For athletes",
     "Für Eltern": "For parents",
     "Für Coaches": "For coaches",
