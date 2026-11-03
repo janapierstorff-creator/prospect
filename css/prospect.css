@@ -1425,34 +1425,31 @@ main .hero ~ * .h2 { font-size: clamp(36px, 3.6vw, 64px); line-height: .95; text
 /* Lösung: Text und Hinweis „Bald verfügbar“ */
 .system__text:not(.system__text--more) { font-weight: 600; }
 .system__text--more { margin-top: 12px; font-size: clamp(15px, 1.1vw, 17px) !important; color: rgba(255,255,255,.72); }
-.system__soon { display: inline-flex; align-items: center; gap: 10px; margin-top: 24px; padding: 9px 20px; border: 1.5px solid var(--accent); border-radius: 999px; color: var(--accent); font-weight: 600; font-size: 15px; }
-.system__soon svg { width: 20px; height: 20px; }
+/* „Bald verfügbar“ auf dem Rendering verankert: Box im Seitenverhältnis des Bilds, wie object-fit: cover zentriert */
+.system .fill { container-type: size; }
+.system__pin { position: absolute; left: 50%; top: 50%; z-index: 2; width: max(100cqw, 100cqh * 1.7758); height: max(100cqh, 100cqw / 1.7758); transform: translate(-50%, -50%); pointer-events: none; }
+.system__soon { position: absolute; left: 28.5%; top: 42%; display: inline-flex; align-items: center; gap: 7px; padding: 6px 13px; border: 1.5px solid var(--accent); border-radius: 999px; background: rgba(8,14,19,.6); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); color: #fff; font-size: 13px; font-weight: 600; white-space: nowrap; }
+.system__soon svg { width: 16px; height: 16px; color: #fff; }
+@media (max-width: 760px) { .system__soon { font-size: 11px; padding: 4px 10px; gap: 5px; } .system__soon svg { width: 13px; height: 13px; } }
 
-/* Timing unter der Lösung: schlanke Zeitleiste, horizontal (Desktop) und vertikal (mobil) */
-.timing { padding: 0 0 clamp(56px, 6vw, 88px); }
+/* Timing unter der Lösung: drei Spalten mit Icon im Kreis, getrennt durch feine Linien */
+.timing { padding: 8px 0 clamp(56px, 6vw, 88px); }
 .timing__cards { display: grid; grid-template-columns: repeat(3, 1fr); }
-.t-card { position: relative; padding: 34px 24px 0; text-align: center; }
-.t-card + .t-card { border-left: 1px solid rgba(255,255,255,.1); }
-/* Linie und Punkt */
-.t-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: rgba(47,91,255,.55); }
-.t-card:first-child::before { left: 50%; }
-.t-card:last-child::before { right: 50%; }
-.t-card::after { content: ""; position: absolute; top: -4px; left: 50%; width: 10px; height: 10px; margin-left: -5px; border-radius: 50%; background: var(--accent); }
-.t-card > svg { display: block; width: 26px; height: 26px; margin: 0 auto; color: var(--accent); }
-.t-card h3 { margin-top: 12px; font: 800 22px/1 var(--font-head); letter-spacing: .02em; text-transform: uppercase; color: #fff; }
-.t-card p { margin-top: 8px; font-size: 15px; line-height: 1.45; color: rgba(255,255,255,.72); }
-@media (max-width: 760px) {
+.t-card { display: grid; grid-template-columns: auto 1fr; column-gap: 22px; align-items: start; padding: 6px clamp(16px, 2.6vw, 40px); }
+.t-card:first-child { padding-left: 0; }
+.t-card:last-child { padding-right: 0; }
+.t-card + .t-card { border-left: 1px solid rgba(255,255,255,.18); }
+.t-card > svg { grid-row: span 2; width: 64px; height: 64px; padding: 15px; border: 2px solid var(--accent); border-radius: 50%; color: var(--accent); }
+.t-card h3 { margin-top: 4px; font: 800 clamp(26px, 2.3vw, 34px)/1 var(--font-head); text-transform: uppercase; color: #fff; }
+.t-card p { margin-top: 8px; font-size: clamp(15px, 1.25vw, 18px); line-height: 1.45; color: rgba(255,255,255,.85); }
+@media (max-width: 1080px) {
   .timing__cards { grid-template-columns: 1fr; }
-  .t-card { display: grid; grid-template-columns: 26px 1fr; column-gap: 14px; padding: 0 0 22px 28px; text-align: left; }
-  .t-card + .t-card { border-left: 0; }
-  .t-card:last-child { padding-bottom: 0; }
-  .t-card::before { top: 0; bottom: 0; left: 4px; right: auto; width: 2px; height: auto; }
-  .t-card:first-child::before { left: 4px; top: 8px; }
-  .t-card:last-child::before { right: auto; bottom: auto; height: 8px; }
-  .t-card::after { top: 4px; left: 0; margin-left: 0; }
-  .t-card > svg { grid-row: span 2; width: 24px; height: 24px; margin: 0; }
-  .t-card h3 { margin-top: 2px; font-size: 20px; }
-  .t-card p { margin-top: 4px; }
+  .t-card, .t-card:first-child, .t-card:last-child { padding: 18px 0; column-gap: 18px; }
+  .t-card:first-child { padding-top: 0; }
+  .t-card + .t-card { border-left: 0; border-top: 1px solid rgba(255,255,255,.14); }
+  .t-card > svg { width: 52px; height: 52px; padding: 12px; }
+  .t-card h3 { font-size: 24px; }
+  .t-card p { margin-top: 4px; font-size: 15px; }
 }
 
 /* So funktioniert's: drei Schritte */
