@@ -1428,28 +1428,32 @@ main .hero ~ * .h2 { font-size: clamp(36px, 3.6vw, 64px); line-height: .95; text
 .system__soon { display: inline-flex; align-items: center; gap: 10px; margin-top: 24px; padding: 9px 20px; border: 1.5px solid var(--accent); border-radius: 999px; color: var(--accent); font-weight: 600; font-size: 15px; }
 .system__soon svg { width: 20px; height: 20px; }
 
-/* Timing-Karten unter der Lösung */
-.timing { padding: 8px 0 clamp(64px, 7vw, 104px); }
-.timing__cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px; }
-.t-card { position: relative; display: flex; flex-direction: column; padding: 32px 32px 0; border: 1px solid rgba(255,255,255,.12); border-radius: 18px; background: linear-gradient(180deg, var(--bg-2) 0%, var(--bg) 100%); overflow: hidden; }
-.t-card > svg { width: 58px; height: 58px; padding: 13px; border: 2px solid var(--accent); border-radius: 50%; color: var(--accent); }
-.t-card h3 { margin-top: 22px; font: 800 clamp(32px, 2.6vw, 42px)/1 var(--font-head); text-transform: uppercase; color: #fff; }
-.t-card p { margin-top: 10px; padding-bottom: 32px; font-size: clamp(16px, 1.3vw, 20px); line-height: 1.45; color: rgba(255,255,255,.88); }
-.t-card img { margin: auto -32px 0; width: calc(100% + 64px); max-width: none; height: 180px; object-fit: cover; -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 45%); mask-image: linear-gradient(180deg, transparent 0%, #000 45%); }
-/* Verbindungslinie zwischen den Karten */
-.t-card:not(:last-child)::after { content: ""; position: absolute; top: 142px; right: -38px; width: 38px; height: 3px; background: var(--accent); }
-.t-card { overflow: visible; }
-.t-card img { border-radius: 0 0 17px 17px; }
-@media (max-width: 1080px) {
-  .timing__cards { grid-template-columns: 1fr; gap: 16px; }
-  .t-card:not(:last-child)::after { top: auto; bottom: -18px; right: auto; left: 48px; width: 3px; height: 18px; }
-  .t-card { display: grid; grid-template-columns: auto 1fr; column-gap: 20px; align-items: start; min-height: 0; padding: 24px; }
-  .t-card > svg { grid-row: span 2; width: 52px; height: 52px; padding: 12px; }
-  .t-card h3 { margin-top: 2px; font-size: 30px; }
-  .t-card p { margin-top: 6px; padding-bottom: 0; font-size: 16px; }
-  .t-card img { display: none; }
+/* Timing unter der Lösung: schlanke Zeitleiste, horizontal (Desktop) und vertikal (mobil) */
+.timing { padding: 0 0 clamp(56px, 6vw, 88px); }
+.timing__cards { display: grid; grid-template-columns: repeat(3, 1fr); }
+.t-card { position: relative; padding: 34px 24px 0; text-align: center; }
+.t-card + .t-card { border-left: 1px solid rgba(255,255,255,.1); }
+/* Linie und Punkt */
+.t-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: rgba(47,91,255,.55); }
+.t-card:first-child::before { left: 50%; }
+.t-card:last-child::before { right: 50%; }
+.t-card::after { content: ""; position: absolute; top: -4px; left: 50%; width: 10px; height: 10px; margin-left: -5px; border-radius: 50%; background: var(--accent); }
+.t-card > svg { display: block; width: 26px; height: 26px; margin: 0 auto; color: var(--accent); }
+.t-card h3 { margin-top: 12px; font: 800 22px/1 var(--font-head); letter-spacing: .02em; text-transform: uppercase; color: #fff; }
+.t-card p { margin-top: 8px; font-size: 15px; line-height: 1.45; color: rgba(255,255,255,.72); }
+@media (max-width: 760px) {
+  .timing__cards { grid-template-columns: 1fr; }
+  .t-card { display: grid; grid-template-columns: 26px 1fr; column-gap: 14px; padding: 0 0 22px 28px; text-align: left; }
+  .t-card + .t-card { border-left: 0; }
+  .t-card:last-child { padding-bottom: 0; }
+  .t-card::before { top: 0; bottom: 0; left: 4px; right: auto; width: 2px; height: auto; }
+  .t-card:first-child::before { left: 4px; top: 8px; }
+  .t-card:last-child::before { right: auto; bottom: auto; height: 8px; }
+  .t-card::after { top: 4px; left: 0; margin-left: 0; }
+  .t-card > svg { grid-row: span 2; width: 24px; height: 24px; margin: 0; }
+  .t-card h3 { margin-top: 2px; font-size: 20px; }
+  .t-card p { margin-top: 4px; }
 }
-@media (max-width: 760px) { .timing { padding-top: 0; padding-bottom: 56px; } }
 
 /* So funktioniert's: drei Schritte */
 .steps-4.steps-3 { grid-template-columns: repeat(3, 1fr); }

@@ -28,7 +28,7 @@ Alle Bilder liegen in `assets/img/prospect/`. Fehlt ein Bild, zeigt die Seite ei
 | Eltern | `eltern-hero.jpg`, `eltern-challenge.jpg`, `eltern-motivation.jpg`, `eltern-final.jpg` |
 | Coaches | `coach-hero.jpg`, `coach-band.jpg`, `coach-band2.jpg` |
 | Alle | `og-image.jpg` (1200 × 630, Vorschaubild beim Teilen, fehlt noch) |
-| Optional | `rezept-shake.jpg` (Rezept im Athleten-Mockup); `timing-vorher.jpg`, `timing-waehrend.jpg`, `timing-danach.jpg` (Bilder unten in den drei Timing-Karten der Startseite, fehlen sie, bleiben die Karten ohne Bild) |
+| Optional | `rezept-shake.jpg` (Rezept im Athleten-Mockup) |
 
 Die drei Karten „Für Athleten / Eltern / Coaches“ auf der Startseite nutzen die Hero-Bilder der Unterseiten. Der Ausschnitt steht direkt am Bild als `object-position`.
 
