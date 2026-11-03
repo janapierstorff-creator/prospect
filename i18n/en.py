@@ -54,8 +54,6 @@ SNIPPETS = {
     '<h2 class="h2 upper">Berlin startet zuerst.<br><span class="accent">Werdet Pilotteam.</span></h2>':
         '<h2 class="h2 upper">Berlin goes first.<br><span class="accent">Become a pilot team.</span></h2>',
     # Copy-Update Startseite (Copy-Doc)
-    '<h1 class="h1 h1--long">Du trainierst für <br class="br-d">das nächste Level.<br><span class="accent">Dein Körper braucht <br class="br-d">den Treibstoff dafür.</span></h1>':
-        '<h1 class="h1 h1--long">You\'re training for <br class="br-d">the next level.<br><span class="accent">Your body needs <br class="br-d">the fuel to get there.</span></h1>',
     '<span>Erinnerung vor<br>jedem Training</span>': '<span>A reminder before<br>every session</span>',
     '<span>Passend zu eurem<br>Trainingsplan</span>': '<span>Built around your<br>training plan</span>',
     '<span>Für Eltern: Wochenplan<br>&amp; Einkaufsliste</span>': '<span>For parents: weekly plan<br>&amp; shopping list</span>',
@@ -102,6 +100,7 @@ TEXT = {
     "Datenschutzerklärung": "privacy policy (in German)",
     "Impressum": "Legal notice (in German)",
     "Datenschutz": "Privacy (in German)",
+    "Fueling Coaching für junge Athleten – abgestimmt auf Training, Schule und Wachstum. Mehr Energie. Bessere Leistung. Ein Schritt näher am Pro.": "Fueling coaching for young athletes – built around training, school and growth. More energy. Better performance. A step closer to pro.",
     # Meta und Titel
     "ProspectFuel – Der Trainingsplan steht. Wer plant die Energie dafür?": "ProspectFuel – The training plan is set. Who plans the fuel for it?",
     "Das Fueling System für die nächste Generation: für junge Athleten, ihre Eltern und Coaches. Jetzt auf die Warteliste.": "The fueling system for the next generation: for young athletes, their parents and coaches. Join the waitlist now.",
