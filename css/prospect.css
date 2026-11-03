@@ -1355,3 +1355,11 @@ br.only-m { display: none; }
 @media (max-width: 760px) {
   .challenge:not(:has(.challenge__list)) { grid-template-columns: 1fr; }
 }
+
+/* Copy-Update Startseite */
+.hero__kicker { color: var(--accent); }
+.why__trust { margin-top: 14px; font-size: 14px; color: rgba(255,255,255,.7); }
+.final-label { display: block; margin-bottom: 8px; font-size: 14px; font-weight: 600; color: #fff; }
+.final-form .role-note p { margin: 0 0 10px; }
+.btn--sm { padding: 10px 16px; font-size: 14px; }
+@media (max-width: 760px) { .hero h1 br.br-d { display: none; } }

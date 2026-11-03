@@ -1,4 +1,4 @@
-# PROSPECT – Waitlist-Website
+# ProspectFuel – Waitlist-Website
 
 Statische Website mit Startseite und drei Zielgruppen-Seiten (Athleten, Eltern, Coaches), auf Deutsch und Englisch. Dazu kommen Impressum und Datenschutz.
 Die Anmeldungen für die Warteliste landen in **Supabase**, gehostet wird über **GitHub Pages**. Beides ist kostenlos.

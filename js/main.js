@@ -84,10 +84,10 @@
       e.preventDefault();
       var url = new URL("eltern.html?ref=spieler", location.href).href;
       var text = EN
-        ? "Check this out: PROSPECT is a fueling coach for my training. Can you sign us up?"
-        : "Schau mal, das ist PROSPECT – ein Fueling Coach für mein Training. Kannst du uns eintragen?";
+        ? "Hey, I want to join ProspectFuel. Can you sign me up here?"
+        : "Hey, ich will bei ProspectFuel mitmachen. Kannst du mich hier eintragen?";
       if (navigator.share) {
-        navigator.share({ title: "PROSPECT", text: text, url: url }).catch(function () {});
+        navigator.share({ title: "ProspectFuel", text: text, url: url }).catch(function () {});
       } else {
         window.open("https://wa.me/?text=" + encodeURIComponent(text + " " + url), "_blank", "noopener");
       }
@@ -108,11 +108,11 @@
 
   function successMarkup(role) {
     var text = EN
-      ? (role === "coach" ? "Thanks! We'll be in touch as soon as the pilot starts." : "Thanks! You're on the waitlist. We'll be in touch as soon as we launch.")
-      : (role === "coach" ? "Danke! Wir melden uns bei dir, sobald die Pilotphase startet." : "Danke! Du stehst auf der Warteliste. Wir melden uns, sobald es losgeht.");
+      ? (role === "coach" ? "We'll be in touch as soon as the pilot starts." : "We'll be in touch when we start.")
+      : (role === "coach" ? "Wir melden uns bei dir, sobald die Pilotphase startet." : "Wir melden uns, sobald es losgeht.");
     return '<div class="form-success" role="status">' +
       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>' +
-      '<h3>' + (EN ? "You're in." : "Platz gesichert.") + '</h3><p>' + text + "</p></div>";
+      '<h3>' + (EN ? "Your spot is saved." : "Dein Platz ist gesichert.") + '</h3><p>' + text + "</p></div>";
   }
 
   function send(payload) {
