@@ -4,7 +4,7 @@
 // nur das Eintragen, nicht das Lesen (siehe supabase/schema.sql).
 // Solange die Felder leer sind, laufen die Formulare im Testmodus (nichts wird gespeichert).
 window.PF_CONFIG = {
-  supabaseUrl: "",      // z. B. "https://abcdefgh.supabase.co"
-  supabaseAnonKey: "",  // "eyJhbGciOi..." oder "sb_publishable_..."
+  supabaseUrl: "https://jtzgzudoywtzryigtdgk.supabase.co",
+  supabaseAnonKey: "sb_publishable_hfRrPenW5LGiwSWcS_Mlxg_O4PlfFWc",
   table: "waitlist"
 };
