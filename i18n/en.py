@@ -3,6 +3,7 @@
 # TEXT: einzelne Textstücke und Attribute (alt, placeholder, aria-label, Meta).
 
 SNIPPETS = {
+    '<h2 class="h2 upper">Berlin startet<br><span class="accent">zuerst.</span></h2>': '<h2 class="h2 upper">Berlin<br><span class="accent">goes first.</span></h2>',
     '<h2 class="h2">Dein Plan. Dein Coach.<br>Dein Fortschritt.</h2>': '<h2 class="h2">Your plan. Your coach.<br>Your progress.</h2>',
     # Startseite: Timing-Karten
     '<p>Bereit ins Training.<br>Energie aufbauen.</p>': '<p>Ready for practice.<br>Build energy.</p>',
@@ -77,6 +78,9 @@ SNIPPETS = {
 }
 
 TEXT = {
+    "50 Plätze für junge Athleten und ihre Familien.": "50 spots for young athletes and their families.",
+    "Seid von Anfang an dabei, testet ProspectFuel als Erste und gestaltet mit, wie es weitergeht.": "Be there from day one, test ProspectFuel first and help shape what comes next.",
+    "Unverbindlich": "No commitment",
     "Als Mutter eines jungen Basketballspielers habe ich erlebt, wie schwer es ist, Schule, Training und die richtige Ernährung unter einen Hut zu bekommen.": "As the mother of a young basketball player, I've seen how hard it is to juggle school, training and the right nutrition.",
     "Genau deshalb entwickeln wir ProspectFuel: Damit junge Athleten die Energie bekommen, die sie für ihre Entwicklung brauchen.": "That's exactly why we're building ProspectFuel: so young athletes get the energy they need to develop.",
     "Entwickelt im Austausch mit Experten aus der Sporternährung.": "Developed with input from sports nutrition experts.",

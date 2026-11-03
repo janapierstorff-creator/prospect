@@ -1457,3 +1457,6 @@ main .hero ~ * .h2 { font-size: clamp(36px, 3.6vw, 64px); line-height: .95; text
 
 /* So funktioniert's: drei Schritte */
 .steps-4.steps-3 { grid-template-columns: repeat(3, 1fr); }
+
+/* Final: Lead-Zeile unter der Headline */
+.final__copy > p.final__lead { margin-top: 16px; font-weight: 600; font-size: clamp(18px, 1.5vw, 22px); color: #fff; }
