@@ -54,10 +54,10 @@ SNIPPETS = {
     '<h2 class="h2 upper">Berlin startet zuerst.<br><span class="accent">Werdet Pilotteam.</span></h2>':
         '<h2 class="h2 upper">Berlin goes first.<br><span class="accent">Become a pilot team.</span></h2>',
     # Copy-Update Startseite (Copy-Doc)
-    '<span>Erinnerung vor<br>jedem Training</span>': '<span>A reminder before<br>every session</span>',
-    '<span>Passend zu eurem<br>Trainingsplan</span>': '<span>Built around your<br>training plan</span>',
-    '<span>Für Eltern: Wochenplan<br>&amp; Einkaufsliste</span>': '<span>For parents: weekly plan<br>&amp; shopping list</span>',
-    '<span>Für Spieler: einfach<br>per WhatsApp</span>': '<span>For players: simply<br>via WhatsApp</span>',
+    '<span>Passend zum<br>Training</span>': '<span>Built around<br>training</span>',
+    '<span>Für Spieler<br>&amp; Eltern</span>': '<span>For players<br>&amp; parents</span>',
+    '<span>Persönlich<br>abgestimmt</span>': '<span>Personally<br>tailored</span>',
+    '<span>Mit Experten<br>entwickelt</span>': '<span>Developed<br>with experts</span>',
     '<h2 class="h2 upper">Das Richtige <br>zur richtigen Zeit.<br>Ohne dran denken <br>zu müssen.</h2>':
         '<h2 class="h2 upper">The right fuel <br>at the right time.<br>Without having <br>to think about it.</h2>',
     '<h2 class="h2 upper">Vorher. Währenddessen.<br>Danach.</h2>': '<h2 class="h2 upper">Before. During.<br>After.</h2>',
