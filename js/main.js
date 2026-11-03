@@ -122,12 +122,13 @@
     }
     return fetch(cfg.supabaseUrl.replace(/\/$/, "") + "/rest/v1/" + (cfg.table || "waitlist"), {
       method: "POST",
-      headers: {
+      headers: Object.assign({
         "Content-Type": "application/json",
         apikey: cfg.supabaseAnonKey,
-        Authorization: "Bearer " + cfg.supabaseAnonKey,
         Prefer: "return=minimal"
-      },
+      // Alter anon-Key (JWT, beginnt mit "eyJ") braucht zusätzlich den Authorization-Header,
+      // der neue Publishable Key ("sb_publishable_…") nicht
+      }, /^eyJ/.test(cfg.supabaseAnonKey) ? { Authorization: "Bearer " + cfg.supabaseAnonKey } : {}),
       body: JSON.stringify(payload)
     }).then(function (res) {
       // 409 = E-Mail ist für diese Rolle schon eingetragen → für die Person trotzdem ein Erfolg
