@@ -227,6 +227,7 @@ svg.lucide { stroke-width: 1.9; }
   .steps { grid-template-columns: 1fr; }
   .why__inner { grid-template-columns: .7fr 1.6fr; }
   .why__quote-wrap { grid-column: 2; }
+  .why__text, .why__quote-wrap { max-width: 640px; }
   .voice { grid-template-columns: 76px 1fr; }
 }
 
@@ -1511,4 +1512,18 @@ main .hero ~ * .h2 { font-size: clamp(36px, 3.6vw, 64px); line-height: .95; text
 @media (max-width: 760px) {
   .cband--light .cband__quote { margin: -14px 0 4px 4px; }
   .cband--light .cband__cols { margin-top: -8px; }
+}
+
+/* Warum: Zitat und Unterschrift unter dem Text, linksbündig */
+@media (min-width: 761px) {
+  .why__inner { grid-template-columns: 1fr 1.9fr; align-items: start; row-gap: 0; padding-top: clamp(40px, 4.5vw, 72px); padding-bottom: clamp(40px, 4.5vw, 72px); }
+  .why__spacer { grid-row: span 2; }
+  .why__quote-wrap { grid-column: 2; }
+  .why__text, .why__quote-wrap { max-width: 640px; }
+}
+.why__quote-wrap { margin-top: 28px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.14); }
+.why__quote { font-size: clamp(20px, 1.8vw, 26px); line-height: 1.25; transform: rotate(-2deg); transform-origin: left center; }
+.why__sign { margin-top: 14px; text-align: left; }
+@media (max-width: 760px) {
+  .why__quote-wrap { margin-top: 22px; padding-top: 20px; }
 }
