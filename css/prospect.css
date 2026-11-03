@@ -1393,3 +1393,4 @@ br.only-m { display: none; }
   .cband__cols svg { grid-row: span 2; margin: 2px 0 0; width: 32px; height: 32px; }
   .cband__cols p { margin-top: 2px; }
 }
+.cband__quote blockquote, .cband__quote figcaption { text-shadow: 0 1px 12px rgba(8,14,19,.75); }
