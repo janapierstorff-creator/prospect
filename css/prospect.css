@@ -1500,3 +1500,14 @@ main .hero ~ * .h2 { font-size: clamp(36px, 3.6vw, 64px); line-height: .95; text
   .t-card h3 { font-size: clamp(18px, 2.4vw, 24px); }
   .t-card p { font-size: 14px; }
 }
+
+/* Herausforderung: Zitat auf Desktop unter dem Text (über den Icons), mobil als Abschluss */
+.cband--light .cband__quote blockquote, .cband--light .cband__quote figcaption { color: var(--ink); text-shadow: none; }
+@media (min-width: 761px) {
+  .cband--light .cband__head { grid-column: 1; grid-row: 1; }
+  .cband--light .cband__quote { grid-column: 1; grid-row: 2; justify-self: start; max-width: 380px; margin: 26px 0 0 4px; }
+  .cband--light .cband__cols { grid-row: 3; margin-top: clamp(40px, 5vw, 72px); }
+}
+@media (max-width: 760px) {
+  .cband--light .cband__quote { margin: -14px 0 4px 4px; }
+}
