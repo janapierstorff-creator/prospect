@@ -1348,3 +1348,10 @@ br.only-m { display: none; }
 @media (max-width: 760px) {
   .nav a.lang-switch { align-self: flex-start; margin-top: 12px; padding: 6px 14px; border: 1px solid rgba(255,255,255,.45); }
 }
+
+/* Startseite Herausforderung: ohne Highlights, Bild und Text nebeneinander */
+.challenge:not(:has(.challenge__list)) { grid-template-columns: 1fr 1.25fr; gap: clamp(28px, 4vw, 64px); }
+.challenge:not(:has(.challenge__list)) .challenge__text { max-width: 620px; }
+@media (max-width: 760px) {
+  .challenge:not(:has(.challenge__list)) { grid-template-columns: 1fr; }
+}
