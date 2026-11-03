@@ -112,7 +112,7 @@ TEXT = {
     "Die Lücke": "The gap",
     "Zwischen Schule und Halle bleibt das Essen auf der Strecke.": "Between school and practice, food falls by the wayside.",
     "Die Folge": "The result",
-    "Das Können ist da. Die Energie nicht.": "The skills are there. The energy isn't.",
+    "Das Talent ist da. Die Energie nicht.": "The talent is there. The energy isn't.",
     "„Mein Kopf will noch. Aber mein Körper kann nicht mehr.“": "“My head wants to keep going. But my body is done.”",
     "Basketballspieler, 13 Jahre": "Basketball player, 13",
     "Coach + Produkte": "Coach + products",
