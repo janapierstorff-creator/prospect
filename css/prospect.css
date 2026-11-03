@@ -1460,3 +1460,30 @@ main .hero ~ * .h2 { font-size: clamp(36px, 3.6vw, 64px); line-height: .95; text
 
 /* Final: Lead-Zeile unter der Headline */
 .final__copy > p.final__lead { margin-top: 16px; font-weight: 600; font-size: clamp(18px, 1.5vw, 22px); color: #fff; }
+
+/* Startseite: Karten schwarz direkt unter dem Hero (nahtlos) */
+.hero .fill::after { background: linear-gradient(90deg, rgba(8,14,19,.92) 0%, rgba(8,14,19,.72) 36%, rgba(8,14,19,.08) 68%), linear-gradient(0deg, var(--bg) 0%, rgba(8,14,19,.6) 12%, rgba(8,14,19,0) 34%); }
+@media (max-width: 760px) { .hero .fill::after { background: linear-gradient(0deg, var(--bg) 0%, rgba(8,14,19,.55) 28%, rgba(8,14,19,0) 55%), linear-gradient(180deg, rgba(8,14,19,.55) 0%, rgba(8,14,19,0) 22%); } }
+.hero + .audience { padding-top: 8px; padding-bottom: clamp(56px, 6vw, 88px); }
+.audience.dark .a-card { box-shadow: 0 0 0 1px rgba(255,255,255,.08); }
+
+/* Herausforderung hell: Bild rechts, läuft nach Weiß aus */
+.cband--light { background: #fff; color: var(--ink); }
+@media (min-width: 761px) {
+  .cband--light .fill { left: 40%; bottom: 0; -webkit-mask-image: linear-gradient(0deg, transparent 0%, transparent 28%, rgba(0,0,0,.6) 44%, #000 62%); mask-image: linear-gradient(0deg, transparent 0%, transparent 28%, rgba(0,0,0,.6) 44%, #000 62%); }
+  .cband--light .fill > img { object-position: 60% 30%; -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.45) 14%, rgba(0,0,0,.85) 28%, #000 40%); mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.45) 14%, rgba(0,0,0,.85) 28%, #000 40%); }
+}
+.cband--light .fill { background: transparent; }
+.cband--light .fill::after { display: none; }
+.cband--light .kicker { color: var(--ink); }
+.cband--light .h2 { color: var(--ink); }
+.cband--light .cband__sub { color: var(--ink); }
+.cband--light .cband__cols h3 { color: var(--ink); }
+.cband--light .cband__cols p { color: var(--text); }
+.cband--light .cband__cols li + li { border-left-color: rgba(16,24,32,.15); }
+@media (max-width: 760px) {
+  .cband--light .fill > img { -webkit-mask-image: none; mask-image: none; }
+  .cband--light .fill { -webkit-mask-image: linear-gradient(0deg, transparent 0%, #000 45%); mask-image: linear-gradient(0deg, transparent 0%, #000 45%); }
+  .cband--light .cband__quote blockquote, .cband--light .cband__quote figcaption { color: var(--ink); text-shadow: none; }
+  .cband--light .cband__cols li + li { border-top-color: rgba(16,24,32,.15); }
+}
