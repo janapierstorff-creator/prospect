@@ -1521,9 +1521,9 @@ main .hero ~ * .h2 { font-size: clamp(36px, 3.6vw, 64px); line-height: .95; text
   .why__quote-wrap { grid-column: 2; }
   .why__text, .why__quote-wrap { max-width: 640px; }
 }
-.why__quote-wrap { margin-top: 28px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.14); }
+.why__quote-wrap { margin-top: 32px; }
 .why__quote { font-size: clamp(20px, 1.8vw, 26px); line-height: 1.25; transform: rotate(-2deg); transform-origin: left center; }
 .why__sign { margin-top: 14px; text-align: left; }
 @media (max-width: 760px) {
-  .why__quote-wrap { margin-top: 22px; padding-top: 20px; }
+  .why__quote-wrap { margin-top: 26px; }
 }
