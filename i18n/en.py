@@ -77,6 +77,10 @@ SNIPPETS = {
 }
 
 TEXT = {
+    "Als Mutter eines jungen Basketballspielers habe ich erlebt, wie schwer es ist, Schule, Training und die richtige Ernährung unter einen Hut zu bekommen.": "As the mother of a young basketball player, I've seen how hard it is to juggle school, training and the right nutrition.",
+    "Genau deshalb entwickeln wir ProspectFuel: Damit junge Athleten die Energie bekommen, die sie für ihre Entwicklung brauchen.": "That's exactly why we're building ProspectFuel: so young athletes get the energy they need to develop.",
+    "Entwickelt im Austausch mit Experten aus der Sporternährung.": "Developed with input from sports nutrition experts.",
+    "„Fueling is a skill. One that makes a difference.“": "“Fueling is a skill. One that makes a difference.”",
     "Profil erstellen": "Create your profile",
     "Training, Alltag und Ziele angeben.": "Add your training, daily life and goals.",
     "Persönlich begleitet werden": "Get personal guidance",
