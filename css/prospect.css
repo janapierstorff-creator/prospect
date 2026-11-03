@@ -1399,3 +1399,5 @@ br.only-m { display: none; }
 .cband__quote blockquote.hand { font-family: var(--font-hand); font-weight: 400; font-size: clamp(20px, 1.9vw, 28px); line-height: 1.2; }
 .cband__quote figcaption { margin-top: 12px; text-align: right; }
 @media (max-width: 760px) { .cband__quote { transform: rotate(-3deg); margin-top: 20px; } }
+/* Für wen direkt unter dem Hero: etwas mehr Luft zu den dunklen Bereichen */
+.hero + .audience { padding-top: 36px; padding-bottom: 40px; }
