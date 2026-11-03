@@ -3,6 +3,10 @@
 # TEXT: einzelne Textstücke und Attribute (alt, placeholder, aria-label, Meta).
 
 SNIPPETS = {
+    # Startseite: Timing-Karten
+    '<p>Bereit ins Training.<br>Energie aufbauen.</p>': '<p>Ready for practice.<br>Build energy.</p>',
+    '<p>Energie bis zum Schluss.<br>Stark bleiben.</p>': '<p>Energy until the end.<br>Stay strong.</p>',
+    '<p>Auftanken.<br>Bereit fürs nächste Mal.</p>': '<p>Refuel.<br>Ready for next time.</p>',
     # Startseite
     '<h1 class="h1 h1--long">Der Trainingsplan <br>steht.<br><span class="accent">Wer plant die <br>Energie dafür?</span></h1>':
         '<h1 class="h1 h1--long">The training plan <br>is set.<br><span class="accent">Who plans the <br>fuel for it?</span></h1>',
@@ -72,6 +76,11 @@ SNIPPETS = {
 }
 
 TEXT = {
+    "Vorher.": "Before.",
+    "Währenddessen.": "During.",
+    "Danach.": "After.",
+    "Vorher, währenddessen, danach": "Before, during, after",
+    "Bald verfügbar": "Coming soon",
     # Copy-Update Startseite (Copy-Doc)
     "ProspectFuel – Der Fueling Coach für junge Athleten": "ProspectFuel – The fueling coach for young athletes",
     "Der Trainingsplan steht – die Energie dafür auch? ProspectFuel ist der Fueling Coach für junge Athleten und ihre Eltern. Jetzt Platz sichern.": "The training plan is set – is the fuel? ProspectFuel is the fueling coach for young athletes and their parents. Save your spot.",
@@ -118,12 +127,6 @@ TEXT = {
     "Coach + Produkte": "Coach + products",
     "Damit junge Athleten mit Energie ins Training starten und bis zum Schluss alles geben können.": "So young athletes start training with energy and give it everything right to the end.",
     "ProspectFuel verbindet persönliche Fueling-Pläne, einen Coach für den Alltag und bald auch passende Produkte rund ums Training. Abgestimmt auf die Bedürfnisse junger Athleten – mit Unterstützung für Eltern und Coaches.": "ProspectFuel combines personal fueling plans, an everyday coach and, soon, matching products around training. Built for the needs of young athletes – with support for parents and coaches.",
-    "Vorher.": "Before.",
-    "Bereit ins Training.": "Ready for practice.",
-    "Währenddessen.": "During.",
-    "Energie bis zum Schluss.": "Energy until the final whistle.",
-    "Danach.": "After.",
-    "Auftanken fürs nächste Mal.": "Refuel for next time.",
     # Meta und Titel
     "ProspectFuel – Der Trainingsplan steht. Wer plant die Energie dafür?": "ProspectFuel – The training plan is set. Who plans the fuel for it?",
     "Das Fueling System für die nächste Generation: für junge Athleten, ihre Eltern und Coaches. Jetzt auf die Warteliste.": "The fueling system for the next generation: for young athletes, their parents and coaches. Join the waitlist now.",

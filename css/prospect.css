@@ -1422,11 +1422,31 @@ main .hero ~ * .h2 { font-size: clamp(36px, 3.6vw, 64px); line-height: .95; text
 /* So funktioniert's: Headline über den vier Schritten statt daneben */
 .steps { grid-template-columns: 1fr; gap: 32px; }
 
-/* Lösung: drei Phasen unter dem Text */
+/* Lösung: Text und Hinweis „Bald verfügbar“ */
+.system__text:not(.system__text--more) { font-weight: 600; }
 .system__text--more { margin-top: 12px; font-size: clamp(15px, 1.1vw, 17px) !important; color: rgba(255,255,255,.72); }
-.system__phases { list-style: none; margin: 24px 0 0; padding: 0; }
-.system__phases li { display: flex; align-items: center; gap: 14px; padding: 12px 0; border-top: 1px solid rgba(255,255,255,.14); }
-.system__phases li:last-child { border-bottom: 1px solid rgba(255,255,255,.14); }
-.system__phases svg { flex: 0 0 auto; width: 26px; height: 26px; color: var(--accent); }
-.system__phases b { display: block; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
-.system__phases span { display: block; margin-top: 2px; font-size: clamp(15px, 1.15vw, 18px); line-height: 1.35; color: #fff; }
+.system__soon { display: inline-flex; align-items: center; gap: 10px; margin-top: 24px; padding: 9px 20px; border: 1.5px solid var(--accent); border-radius: 999px; color: var(--accent); font-weight: 600; font-size: 15px; }
+.system__soon svg { width: 20px; height: 20px; }
+
+/* Timing-Karten unter der Lösung */
+.timing { padding: 8px 0 clamp(64px, 7vw, 104px); }
+.timing__cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px; }
+.t-card { position: relative; display: flex; flex-direction: column; padding: 32px 32px 0; border: 1px solid rgba(255,255,255,.12); border-radius: 18px; background: linear-gradient(180deg, var(--bg-2) 0%, var(--bg) 100%); overflow: hidden; }
+.t-card > svg { width: 58px; height: 58px; padding: 13px; border: 2px solid var(--accent); border-radius: 50%; color: var(--accent); }
+.t-card h3 { margin-top: 22px; font: 800 clamp(32px, 2.6vw, 42px)/1 var(--font-head); text-transform: uppercase; color: #fff; }
+.t-card p { margin-top: 10px; padding-bottom: 32px; font-size: clamp(16px, 1.3vw, 20px); line-height: 1.45; color: rgba(255,255,255,.88); }
+.t-card img { margin: auto -32px 0; width: calc(100% + 64px); max-width: none; height: 180px; object-fit: cover; -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 45%); mask-image: linear-gradient(180deg, transparent 0%, #000 45%); }
+/* Verbindungslinie zwischen den Karten */
+.t-card:not(:last-child)::after { content: ""; position: absolute; top: 142px; right: -38px; width: 38px; height: 3px; background: var(--accent); }
+.t-card { overflow: visible; }
+.t-card img { border-radius: 0 0 17px 17px; }
+@media (max-width: 1080px) {
+  .timing__cards { grid-template-columns: 1fr; gap: 16px; }
+  .t-card:not(:last-child)::after { top: auto; bottom: -18px; right: auto; left: 48px; width: 3px; height: 18px; }
+  .t-card { display: grid; grid-template-columns: auto 1fr; column-gap: 20px; align-items: start; min-height: 0; padding: 24px; }
+  .t-card > svg { grid-row: span 2; width: 52px; height: 52px; padding: 12px; }
+  .t-card h3 { margin-top: 2px; font-size: 30px; }
+  .t-card p { margin-top: 6px; padding-bottom: 0; font-size: 16px; }
+  .t-card img { display: none; }
+}
+@media (max-width: 760px) { .timing { padding-top: 0; padding-bottom: 56px; } }

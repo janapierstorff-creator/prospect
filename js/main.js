@@ -24,6 +24,13 @@
     else img.addEventListener("error", mark);
   });
 
+  // Timing-Karten: fehlende Bilder einfach weglassen
+  document.querySelectorAll(".t-card img").forEach(function (img) {
+    var hide = function () { img.remove(); };
+    if (img.complete && img.naturalWidth === 0) hide();
+    else img.addEventListener("error", hide);
+  });
+
   // Karussell-Punkte für die Karten (nur mobil sichtbar, siehe CSS)
   document.querySelectorAll(".cards-3, .cards-4, .steps-4, .channels, .facts4, .hero__facts").forEach(function (track) {
     var items = Array.prototype.slice.call(track.children);
