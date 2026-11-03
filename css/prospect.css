@@ -1363,3 +1363,33 @@ br.only-m { display: none; }
 .final-form .role-note p { margin: 0 0 10px; }
 .btn--sm { padding: 10px 16px; font-size: 14px; }
 @media (max-width: 760px) { .hero h1 br.br-d { display: none; } }
+
+/* Startseite: Herausforderung als dunkles Bild-Band */
+.cband { position: relative; overflow: hidden; }
+.cband .fill > img { object-position: 68% 35%; }
+.cband .fill::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(8,14,19,.94) 0%, rgba(8,14,19,.7) 38%, rgba(8,14,19,.15) 70%), linear-gradient(0deg, rgba(8,14,19,.92) 0%, rgba(8,14,19,0) 45%); }
+.cband__inner { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr auto; align-items: start; gap: 32px; padding-top: clamp(48px, 5vw, 80px); padding-bottom: clamp(36px, 4vw, 56px); }
+.cband .h2 { font-size: clamp(52px, 6.4vw, 104px); line-height: .92; }
+.cband__sub { margin-top: 16px; font-size: clamp(18px, 1.6vw, 24px); font-weight: 600; color: #fff; }
+.kicker--line::before { content: ""; display: inline-block; width: 44px; height: 2px; margin-right: 14px; vertical-align: middle; background: currentColor; }
+.cband__quote { margin: 40px 0 0; max-width: 300px; justify-self: end; }
+.cband__quote blockquote { margin: 0; font-size: clamp(18px, 1.6vw, 24px); font-weight: 600; line-height: 1.3; color: #fff; }
+.cband__quote figcaption { margin-top: 10px; font-size: 14px; color: var(--text-on-dark); }
+.cband__cols { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, 1fr); margin-top: clamp(56px, 9vw, 140px); text-align: center; }
+.cband__cols li { padding: 0 clamp(16px, 2.4vw, 40px); }
+.cband__cols li + li { border-left: 1px solid rgba(255,255,255,.25); }
+.cband__cols svg { display: block; width: 40px; height: 40px; margin: 0 auto 12px; color: var(--accent); fill: none; stroke-width: 1.9; }
+.cband__cols h3 { font-size: 18px; font-weight: 700; color: #fff; }
+.cband__cols p { margin-top: 6px; font-size: 15px; line-height: 1.45; color: var(--text-on-dark); }
+@media (max-width: 760px) {
+  .cband .fill { position: relative; height: 280px; }
+  .cband .fill::after { background: linear-gradient(0deg, var(--bg) 0%, rgba(8,14,19,0) 55%); }
+  .cband__inner { grid-template-columns: 1fr; padding-top: 4px; }
+  .cband .h2 { font-size: clamp(46px, 14vw, 60px); }
+  .cband__quote { justify-self: start; margin-top: 8px; }
+  .cband__cols { grid-template-columns: 1fr; margin-top: 32px; text-align: left; }
+  .cband__cols li { display: grid; grid-template-columns: 40px 1fr; column-gap: 14px; padding: 16px 0; }
+  .cband__cols li + li { border-left: 0; border-top: 1px solid rgba(255,255,255,.18); }
+  .cband__cols svg { grid-row: span 2; margin: 2px 0 0; width: 32px; height: 32px; }
+  .cband__cols p { margin-top: 2px; }
+}

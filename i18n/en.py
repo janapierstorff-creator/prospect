@@ -58,6 +58,8 @@ SNIPPETS = {
     '<span>Für Spieler<br>&amp; Eltern</span>': '<span>For players<br>&amp; parents</span>',
     '<span>Persönlich<br>abgestimmt</span>': '<span>Personally<br>tailored</span>',
     '<span>Mit Experten<br>entwickelt</span>': '<span>Developed<br>with experts</span>',
+    '<h2 class="h2 upper">Talent braucht<br><span class="accent">Energie.</span></h2>':
+        '<h2 class="h2 upper">Talent runs<br>on <span class="accent">fuel.</span></h2>',
     '<h2 class="h2 upper">Das Richtige <br>zur richtigen Zeit.<br>Ohne dran denken <br>zu müssen.</h2>':
         '<h2 class="h2 upper">The right fuel <br>at the right time.<br>Without having <br>to think about it.</h2>',
     '<h2 class="h2 upper">Vorher. Währenddessen.<br>Danach.</h2>': '<h2 class="h2 upper">Before. During.<br>After.</h2>',
@@ -101,6 +103,16 @@ TEXT = {
     "Impressum": "Legal notice (in German)",
     "Datenschutz": "Privacy (in German)",
     "Fueling Coaching für junge Athleten – abgestimmt auf Training, Schule und Wachstum. Mehr Energie. Bessere Leistung. Ein Schritt näher am Pro.": "Fueling coaching for young athletes – built around training, school and growth. More energy. Better performance. A step closer to pro.",
+    "Am Willen fehlt es selten. Am Tank schon.": "Willpower is rarely the problem. The tank is.",
+    "Erschöpfter junger Basketballspieler sitzt mit Handtuch und Trinkflasche in der Halle": "Exhausted young basketball player sitting in a gym with a towel and water bottle",
+    "Der Bedarf": "The demand",
+    "Training, Schule und Wachstum – alles gleichzeitig.": "Training, school and growth – all at once.",
+    "Die Lücke": "The gap",
+    "Zwischen Schule und Halle bleibt das Essen auf der Strecke.": "Between school and practice, food falls by the wayside.",
+    "Die Folge": "The result",
+    "Das Können ist da. Die Energie nicht.": "The skills are there. The energy isn't.",
+    "„Mein Kopf will noch. Aber mein Körper kann nicht mehr.“": "“My head wants to keep going. But my body is done.”",
+    "Basketballspieler, 13 Jahre": "Basketball player, 13",
     # Meta und Titel
     "ProspectFuel – Der Trainingsplan steht. Wer plant die Energie dafür?": "ProspectFuel – The training plan is set. Who plans the fuel for it?",
     "Das Fueling System für die nächste Generation: für junge Athleten, ihre Eltern und Coaches. Jetzt auf die Warteliste.": "The fueling system for the next generation: for young athletes, their parents and coaches. Join the waitlist now.",
