@@ -3,6 +3,7 @@
 # TEXT: einzelne Textstücke und Attribute (alt, placeholder, aria-label, Meta).
 
 SNIPPETS = {
+    '<h2 class="h2">Dein Plan. Dein Coach.<br>Dein Fortschritt.</h2>': '<h2 class="h2">Your plan. Your coach.<br>Your progress.</h2>',
     # Startseite: Timing-Karten
     '<p>Bereit ins Training.<br>Energie aufbauen.</p>': '<p>Ready for practice.<br>Build energy.</p>',
     '<p>Energie bis zum Schluss.<br>Stark bleiben.</p>': '<p>Energy until the end.<br>Stay strong.</p>',
@@ -76,6 +77,12 @@ SNIPPETS = {
 }
 
 TEXT = {
+    "Profil erstellen": "Create your profile",
+    "Training, Alltag und Ziele angeben.": "Add your training, daily life and goals.",
+    "Persönlich begleitet werden": "Get personal guidance",
+    "Passende Fueling-Pläne und Erinnerungen zum richtigen Zeitpunkt.": "Matching fueling plans and reminders at the right time.",
+    "Fortschritt erleben": "See your progress",
+    "Routinen aufbauen und sehen, wie sich deine Energie entwickelt.": "Build routines and see how your energy develops.",
     "Vorher.": "Before.",
     "Währenddessen.": "During.",
     "Danach.": "After.",

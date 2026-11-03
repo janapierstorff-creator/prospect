@@ -1450,3 +1450,6 @@ main .hero ~ * .h2 { font-size: clamp(36px, 3.6vw, 64px); line-height: .95; text
   .t-card img { display: none; }
 }
 @media (max-width: 760px) { .timing { padding-top: 0; padding-bottom: 56px; } }
+
+/* So funktioniert's: drei Schritte */
+.steps-4.steps-3 { grid-template-columns: repeat(3, 1fr); }
