@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <script>(function () {
+    var pref = null;
+    try { pref = localStorage.getItem("pf_lang"); } catch (e) {}
+    var lang = (navigator.languages && navigator.languages[0]) || navigator.language || "";
+    if (pref === "de" || (pref !== "en" && /^de\b/i.test(lang))) location.replace("de/athleten.html" + location.search + location.hash);
+  })();</script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>For athletes – ProspectFuel</title>
   <meta name="description" content="Steady energy. Higher performance. The fueling system for your next level. We're starting in Berlin with 50 spots.">

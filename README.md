@@ -15,7 +15,7 @@ athleten.html  eltern.html  impressum.html  datenschutz.html  en/
                      – nur Weiterleitungen für alte Links, werden erzeugt
 css/prospect.css     – das gesamte Design
 css/fonts.css        – Schriften, lokal aus assets/fonts/ (keine Verbindung zu Google)
-js/main.js           – Navigation, Slider, Formulare, „Schick es deinen Eltern“, Hinweis „Auf Deutsch lesen“
+js/main.js           – Navigation, Slider, Formulare, „Schick es deinen Eltern“, gemerkte Sprachwahl
 js/vendor/           – Icon-Bibliothek Lucide, lokal (keine Verbindung zu unpkg)
 js/config.js         – Supabase-Zugangsdaten
 supabase/schema.sql  – Tabelle und Sicherheitsregeln für die Warteliste
@@ -57,7 +57,7 @@ python3 i18n/build_en.py
 
 Das Skript schreibt `index.html`, `athletes.html`, `parents.html` und `coaches.html` ins Hauptverzeichnis, legt die Weiterleitungen für alte Adressen an (`/athleten.html`, `/eltern.html`, `/en/…`) und listet am Ende Texte, die noch Deutsch aussehen.
 Impressum und Datenschutz gibt es nur auf Deutsch, die englischen Seiten verlinken dorthin. Anmeldungen von den englischen Seiten haben in `source_page` ein `en-` vorne, zum Beispiel `en-start-final`.
-Auf den englischen Seiten erscheint unten ein kleiner Hinweis „Auf Deutsch lesen“, wenn Deutsch die erste Sprache des Browsers ist. Wer ihn schließt, sieht ihn nicht wieder.
+**Automatische Sprachwahl:** Ist Deutsch die erste Sprache im Browser, leiten die englischen Seiten direkt auf die deutsche Version weiter (zum Beispiel `/parents.html` → `/de/eltern.html`). Wer über DE/EN in der Navigation bewusst eine Sprache wählt, bekommt diese ab dann immer, die Wahl wird im Browser gespeichert. Die deutschen Seiten leiten nie weiter, ein geteilter `/de/`-Link bleibt also immer deutsch.
 
 ## Supabase einrichten (ca. 10 Minuten)
 

@@ -3,7 +3,7 @@
 Aufruf im Projektordner:  python3 i18n/build_en.py
 Nach jeder Textänderung an einer deutschen Seite neu ausführen und neue Texte in i18n/en.py ergänzen.
 Das Skript listet am Ende deutsche Texte, für die noch keine Übersetzung existiert.
-Außerdem legt es Weiterleitungen für alte Adressen an (/athleten.html, /en/… usw.).
+Außerdem legt es Weiterleitungen für alte Adressen an (/athleten.html, /en/… usw.)\nund baut in die englischen Seiten die automatische Weiterleitung für Browser auf Deutsch ein.
 """
 import os
 import re
@@ -38,6 +38,14 @@ REDIRECT_HTML = """<!doctype html>
 <body><a href="{0}">ProspectFuel</a></body>
 </html>
 """
+# Auf den englischen Seiten: Browser mit Deutsch als erster Sprache direkt auf die deutsche Seite leiten,
+# außer jemand hat über DE/EN bewusst Englisch gewählt (gespeichert in localStorage "pf_lang", siehe js/main.js)
+LANG_REDIRECT = """<script>(function () {
+    var pref = null;
+    try { pref = localStorage.getItem("pf_lang"); } catch (e) {}
+    var lang = (navigator.languages && navigator.languages[0]) || navigator.language || "";
+    if (pref === "de" || (pref !== "en" && /^de\\b/i.test(lang))) location.replace("de/%s" + location.search + location.hash);
+  })();</script>"""
 ATTRS = ("alt", "placeholder", "aria-label", "content", "title")
 GERMAN_HINT = re.compile(r"[äöüÄÖÜß]|\b(und|der|die|das|dein|deine|nicht|mit|für|wir|ist)\b")
 
@@ -58,6 +66,7 @@ def translate(html, page):
     html = re.sub(r'\b(%s)="([^"]*)"' % "|".join(ATTRS), attr, html)
 
     html = html.replace('<html lang="de">', '<html lang="en">', 1)
+    html = html.replace('<meta charset="utf-8">', '<meta charset="utf-8">\n  ' + LANG_REDIRECT % page, 1)
     # Pfade: die englischen Seiten liegen eine Ebene höher als die deutschen
     html = re.sub(r'\b(href|src|content)="\.\./(css/|js/|assets/)', r'\1="\2', html)
     # Sprachwechsel und hreflang umdrehen (deutsche Quelle zeigt auf ../<englisch>)

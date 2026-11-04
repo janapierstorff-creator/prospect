@@ -17,23 +17,12 @@
     });
   }
 
-  // Englische Seiten: Browser mit Deutsch als erster Sprache bekommen einen dezenten Hinweis auf die deutsche Version
-  var deLink = document.querySelector('.lang-switch[hreflang="de"]');
-  var prefersDe = /^de\b/i.test((navigator.languages && navigator.languages[0]) || navigator.language || "");
-  var hintClosed = false;
-  try { hintClosed = localStorage.getItem("pf_lang_hint") === "closed"; } catch (e) {}
-  if (EN && deLink && prefersDe && !hintClosed) {
-    var hint = document.createElement("div");
-    hint.className = "lang-hint";
-    hint.setAttribute("lang", "de");
-    hint.innerHTML = '<a href="' + deLink.getAttribute("href") + '">Auf Deutsch lesen <span aria-hidden="true">→</span></a>' +
-      '<button type="button" aria-label="Hinweis schließen">×</button>';
-    hint.querySelector("button").addEventListener("click", function () {
-      hint.remove();
-      try { localStorage.setItem("pf_lang_hint", "closed"); } catch (e) {}
+  // Sprachwahl über DE/EN merken, damit die automatische Weiterleitung sie respektiert (siehe i18n/build_en.py)
+  document.querySelectorAll(".lang-switch").forEach(function (link) {
+    link.addEventListener("click", function () {
+      try { localStorage.setItem("pf_lang", link.getAttribute("hreflang")); } catch (e) {}
     });
-    document.body.appendChild(hint);
-  }
+  });
 
   // Fehlende Bilder als Platzhalter markieren
   document.querySelectorAll(".media > img").forEach(function (img) {

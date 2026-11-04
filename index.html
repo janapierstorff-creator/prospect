@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <script>(function () {
+    var pref = null;
+    try { pref = localStorage.getItem("pf_lang"); } catch (e) {}
+    var lang = (navigator.languages && navigator.languages[0]) || navigator.language || "";
+    if (pref === "de" || (pref !== "en" && /^de\b/i.test(lang))) location.replace("de/index.html" + location.search + location.hash);
+  })();</script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ProspectFuel – The fueling coach for young athletes</title>
   <meta name="description" content="The training plan is set – is the fuel? ProspectFuel is the fueling coach for young athletes and their parents. Save your spot.">
