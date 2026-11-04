@@ -1591,3 +1591,5 @@ main .hero ~ * .h2 { font-size: clamp(36px, 3.6vw, 64px); line-height: .95; text
   .values__list svg { width: 32px; height: 32px; color: var(--accent); }
   .values .dots { margin-top: 2px; }
 }
+/* Mit Einleitung: Slide-Text im normalen Fluss unter dem Text statt auf Handy-Mitte */
+.pf__inner > div:first-child > .pf__intro + [aria-live] { position: static; transform: none; margin: clamp(24px, 3vw, 44px) 0 0; padding: 0; }

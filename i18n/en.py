@@ -3,6 +3,7 @@
 # TEXT: einzelne Textstücke und Attribute (alt, placeholder, aria-label, Meta).
 
 SNIPPETS = {
+    '<h2 class="h2 upper">Mehr Einblick. <br><span class="accent">Besser vorbereitet.</span></h2>': '<h2 class="h2 upper">More insight. <br><span class="accent">Better prepared.</span></h2>',
     '<h1 class="h1">Bereit,<br>wenn es <span class="accent">zählt.</span></h1>': '<h1 class="h1">Ready<br>when it <span class="accent">counts.</span></h1>',
     '<h2 class="h2 upper">Berlin startet.<br><span class="accent">Seid dabei.</span></h2>': '<h2 class="h2 upper">Berlin is starting.<br><span class="accent">Join us.</span></h2>',
     '<h2 class="h2 upper">Ein Plan. <span class="accent">Zwei Kanäle.</span></h2>': '<h2 class="h2 upper">One plan. <span class="accent">Two channels.</span></h2>',
@@ -85,6 +86,14 @@ SNIPPETS = {
 }
 
 TEXT = {
+    "Die Lösung · Team Insights": "The solution · Team insights",
+    "ProspectFuel begleitet deine Spieler beim Fueling im Alltag. Du siehst, wie sich ihre Routinen und ihre Energie entwickeln – und wo dein Team Unterstützung braucht.": "ProspectFuel supports your players with fueling in everyday life. You see how their routines and energy develop – and where your team needs support.",
+    "01 · Dein Team im Blick": "01 · Your team at a glance",
+    "Erkenne, wie regelmäßig deine Spieler ihre Fueling-Routinen umsetzen und wie sich das Team insgesamt entwickelt.": "See how consistently your players follow their fueling routines and how the team is developing overall.",
+    "02 · Entwicklung über die Saison": "02 · Progress over the season",
+    "Sieh, wie sich Fueling, Energie und Trainingsqualität über die Zeit entwickeln.": "See how fueling, energy and training quality develop over time.",
+    "03 · Deine Spieler verstehen": "03 · Understand your players",
+    "Erkenne, wo einzelne Spieler Unterstützung brauchen und wie sich ihre Entwicklung verändert.": "Spot where individual players need support and how their development is changing.",
     "Du gibst deinem Team alles mit, was es auf dem Court braucht.": "You give your team everything they need on the court.",
     "ProspectFuel unterstützt deine Spieler beim richtigen Fueling – und hilft dir, dein Team besser auf Training und Wettkampf vorzubereiten.": "ProspectFuel supports your players in fueling right – and helps you prepare your team better for practice and competition.",
     "Spieler kommen besser vorbereitet in die Halle.": "Players show up to the gym better prepared.",
