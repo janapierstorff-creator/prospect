@@ -83,6 +83,8 @@ SNIPPETS = {
 }
 
 TEXT = {
+    "Abgestimmt auf die Bedürfnisse junger Athleten. Entwickelt mit Ernährungsexperten.": "Tailored to the needs of young athletes. Developed with nutrition experts.",
+    "Richtige Energie für Wachstum, Training und Regeneration.": "The right energy for growth, training and recovery.",
     "Weil Talent mehr als Training braucht.": "Because talent takes more than training.",
     "„Als ich ausgerechnet habe, wie viel Energie mein Sohn an Trainingstagen braucht, dachte ich: Das kann nicht stimmen.": "“When I worked out how much energy my son needs on training days, I thought: that can't be right.",
     "Es stimmte. Und wir lagen meilenweit daneben.": "It was right. And we were miles off.",
