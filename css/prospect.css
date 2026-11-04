@@ -1527,3 +1527,7 @@ main .hero ~ * .h2 { font-size: clamp(36px, 3.6vw, 64px); line-height: .95; text
 @media (max-width: 760px) {
   .why__quote-wrap { margin-top: 26px; }
 }
+
+/* Athleten-Hero: Subline in zwei Absätzen */
+.ath-hero__sub:has(+ .ath-hero__sub--more) { margin-bottom: 10px !important; }
+.ath-hero__sub--more { margin-top: 0 !important; }

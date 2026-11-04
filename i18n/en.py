@@ -3,6 +3,7 @@
 # TEXT: einzelne Textstücke und Attribute (alt, placeholder, aria-label, Meta).
 
 SNIPPETS = {
+    '<h1 class="h1">Mehr Energie<br><span class="accent">für dein Game.</span></h1>': '<h1 class="h1">More energy<br><span class="accent">for your game.</span></h1>',
     '<h2 class="h2 upper">Berlin startet<br><span class="accent">zuerst.</span></h2>': '<h2 class="h2 upper">Berlin<br><span class="accent">goes first.</span></h2>',
     '<h2 class="h2">Dein Plan. Dein Coach.<br>Dein Fortschritt.</h2>': '<h2 class="h2">Your plan. Your coach.<br>Your progress.</h2>',
     # Startseite: Timing-Karten
@@ -78,6 +79,15 @@ SNIPPETS = {
 }
 
 TEXT = {
+    "Du trainierst hart, willst dich weiterentwickeln und den nächsten Schritt machen.": "You train hard, want to keep improving and take the next step.",
+    "Wir helfen dir, deinen Körper richtig zu versorgen – mit dem passenden Fuel zur richtigen Zeit.": "We help you fuel your body right – with the right fuel at the right time.",
+    "Energie bis zum Schluss.": "Energy until the end.",
+    "Ready fürs Training.": "Ready for training.",
+    "Mit Energie in jede Einheit.": "Bring energy to every session.",
+    "Wissen, was du brauchst.": "Know what you need.",
+    "Das richtige Fuel zur richtigen Zeit.": "The right fuel at the right time.",
+    "Näher an dein Ziel.": "Closer to your goal.",
+    "Hol mehr aus jedem Training heraus.": "Get more out of every practice.",
     "50 Plätze für junge Athleten und ihre Familien.": "50 spots for young athletes and their families.",
     "Seid von Anfang an dabei, testet ProspectFuel als Erste und gestaltet mit, wie es weitergeht.": "Be there from day one, test ProspectFuel first and help shape what comes next.",
     "Unverbindlich": "No commitment",
