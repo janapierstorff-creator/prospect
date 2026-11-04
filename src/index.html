@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>(function (d) {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    d.classList.add("reveal");
+    setTimeout(function () { if (!d.classList.contains("rv-ready")) d.classList.remove("reveal"); }, 3000);
+  })(document.documentElement);</script>
+  <title>{{start.meta.title}}</title>
+  <meta name="description" content="{{start.meta.description}}">
+  <meta property="og:title" content="{{start.meta.share_title}}">
+  <meta property="og:description" content="{{start.meta.share_description}}">
+  <meta property="og:image" content="https://prospect-fuel.com/assets/img/prospect/og-image-de.jpg">
+  <meta property="og:url" content="https://prospect-fuel.com/de/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../assets/favicon-prospect.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="alternate" hreflang="en" href="../index.html">
+  <link rel="stylesheet" href="../css/prospect.css">
+</head>
+<body class="">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html" aria-label="{{global.logo_vorlesetext}}">[[global.logo]]</a>
+    <nav class="nav" aria-label="{{global.navigation_vorlesetext}}">
+      <a href="athleten.html">[[global.nav_athleten]]</a>
+      <a href="eltern.html">[[global.nav_eltern]]</a>
+      <a href="coaches.html">[[global.nav_coaches]]</a>
+      <a class="lang-switch" href="../index.html" hreflang="en" lang="en">EN</a>
+    </nav>
+    <a class="btn btn--white" href="#warteliste">[[global.nav_button]] <span aria-hidden="true">→</span></a>
+    <button class="nav-toggle" aria-label="{{global.menue_vorlesetext}}" aria-expanded="false"><i data-lucide="menu"></i></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero dark">
+    <div class="fill media" style="--focus: 0% 30%; --focus-m: 62% 30%" data-ph="prospect/hero.jpg"><img src="../assets/img/prospect/hero.jpg" alt="{{start.hero.image_alt}}"></div>
+    <div class="container hero__inner">
+      <p class="kicker hero__kicker">[[start.hero.kicker]]</p>
+      <h1 class="h1">[[start.hero.headline]]</h1>
+      <p class="hero__sub">[[start.hero.sub]]</p>
+
+      <a class="btn hero__cta" href="#warteliste">[[start.hero.button]] <span aria-hidden="true">→</span></a>
+      <!-- Früheres E-Mail-Formular im Hero, ersetzt durch den Button wie auf den Unterseiten:
+      <form class="pill-form" data-waitlist data-source="start-hero" novalidate>
+        <div class="pill">
+          <input type="email" name="email" placeholder="Deine E-Mail-Adresse" aria-label="Deine E-Mail-Adresse" autocomplete="email" required>
+          <button class="btn" type="submit">Auf die Warteliste <span aria-hidden="true">→</span></button>
+        </div>
+        <div class="pill-extra">
+          <fieldset>
+            <legend>Ich bin …</legend>
+            <div class="roles">
+              <label><input type="radio" name="role" value="spieler" required><span>Athlet</span></label>
+              <label><input type="radio" name="role" value="eltern"><span>Elternteil</span></label>
+              <label><input type="radio" name="role" value="coach"><span>Coach</span></label>
+            </div>
+          </fieldset>
+          <p class="role-note" data-for="spieler">Unter 16? Bitte deine Eltern, dich einzutragen.</p>
+          <label class="check"><input type="checkbox" name="consent" required> <span>Ich möchte auf die Warteliste und Updates per E-Mail erhalten. Jederzeit widerrufbar. Mehr in der <a href="datenschutz.html">Datenschutzerklärung</a>.</span></label>
+        </div>
+        <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <p class="form-msg" aria-live="polite"></p>
+      </form>
+      -->
+
+      <!-- Benefits vorerst ausgeblendet
+      <ul class="hero__facts">
+        <li><i data-lucide="calendar-check"></i><span>Passend zum<br>Training</span></li>
+        <li><i data-lucide="users"></i><span>Für Spieler<br>&amp; Eltern</span></li>
+        <li><i data-lucide="target"></i><span>Persönlich<br>abgestimmt</span></li>
+        <li><i data-lucide="badge-check"></i><span>Mit Experten<br>entwickelt</span></li>
+      </ul>
+      -->
+    </div>
+    <!-- Handschrift-Notiz vorerst ausgeblendet (Text offen, Ideen: „Talent ✓ Training ✓ Fueling ?“ oder „Letztes Viertel. Noch voller Tank.“)
+    <div class="hero__hand hand"><p>Same<br>hard work.<br>Better<br>fueling.</p><svg viewBox="0 0 200 50" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M4 44 196 6 34 40 180 18"/></svg></div>
+    -->
+  </section>
+
+  <section class="audience dark">
+    <div class="container">
+      <p class="kicker">[[start.zielgruppen.kicker]]</p>
+      <div class="cards-3">
+        <a class="a-card media" data-ph="prospect/athlet-hero.jpg" href="athleten.html">
+          <img src="../assets/img/prospect/athlet-hero.jpg" alt="{{start.zielgruppen.image_alt}}" loading="lazy" style="object-position: 88% 30%">
+          <div class="a-card__body"><h3 class="h3">[[start.zielgruppen.title]] <i data-lucide="arrow-right" class="a-card__arrow" aria-hidden="true"></i></h3><p>[[start.zielgruppen.text]]</p></div>
+        </a>
+        <a class="a-card media" data-ph="prospect/eltern-hero.jpg" href="eltern.html">
+          <img src="../assets/img/prospect/eltern-hero.jpg" alt="{{start.zielgruppen.image_alt_2}}" loading="lazy" style="object-position: 63% 30%">
+          <div class="a-card__body"><h3 class="h3">[[start.zielgruppen.title_2]] <i data-lucide="arrow-right" class="a-card__arrow" aria-hidden="true"></i></h3><p>[[start.zielgruppen.text_2]]</p></div>
+        </a>
+        <a class="a-card media" data-ph="prospect/coach-hero.jpg" href="coaches.html">
+          <img src="../assets/img/prospect/coach-hero.jpg" alt="{{start.zielgruppen.image_alt_3}}" loading="lazy" style="object-position: 80% 30%">
+          <div class="a-card__body"><h3 class="h3">[[start.zielgruppen.title_3]] <i data-lucide="arrow-right" class="a-card__arrow" aria-hidden="true"></i></h3><p>[[start.zielgruppen.text_3]]</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cband cband--light" id="herausforderung">
+    <div class="fill media" data-ph="prospect/challenge.jpg"><img src="../assets/img/prospect/challenge.jpg" alt="{{start.herausforderung.image_alt}}" loading="lazy"></div>
+    <div class="container cband__inner">
+      <div class="cband__head">
+        <p class="kicker">[[start.herausforderung.kicker]]</p>
+        <h2 class="h2 upper">[[start.herausforderung.headline]]</h2>
+        <p class="cband__sub">[[start.herausforderung.sub]]</p>
+      </div>
+      <ul class="cband__cols">
+        <li><i data-lucide="battery-low"></i><h3>[[start.herausforderung.title]]</h3><p>[[start.herausforderung.text]]</p></li>
+        <li><i data-lucide="trending-down"></i><h3>[[start.herausforderung.title_2]]</h3><p>[[start.herausforderung.text_2]]</p></li>
+        <li><i data-lucide="zap-off"></i><h3>[[start.herausforderung.title_3]]</h3><p>[[start.herausforderung.text_3]]</p></li>
+      </ul>
+      <figure class="cband__quote"><blockquote class="hand">[[start.herausforderung.quote]]</blockquote></figure>
+    </div>
+  </section>
+
+  <section class="system dark" id="loesung">
+    <div class="fill media" data-ph="prospect/system.jpg"><img src="../assets/img/prospect/system.jpg" alt="{{start.loesung.image_alt}}" loading="lazy"><div class="system__pin" aria-hidden="true"><span class="system__soon"><i data-lucide="package"></i>[[start.loesung.text]]</span></div></div>
+    <div class="container system__inner">
+      <p class="kicker">[[start.loesung.kicker]]</p>
+      <h2 class="h2 upper">[[start.loesung.headline]]</h2>
+      <p class="system__text">[[start.loesung.text_2]]</p>
+      <p class="system__text system__text--more">[[start.loesung.text_3]]</p>
+    </div>
+  </section>
+
+  <section class="timing dark" aria-label="{{start.timing.aria_label}}">
+    <ul class="container timing__cards">
+      <li class="t-card">
+        <i data-lucide="zap"></i>
+        <h3>[[start.timing.title]]</h3>
+        <p>[[start.timing.text]]</p>
+      </li>
+      <li class="t-card">
+        <i data-lucide="activity"></i>
+        <h3>[[start.timing.title_2]]</h3>
+        <p>[[start.timing.text_2]]</p>
+      </li>
+      <li class="t-card">
+        <i data-lucide="refresh-cw"></i>
+        <h3>[[start.timing.title_3]]</h3>
+        <p>[[start.timing.text_3]]</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Timing-Abschnitt entfernt, die drei Phasen stehen jetzt in der Lösung
+  <section class="window" id="trainingsfenster">
+    <div class="fill media" data-ph="prospect/trainingsfenster.jpg"><img src="../assets/img/prospect/trainingsfenster.jpg" alt="Spieler hält einen Basketball unter dem Arm" loading="lazy"></div>
+    <div class="container window__inner">
+      <p class="kicker">Das richtige Timing</p>
+      <h2 class="h2 upper">Vorher. Währenddessen.<br>Danach.</h2>
+      <ul class="window__list">
+        <li><i data-lucide="battery-charging"></i><h3>Vor dem Training</h3><p>Energie aufbauen.<br>Bereit sein.</p></li>
+        <li><i data-lucide="activity"></i><h3>Während des Trainings</h3><p>Leistung halten.<br>Stark bleiben.</p></li>
+        <li><i data-lucide="refresh-ccw"></i><h3>Nach dem Training</h3><p>Auftanken.<br>Morgen wieder bereit.</p></li>
+      </ul>
+    </div>
+  </section>
+  -->
+
+  <div class="steps-wrap" id="so-gehts">
+    <section class="steps">
+      <div>
+        <p class="kicker">[[start.so_funktionierts.kicker]]</p>
+        <h2 class="h2">[[start.so_funktionierts.headline]]</h2>
+      </div>
+      <div class="steps-4 steps-3">
+        <div class="step"><div class="step__top"><span class="step__num">01</span><i data-lucide="user-round"></i></div><h3>[[start.so_funktionierts.title]]</h3><p>[[start.so_funktionierts.text]]</p></div>
+        <div class="step"><div class="step__top"><span class="step__num">02</span><i data-lucide="message-circle"></i></div><h3>[[start.so_funktionierts.title_2]]</h3><p>[[start.so_funktionierts.text_2]]</p></div>
+        <div class="step"><div class="step__top"><span class="step__num">03</span><i data-lucide="chart-no-axes-column"></i></div><h3>[[start.so_funktionierts.title_3]]</h3><p>[[start.so_funktionierts.text_3]]</p></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Zitat-Bereich vorerst ausgeblendet. Zum Wiederherstellen diesen Kommentar entfernen und "<! --" / "-- >" zurücksetzen.
+  <! -- TODO: Nur echte Zitate mit schriftlicher Freigabe der Person eintragen, dann die Klasse voice--todo entfernen. -- >
+  <section class="container voices">
+    <div class="cards-3">
+      <figure class="voice voice--todo" style="margin:0"><div class="media" data-ph="prospect/stimme-1.jpg"><img src="../assets/img/prospect/stimme-1.jpg" alt="" loading="lazy"></div><div><span class="voice__mark" aria-hidden="true">“</span><blockquote>Hier kommt ein freigegebenes Zitat, zum Beispiel von einem Coach oder einer Spielerin.</blockquote><b>Name</b><span>Rolle, Verein</span></div></figure>
+      <figure class="voice voice--todo" style="margin:0"><div class="media" data-ph="prospect/stimme-2.jpg"><img src="../assets/img/prospect/stimme-2.jpg" alt="" loading="lazy"></div><div><span class="voice__mark" aria-hidden="true">“</span><blockquote>Hier kommt ein freigegebenes Zitat, zum Beispiel von einem Elternteil aus der Pilotgruppe.</blockquote><b>Name</b><span>Rolle, Verein</span></div></figure>
+      <figure class="voice voice--todo" style="margin:0"><div class="media" data-ph="prospect/stimme-3.jpg"><img src="../assets/img/prospect/stimme-3.jpg" alt="" loading="lazy"></div><div><span class="voice__mark" aria-hidden="true">“</span><blockquote>Hier kommt ein freigegebenes Zitat, zum Beispiel von einer Ernährungsexpertin.</blockquote><b>Name</b><span>Rolle, Verein</span></div></figure>
+    </div>
+  </section>
+  -->
+
+  <section class="why dark" id="warum">
+    <div class="media" data-ph="prospect/jana.jpg"><img src="../assets/img/prospect/jana.jpg" alt="{{start.warum.image_alt}}" loading="lazy"></div>
+    <div class="container why__inner">
+      <div class="why__spacer"></div>
+      <div class="why__text">
+        <p class="kicker">[[start.warum.kicker]]</p>
+        <h2 class="h2">[[start.warum.headline]]</h2>
+        <p>[[start.warum.text]]</p>
+        <p>[[start.warum.text_2]]</p>
+        <p class="why__trust">[[start.warum.text_3]]</p>
+      </div>
+      <div class="why__quote-wrap">
+        <p class="why__quote hand">[[start.warum.text_4]]</p>
+        <p class="why__sign">[[start.warum.text_5]]</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="final dark" id="warteliste">
+    <div class="fill media" data-ph="prospect/final.jpg"><img src="../assets/img/prospect/final.jpg" alt="{{start.warteliste.image_alt}}" loading="lazy"></div>
+    <div class="container final__inner">
+      <div class="final__copy">
+        <h2 class="h2 upper">[[start.warteliste.headline]]</h2>
+        <p class="final__lead">[[start.warteliste.sub]]</p>
+        <p>[[start.warteliste.text]]</p>
+      </div>
+      <div class="final__action">
+        <form class="pill-form final-form" data-waitlist data-source="start-final" novalidate>
+          <fieldset class="final-roles">
+            <legend>[[start.warteliste.text_2]]</legend>
+            <div class="roles">
+              <label><input type="radio" name="role" value="eltern" required><span>[[start.warteliste.text_3]]</span></label>
+              <label><input type="radio" name="role" value="spieler"><span>[[start.warteliste.text_4]]</span></label>
+              <label><input type="radio" name="role" value="coach"><span>[[start.warteliste.text_5]]</span></label>
+            </div>
+          </fieldset>
+          <label class="final-label" for="final-email">[[start.warteliste.label]]</label>
+          <div class="pill">
+            <input type="email" id="final-email" name="email" placeholder="{{start.warteliste.placeholder}}" autocomplete="email" required>
+            <button class="btn" type="submit">[[start.warteliste.button]] <span aria-hidden="true">→</span></button>
+          </div>
+          <div class="pill-extra">
+            <div class="role-note" data-for="spieler"><p>[[start.warteliste.text_6]]</p><button class="btn btn--white btn--sm" type="button" data-share-parents>[[start.warteliste.button_2]] <span aria-hidden="true">→</span></button></div>
+            <div class="role-field" data-for="eltern"><input type="number" name="child_age" min="8" max="21" inputmode="numeric" placeholder="{{start.warteliste.placeholder_2}}" aria-label="{{start.warteliste.aria_label}}"></div>
+            <div class="role-field" data-for="coach"><input type="text" name="club" maxlength="160" placeholder="{{start.warteliste.placeholder_3}}" aria-label="{{start.warteliste.aria_label_2}}"></div>
+            <label class="check"><input type="checkbox" name="consent" required> <span>[[start.warteliste.text_7]] <a href="datenschutz.html">[[start.warteliste.link]]</a>.</span></label>
+          </div>
+          <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="form-msg" aria-live="polite"></p>
+        </form>
+        <ul class="final__perks">
+          <li><i data-lucide="circle-check"></i>[[start.warteliste.text_8]]</li>
+          <li><i data-lucide="circle-check"></i>[[start.warteliste.text_9]]</li>
+          <li><i data-lucide="circle-check"></i>[[start.warteliste.text_10]]</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer dark">
+  <div class="container footer-inner">
+    <a class="logo" href="index.html">[[global.logo]]</a>
+    <nav aria-label="{{global.footer_vorlesetext}}">
+      <a href="impressum.html">[[global.footer_impressum]]</a>
+      <a href="datenschutz.html">[[global.footer_datenschutz]]</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="../js/vendor/lucide-0.453.0.min.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

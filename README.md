@@ -6,20 +6,21 @@ Die Anmeldungen für die Warteliste landen in **Supabase**, gehostet wird über 
 Live: **https://prospect-fuel.com** (Domain bei GoDaddy, die Datei `CNAME` im Projekt verbindet sie mit GitHub Pages).
 
 ```
-de/                  – deutsche Seiten (hier werden alle Texte gepflegt)
-                       index.html  athleten.html  eltern.html  coaches.html
-                       impressum.html  datenschutz.html (Rechtliches nur Deutsch)
+content/texts.yml    – ALLE TEXTE der Website, Deutsch und Englisch (hier wird bearbeitet)
+src/                 – Vorlagen der Seiten (Aufbau, Design-Klassen, Bilder); Texte als Platzhalter
+i18n/build.py        – baut aus Vorlagen + Texten die fertigen Seiten
+de/                  – deutsche Seiten (werden erzeugt, nicht direkt bearbeiten)
 index.html  athletes.html  parents.html  coaches.html
-                     – englische Seiten im Hauptverzeichnis, werden erzeugt (siehe unten)
+                     – englische Seiten im Hauptverzeichnis (werden erzeugt)
 athleten.html  eltern.html  impressum.html  datenschutz.html  en/
-                     – nur Weiterleitungen für alte Links, werden erzeugt
+                     – nur Weiterleitungen für alte Links (werden erzeugt)
+.github/workflows/build.yml – baut und veröffentlicht automatisch nach jeder Änderung
 css/prospect.css     – das gesamte Design
 css/fonts.css        – Schriften, lokal aus assets/fonts/ (keine Verbindung zu Google)
-js/main.js           – Navigation, Slider, Formulare, „Schick es deinen Eltern“, gemerkte Sprachwahl
+js/main.js           – Navigation, Slider, Formulare, Einblenden beim Scrollen, gemerkte Sprachwahl
 js/vendor/           – Icon-Bibliothek Lucide, lokal (keine Verbindung zu unpkg)
 js/config.js         – Supabase-Zugangsdaten
 supabase/schema.sql  – Tabelle und Sicherheitsregeln für die Warteliste
-i18n/                – englische Texte und Skript für die englischen Seiten
 assets/img/prospect/ – alle Fotos
 CNAME                – eigene Domain prospect-fuel.com
 ```
@@ -42,21 +43,32 @@ Bildausschnitt im Hero: Am Bild steht `style="--focus: 72% 30%; --focus-m: 97% 3
 
 Tipp: Bilder vorher auf etwa 1800 bis 2400 px Breite verkleinern und komprimieren, zum Beispiel mit squoosh.app.
 
+## Texte bearbeiten
+
+Alle Texte stehen in **`content/texts.yml`**, sortiert nach Seite → Abschnitt → Element, Deutsch (`de`) und Englisch (`en`) untereinander.
+
+**Auf github.com (ohne Programm auf dem Rechner):**
+1. Im Repository `content/texts.yml` öffnen und oben rechts auf das Stift-Symbol klicken.
+2. Text ändern. Mit `Strg/Cmd + F` findest du die Stelle schnell, einfach nach dem alten Text suchen.
+3. Unten bzw. oben rechts auf **Commit changes** klicken.
+4. Nach ca. 1–2 Minuten ist die Änderung live. Den Fortschritt siehst du im Reiter **Actions**.
+
+**Zeichen in Texten auf der Seite** (nicht in Bildbeschreibungen und Platzhaltern):
+- ` / ` Zeilenumbruch, z. B. `Real fuel. / *Real progress.*`
+- `*Text*` Text in Blau
+- `**Text**` Text fett
+
+**Wichtig:** Enthält ein Text einen Doppelpunkt mit Leerzeichen dahinter (`: `) oder beginnt er mit einem Sonderzeichen, muss er in Anführungszeichen stehen: `de: "So geht's: ganz einfach"`. Ist die Datei fehlerhaft, bricht der automatische Bau ab, die Website bleibt unverändert, und unter **Actions** steht, in welcher Zeile das Problem ist.
+
+**Lokal:** `python3 i18n/build.py` im Projektordner baut alle Seiten (einmalig `python3 -m pip install --user pyyaml`).
+
+Neue Abschnitte, Layout, Bilder und Design werden in den Vorlagen in `src/` und in `css/prospect.css` geändert.
+
 ## Sprachen
 
-Englisch ist die Standardsprache unter `prospect-fuel.com/`, Deutsch liegt unter `prospect-fuel.com/de/`.
-Die Texte werden **auf den deutschen Seiten in `de/` gepflegt**, die englischen Seiten werden daraus erzeugt. Nicht direkt in den englischen Seiten im Hauptverzeichnis bearbeiten.
+Englisch ist die Standardsprache unter `prospect-fuel.com/`, Deutsch liegt unter `prospect-fuel.com/de/`. Impressum und Datenschutz gibt es nur auf Deutsch, die englischen Seiten verlinken dorthin.
+Anmeldungen von den englischen Seiten haben in `source_page` ein `en-` vorne, zum Beispiel `en-start-final`.
 
-1. Texte auf den deutschen Seiten in `de/` ändern.
-2. Neue oder geänderte Texte in `i18n/en.py` übersetzen (`TEXT` für einzelne Texte, `SNIPPETS` für Headlines mit Zeilenumbrüchen).
-3. Im Projektordner ausführen:
-
-```bash
-python3 i18n/build_en.py
-```
-
-Das Skript schreibt `index.html`, `athletes.html`, `parents.html` und `coaches.html` ins Hauptverzeichnis, legt die Weiterleitungen für alte Adressen an (`/athleten.html`, `/eltern.html`, `/en/…`) und listet am Ende Texte, die noch Deutsch aussehen.
-Impressum und Datenschutz gibt es nur auf Deutsch, die englischen Seiten verlinken dorthin. Anmeldungen von den englischen Seiten haben in `source_page` ein `en-` vorne, zum Beispiel `en-start-final`.
 **Automatische Sprachwahl:** Ist Deutsch die erste Sprache im Browser, leiten die englischen Seiten direkt auf die deutsche Version weiter (zum Beispiel `/parents.html` → `/de/eltern.html`). Wer über DE/EN in der Navigation bewusst eine Sprache wählt, bekommt diese ab dann immer, die Wahl wird im Browser gespeichert. Die deutschen Seiten leiten nie weiter, ein geteilter `/de/`-Link bleibt also immer deutsch.
 
 ## Supabase einrichten (ca. 10 Minuten)
@@ -84,7 +96,7 @@ git remote add origin https://github.com/<dein-name>/prospect.git
 git push -u origin main
 ```
 
-3. Im Repository unter **Settings → Pages** als Source **Deploy from a branch** wählen, dann Branch `main` und Ordner `/ (root)`.
+3. Im Repository unter **Settings → Pages** als Source **GitHub Actions** wählen. Die Seiten werden dann bei jeder Änderung automatisch gebaut und veröffentlicht.
 4. Nach etwa einer Minute ist die Seite unter `https://<dein-name>.github.io/prospect/` erreichbar.
 5. Eigene Domain (optional): Unter **Settings → Pages → Custom domain** eintragen und beim Domain-Anbieter die DNS-Einträge setzen, die GitHub anzeigt.
 
