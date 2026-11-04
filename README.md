@@ -94,7 +94,7 @@ Nicht veröffentlicht werden (siehe `.gitignore`): die alten `*-prospectfuel-alt
 
 - [ ] Impressum ausfüllen (Anschrift, E-Mail, gelb markierte Stellen)
 - [ ] Datenschutz vervollständigen und prüfen lassen (Supabase, Minderjährige)
-- [ ] Kontakt-E-Mail festlegen (Impressum und Datenschutz nennen noch `hallo@prospectfuel.de`)
+- [x] Kontakt-E-Mail festlegen: jana@prospect-fuel.com (Postfach bzw. Weiterleitung bei GoDaddy muss eingerichtet sein)
 - [ ] `og-image.jpg` anlegen
 - [ ] Zahlen auf der Athleten-Seite mit Quelle belegen (60 %, 2–3x), Fußnote aktivieren
 - [ ] Wirkversprechen und Aussagen prüfen („Mehr Energie“, „Bessere Performance“, „mit Ernährungsexperten entwickelt“, „kostenlos“)
