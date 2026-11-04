@@ -323,8 +323,8 @@ athleten:
       de: Für Athleten – ProspectFuel
       en: For athletes – ProspectFuel
     description:
-      de: Dein Fueling-Coach für junge Athleten: Konstante Energie, mehr Performance, Sporternährung für dein nächstes Level. Start in Berlin mit 50 Plätzen.
-      en: Your fueling coach for young athletes: steady energy, better performance, sports nutrition for your next level. Starting in Berlin with 50 spots.
+      de: "Dein Fueling-Coach für junge Athleten: Konstante Energie, mehr Performance, Sporternährung für dein nächstes Level. Start in Berlin mit 50 Plätzen."
+      en: "Your fueling coach for young athletes: steady energy, better performance, sports nutrition for your next level. Starting in Berlin with 50 spots."
     share_title:
       de: Dein Talent. Dein Tank. Dein Game. – ProspectFuel
       en: Your talent. Your tank. Your game. – ProspectFuel
@@ -692,8 +692,8 @@ eltern:
       de: Ihr unterstützt / den Traum. / *Wir unterstützen / euch.*
       en: You support / the dream. / *We support / you.*
     sub:
-      de: Fahrdienst, Fan, Koch: Ihr macht schon so viel.
-      en: Driver, fan, cook: you already do so much.
+      de: "Fahrdienst, Fan, Koch: Ihr macht schon so viel."
+      en: "Driver, fan, cook: you already do so much."
     sub_2:
       de: ProspectFuel nimmt euch die Ernährungsplanung ab, damit euer Kind gut versorgt ist, ohne dass ihr Experten werden müsst.
       en: ProspectFuel takes nutrition planning off your plate, so your child is well fueled without you having to become experts.
@@ -1006,7 +1006,7 @@ eltern:
     text_7:
       de: Datenschutz hat für uns oberste Priorität. Wir speichern nur, was für den persönlichen Plan nötig ist, verarbeiten die Daten nach DSGVO und geben sie nicht an Dritte weiter.
       en: Data protection is our top priority. We only store what’s needed for the personal plan, process data in line with GDPR and never share it with third parties.
-   question_8:
+    question_8:
       de: Was ist bei Allergien oder Unverträglichkeiten?
       en: What about allergies or intolerances?
     text_8:
