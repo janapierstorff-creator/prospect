@@ -1620,3 +1620,10 @@ main .hero ~ * .h2 { font-size: clamp(36px, 3.6vw, 64px); line-height: .95; text
   .pilot .final__perks li, .pilot .final__perks li + li { gap: 4px; font-size: 12px; white-space: nowrap; }
   .pilot .final__perks svg { width: 14px; height: 14px; }
 }
+
+/* Hinweis auf die deutsche Version (nur englische Seiten, Browser auf Deutsch) */
+.lang-hint { position: fixed; left: 50%; bottom: 20px; z-index: 50; display: flex; align-items: center; gap: 4px; padding: 6px 6px 6px 18px; border: 1px solid rgba(255,255,255,.16); border-radius: 999px; background: rgba(8,14,19,.92); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); box-shadow: 0 8px 24px rgba(0,0,0,.3); transform: translateX(-50%); white-space: nowrap; }
+.lang-hint a { color: #fff; font-size: 14px; font-weight: 600; text-decoration: none; }
+.lang-hint a span { color: var(--accent); }
+.lang-hint button { width: 30px; height: 30px; border: 0; border-radius: 50%; background: transparent; color: rgba(255,255,255,.7); font-size: 18px; line-height: 1; cursor: pointer; }
+.lang-hint button:hover { color: #fff; background: rgba(255,255,255,.1); }

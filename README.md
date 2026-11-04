@@ -1,22 +1,27 @@
 # ProspectFuel – Waitlist-Website
 
-Statische Website mit Startseite und drei Zielgruppen-Seiten (Athleten, Eltern, Coaches), auf Deutsch und Englisch. Dazu kommen Impressum und Datenschutz.
+Statische Website mit Startseite und drei Zielgruppen-Seiten (Athleten, Eltern, Coaches), auf Englisch (Standard) und Deutsch (unter `/de/`). Dazu kommen Impressum und Datenschutz.
 Die Anmeldungen für die Warteliste landen in **Supabase**, gehostet wird über **GitHub Pages**. Beides ist kostenlos.
 
 Live: **https://prospect-fuel.com** (Domain bei GoDaddy, die Datei `CNAME` im Projekt verbindet sie mit GitHub Pages).
 
 ```
-index.html  athleten.html  eltern.html  coaches.html   – deutsche Seiten
-impressum.html  datenschutz.html                        – Rechtliches (nur Deutsch)
-en/                  – englische Seiten, werden erzeugt (siehe unten)
+de/                  – deutsche Seiten (hier werden alle Texte gepflegt)
+                       index.html  athleten.html  eltern.html  coaches.html
+                       impressum.html  datenschutz.html (Rechtliches nur Deutsch)
+index.html  athletes.html  parents.html  coaches.html
+                     – englische Seiten im Hauptverzeichnis, werden erzeugt (siehe unten)
+athleten.html  eltern.html  impressum.html  datenschutz.html  en/
+                     – nur Weiterleitungen für alte Links, werden erzeugt
 css/prospect.css     – das gesamte Design
 css/fonts.css        – Schriften, lokal aus assets/fonts/ (keine Verbindung zu Google)
-js/main.js           – Navigation, Slider, Formulare, „Schick es deinen Eltern“
+js/main.js           – Navigation, Slider, Formulare, „Schick es deinen Eltern“, Hinweis „Auf Deutsch lesen“
 js/vendor/           – Icon-Bibliothek Lucide, lokal (keine Verbindung zu unpkg)
-js/config.js         – Supabase-Zugangsdaten (hier eintragen)
+js/config.js         – Supabase-Zugangsdaten
 supabase/schema.sql  – Tabelle und Sicherheitsregeln für die Warteliste
 i18n/                – englische Texte und Skript für die englischen Seiten
 assets/img/prospect/ – alle Fotos
+CNAME                – eigene Domain prospect-fuel.com
 ```
 
 ## Bilder
@@ -37,11 +42,12 @@ Bildausschnitt im Hero: Am Bild steht `style="--focus: 72% 30%; --focus-m: 97% 3
 
 Tipp: Bilder vorher auf etwa 1800 bis 2400 px Breite verkleinern und komprimieren, zum Beispiel mit squoosh.app.
 
-## Englische Version
+## Sprachen
 
-Die englischen Seiten liegen unter `en/` und werden aus den deutschen Seiten erzeugt. Nicht direkt in `en/` bearbeiten.
+Englisch ist die Standardsprache unter `prospect-fuel.com/`, Deutsch liegt unter `prospect-fuel.com/de/`.
+Die Texte werden **auf den deutschen Seiten in `de/` gepflegt**, die englischen Seiten werden daraus erzeugt. Nicht direkt in den englischen Seiten im Hauptverzeichnis bearbeiten.
 
-1. Texte auf den deutschen Seiten ändern.
+1. Texte auf den deutschen Seiten in `de/` ändern.
 2. Neue oder geänderte Texte in `i18n/en.py` übersetzen (`TEXT` für einzelne Texte, `SNIPPETS` für Headlines mit Zeilenumbrüchen).
 3. Im Projektordner ausführen:
 
@@ -49,7 +55,9 @@ Die englischen Seiten liegen unter `en/` und werden aus den deutschen Seiten erz
 python3 i18n/build_en.py
 ```
 
-Das Skript listet am Ende Texte, die noch Deutsch aussehen. Impressum und Datenschutz gibt es nur auf Deutsch, die englischen Seiten verlinken dorthin. Anmeldungen von den englischen Seiten haben in `source_page` ein `en-` vorne, zum Beispiel `en-start-final`.
+Das Skript schreibt `index.html`, `athletes.html`, `parents.html` und `coaches.html` ins Hauptverzeichnis, legt die Weiterleitungen für alte Adressen an (`/athleten.html`, `/eltern.html`, `/en/…`) und listet am Ende Texte, die noch Deutsch aussehen.
+Impressum und Datenschutz gibt es nur auf Deutsch, die englischen Seiten verlinken dorthin. Anmeldungen von den englischen Seiten haben in `source_page` ein `en-` vorne, zum Beispiel `en-start-final`.
+Auf den englischen Seiten erscheint unten ein kleiner Hinweis „Auf Deutsch lesen“, wenn Deutsch die erste Sprache des Browsers ist. Wer ihn schließt, sieht ihn nicht wieder.
 
 ## Supabase einrichten (ca. 10 Minuten)
 
