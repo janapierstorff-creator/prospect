@@ -3,6 +3,7 @@
 # TEXT: einzelne Textstücke und Attribute (alt, placeholder, aria-label, Meta).
 
 SNIPPETS = {
+    '<h2 class="h2 upper need__title">Wachsen. Lernen.<br>Trainieren.<br><span class="accent">Alles braucht Energie.</span></h2>': '<h2 class="h2 upper need__title">Growing. Learning.<br>Training.<br><span class="accent">It all takes energy.</span></h2>',
     '<h1 class="h1 h1--long">Ihr unterstützt<br>den Traum.<br><span class="accent">Wir unterstützen<br>euch.</span></h1>': '<h1 class="h1 h1--long">You support<br>the dream.<br><span class="accent">We support<br>you.</span></h1>',
     '<h1 class="h1">Dein Game.<br>Dein <span class="accent">nächstes Level.</span></h1>': '<h1 class="h1">Your game.<br>Your <span class="accent">next level.</span></h1>',
     '<h1 class="h1">Mehr Energie<br><span class="accent">für dein Game.</span></h1>': '<h1 class="h1">More energy<br><span class="accent">for your game.</span></h1>',
@@ -81,6 +82,9 @@ SNIPPETS = {
 }
 
 TEXT = {
+    "Schule, Hausaufgaben, Fahrwege, Training. Und mittendrin ein Körper, der noch wächst und besonders viel Energie braucht.": "School, homework, commutes, training. And in the middle of it all, a body that's still growing and needs a lot of energy.",
+    "Doch zwischen all den Terminen bleibt die richtige Ernährung schnell auf der Strecke.": "But between all those commitments, good nutrition quickly falls by the wayside.",
+    "Wisst ihr eigentlich, wie viel Energie euer Kind an Trainingstagen braucht?": "Do you actually know how much energy your child needs on training days?",
     "Ihr tut alles, damit euer Kind seinen Weg im Sport gehen kann. Aber bekommt es auch die Energie, die es dafür braucht?": "You do everything so your child can follow their path in sport. But are they getting the energy they need for it?",
     "ProspectFuel nimmt euch die Ernährungsplanung ab, ohne dass ihr Experten werden müsst. Gleichzeitig lernt euer Kind, selbst für seine Energie zu sorgen.": "ProspectFuel takes nutrition planning off your plate – no need to become experts. At the same time, your child learns to take care of their own energy.",
     "Wissen, was euer Kind braucht.": "Know what your child needs.",
