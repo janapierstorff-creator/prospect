@@ -80,6 +80,11 @@ SNIPPETS = {
 }
 
 TEXT = {
+    "Berlin startet zuerst. Sichere dir die Chance, bei den ersten 50 Plätzen dabei zu sein.": "Berlin goes first. Get your chance at one of the first 50 spots.",
+    "Unter 16?": "Under 16?",
+    "Hol deine Eltern dazu.": "Bring your parents in.",
+    "Ab 16?": "16 or older?",
+    "Trag dich auf die Warteliste ein.": "Join the waitlist.",
     "Du trainierst, um besser zu werden. Doch nicht nur dein Training entscheidet, wie weit du kommst.": "You train to get better. But training alone doesn't decide how far you go.",
     "Lerne, deinen Körper richtig zu versorgen – damit du mehr aus jeder Einheit herausholen kannst.": "Learn to fuel your body right – so you can get more out of every session.",
     "Dein Coach. Direkt auf WhatsApp.": "Your coach. Right on WhatsApp.",
