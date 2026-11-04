@@ -3,6 +3,7 @@
 # TEXT: einzelne Textstücke und Attribute (alt, placeholder, aria-label, Meta).
 
 SNIPPETS = {
+    '<h2 class="h2 upper">Berlin startet.<br><span class="accent">Seid dabei.</span></h2>': '<h2 class="h2 upper">Berlin is starting.<br><span class="accent">Join us.</span></h2>',
     '<h2 class="h2 upper">Ein Plan. <span class="accent">Zwei Kanäle.</span></h2>': '<h2 class="h2 upper">One plan. <span class="accent">Two channels.</span></h2>',
     '<h2 class="h2 upper need__title">Wachsen. Lernen.<br>Trainieren.<br><span class="accent">Alles braucht Energie.</span></h2>': '<h2 class="h2 upper need__title">Growing. Learning.<br>Training.<br><span class="accent">It all takes energy.</span></h2>',
     '<h1 class="h1 h1--long">Ihr unterstützt<br>den Traum.<br><span class="accent">Wir unterstützen<br>euch.</span></h1>': '<h1 class="h1 h1--long">You support<br>the dream.<br><span class="accent">We support<br>you.</span></h1>',
@@ -83,6 +84,8 @@ SNIPPETS = {
 }
 
 TEXT = {
+    "Wir starten mit 50 jungen Athleten und ihren Familien in Berlin.": "We're starting in Berlin with 50 young athletes and their families.",
+    "Seid von Anfang an dabei, testet ProspectFuel als Erste und gestaltet mit, wie wir junge Athleten künftig unterstützen.": "Be there from day one, be the first to try ProspectFuel and help shape how we support young athletes in the future.",
     "Gut zu wissen.": "Good to know.",
     "Für welches Alter ist ProspectFuel gedacht?": "What age is ProspectFuel for?",
     "Für junge Athlet:innen zwischen 12 und 18 Jahren, die regelmäßig trainieren und sich sportlich weiterentwickeln wollen.": "For young athletes aged 12 to 18 who train regularly and want to keep developing in their sport.",
