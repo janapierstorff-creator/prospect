@@ -85,7 +85,7 @@ SNIPPETS = {
 }
 
 TEXT = {
-    "Du gibst deinem Team alles mit, was es auf dem Court braucht. Aber kommen deine Spieler auch mit der Energie ins Training, die sie brauchen?": "You give your team everything they need on the court. But are your players showing up to practice with the energy they need?",
+    "Du gibst deinem Team alles mit, was es auf dem Court braucht.": "You give your team everything they need on the court.",
     "ProspectFuel unterstützt deine Spieler beim richtigen Fueling – und hilft dir, dein Team besser auf Training und Wettkampf vorzubereiten.": "ProspectFuel supports your players in fueling right – and helps you prepare your team better for practice and competition.",
     "Spieler kommen besser vorbereitet in die Halle.": "Players show up to the gym better prepared.",
     "Damit dein Team auch am Ende noch alles geben kann.": "So your team can still give it everything in the final minutes.",
