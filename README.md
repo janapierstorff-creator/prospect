@@ -34,7 +34,7 @@ Alle Bilder liegen in `assets/img/prospect/`. Fehlt ein Bild, zeigt die Seite ei
 | Athleten | `athlet-hero.jpg`, `athlet-skill.jpg`, `athlet-final.jpg` |
 | Eltern | `eltern-hero.jpg`, `eltern-challenge.jpg`, `eltern-motivation.jpg`, `eltern-final.jpg` |
 | Coaches | `coach-hero.jpg`, `coach-band.jpg`, `coach-final.jpg` |
-| Alle | `og-image.jpg` (1200 × 630, Vorschaubild beim Teilen, fehlt noch) |
+| Alle | `og-image.jpg` und `og-image-de.jpg` (1200 × 630, Vorschaubild beim Teilen auf Englisch und Deutsch) |
 
 Die drei Karten „Für Athleten / Eltern / Coaches“ auf der Startseite nutzen die Hero-Bilder der Unterseiten. Der Ausschnitt steht direkt am Bild als `object-position`.
 
@@ -90,15 +90,19 @@ git push -u origin main
 
 Nicht veröffentlicht werden (siehe `.gitignore`): die alten `*-prospectfuel-alt.html`-Seiten, `css/style.css`, `exports/` und ungenutzte Bild-Alternativen. Sie bleiben lokal liegen.
 
-## Vor dem Livegang
+## Vor dem breiten Teilen
 
-- [ ] Impressum ausfüllen (Anschrift, E-Mail, gelb markierte Stellen)
-- [ ] Datenschutz vervollständigen und prüfen lassen (Supabase, Minderjährige)
-- [x] Kontakt-E-Mail festlegen: jana@prospect-fuel.com (Postfach bzw. Weiterleitung bei GoDaddy muss eingerichtet sein)
-- [ ] `og-image.jpg` anlegen
-- [ ] Zahlen auf der Athleten-Seite mit Quelle belegen (60 %, 2–3x), Fußnote aktivieren
-- [ ] Wirkversprechen und Aussagen prüfen („Mehr Energie“, „Bessere Performance“, „mit Ernährungsexperten entwickelt“, „kostenlos“)
-- [ ] Einmal selbst eintragen und in Supabase prüfen, ob der Eintrag ankommt
+- [x] Impressum ausgefüllt (Anschrift, E-Mail)
+- [x] Datenschutzerklärung überarbeitet (Stand November 2026)
+- [x] Kontakt-E-Mail: jana@prospect-fuel.com
+- [x] Vorschaubilder zum Teilen: `og-image.jpg` (Englisch) und `og-image-de.jpg` (Deutsch), Vorlagen in `exports/og-image-*.html`
+- [ ] E-Mail-Empfang für jana@prospect-fuel.com einrichten (Weiterleitung oder Postfach bei GoDaddy, MX-Eintrag)
+- [ ] Auftragsverarbeitungsvertrag (DPA) mit Supabase abschließen (Dashboard → Organization → Legal Documents)
+- [ ] Einmal selbst auf Deutsch und Englisch eintragen und in Supabase prüfen, ob die Einträge ankommen; alte Test-Einträge löschen
+- [ ] Wirkversprechen und Aussagen prüfen („Mehr Energie“, „Bessere Leistung“, „Schneller regenerieren“, „mit Ernährungsexperten entwickelt“)
+- [ ] Datenschutzerklärung und Impressum juristisch prüfen lassen
+- [ ] Später: E-Mail-Tool für die Start-Mails wählen (mit Double-Opt-in) und in der Datenschutzerklärung ergänzen
+- [ ] Optional: Zahlen auf der Athleten-Seite nur mit Quelle wieder einblenden (60 %, 2–3x)
 
 ## Kampagnen messen
 

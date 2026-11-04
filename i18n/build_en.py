@@ -81,6 +81,10 @@ def translate(html, page):
             return 'href="de/%s%s"' % (name, rest)
         return 'href="%s%s"' % (PAGES[name], rest)
     html = re.sub(r'href="(index\.html|athleten\.html|eltern\.html|coaches\.html|impressum\.html|datenschutz\.html)([^"]*)"', page_link, html)
+    # Vorschaubild und Adresse beim Teilen (absolute URLs, damit WhatsApp & Co. sie finden)
+    html = html.replace("og-image-de.jpg", "og-image.jpg")
+    html = html.replace('content="https://prospect-fuel.com/de/%s"' % ("" if page == "index.html" else page),
+                        'content="https://prospect-fuel.com/%s"' % ("" if page == "index.html" else PAGES[page]))
     # Anmeldungen der englischen Seiten erkennbar machen
     html = re.sub(r'data-source="([^"]+)"', r'data-source="en-\1"', html)
     return html
