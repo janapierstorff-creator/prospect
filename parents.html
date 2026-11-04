@@ -9,6 +9,11 @@
     if (pref === "de" || (pref !== "en" && /^de\b/i.test(lang))) location.replace("de/eltern.html" + location.search + location.hash);
   })();</script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>(function (d) {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    d.classList.add("reveal");
+    setTimeout(function () { if (!d.classList.contains("rv-ready")) d.classList.remove("reveal"); }, 3000);
+  })(document.documentElement);</script>
   <title>For parents – ProspectFuel</title>
   <meta name="description" content="You support your child's dream. We help you fuel them well every day – with simple solutions and practical recipes.">
   <meta property="og:title" content="You support the dream. We support you. – ProspectFuel">

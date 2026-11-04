@@ -3,6 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>(function (d) {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    d.classList.add("reveal");
+    setTimeout(function () { if (!d.classList.contains("rv-ready")) d.classList.remove("reveal"); }, 3000);
+  })(document.documentElement);</script>
   <title>Für Eltern – ProspectFuel</title>
   <meta name="description" content="Du unterstützt den Traum deines Kindes. Wir helfen dir, es im Alltag optimal zu versorgen – mit einfachen Lösungen und alltagstauglichen Rezepten.">
   <meta property="og:title" content="Du unterstützt den Traum. Wir unterstützen dich. – ProspectFuel">

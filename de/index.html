@@ -3,6 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>(function (d) {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    d.classList.add("reveal");
+    setTimeout(function () { if (!d.classList.contains("rv-ready")) d.classList.remove("reveal"); }, 3000);
+  })(document.documentElement);</script>
   <title>ProspectFuel – Der Fueling Coach für junge Athleten</title>
   <meta name="description" content="Der Trainingsplan steht – die Energie dafür auch? ProspectFuel ist der Fueling Coach für junge Athleten und ihre Eltern. Jetzt Platz sichern.">
   <meta property="og:title" content="ProspectFuel – Elite habits start early.">

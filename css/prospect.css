@@ -1620,3 +1620,22 @@ main .hero ~ * .h2 { font-size: clamp(36px, 3.6vw, 64px); line-height: .95; text
   .pilot .final__perks li, .pilot .final__perks li + li { gap: 4px; font-size: 12px; white-space: nowrap; }
   .pilot .final__perks svg { width: 14px; height: 14px; }
 }
+
+/* Handy: Navigation bleibt oben stehen, halbtransparent mit Unschärfe */
+@media (max-width: 760px) {
+  .site-header { position: fixed; background: rgba(8,14,19,.62); -webkit-backdrop-filter: blur(14px) saturate(140%); backdrop-filter: blur(14px) saturate(140%); border-bottom: 1px solid rgba(255,255,255,.08); }
+  .site-header.is-open { background: var(--bg); }
+  .legal-page .site-header { position: sticky; top: 0; }
+  .nav { background: var(--bg); }
+}
+
+/* Einblenden beim Scrollen: einheitlicher Hintergrund, bis das Skript bereit ist, dann erscheinen die Inhalte im Viewport */
+html.reveal:not(.rv-ready) body { background: var(--bg); }
+html.reveal:not(.rv-ready) main, html.reveal:not(.rv-ready) .site-footer { opacity: 0; }
+html.reveal .rv { opacity: 0; transform: translateY(26px); transition: opacity .8s ease, transform .8s cubic-bezier(.2, .7, .2, 1); transition-delay: var(--rv-d, 0ms); }
+html.reveal .rv.is-in { opacity: 1; transform: none; }
+html.reveal main img { opacity: 0; transition: opacity .9s ease; }
+html.reveal main img.is-loaded { opacity: 1; }
+@media (prefers-reduced-motion: reduce) {
+  html.reveal .rv, html.reveal main img { opacity: 1; transform: none; transition: none; }
+}

@@ -9,6 +9,11 @@
     if (pref === "de" || (pref !== "en" && /^de\b/i.test(lang))) location.replace("de/athleten.html" + location.search + location.hash);
   })();</script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>(function (d) {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    d.classList.add("reveal");
+    setTimeout(function () { if (!d.classList.contains("rv-ready")) d.classList.remove("reveal"); }, 3000);
+  })(document.documentElement);</script>
   <title>For athletes – ProspectFuel</title>
   <meta name="description" content="Steady energy. Higher performance. The fueling system for your next level. We're starting in Berlin with 50 spots.">
   <meta property="og:title" content="Your talent. Your tank. Your game. – ProspectFuel">

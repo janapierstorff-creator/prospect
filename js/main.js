@@ -6,6 +6,36 @@
   // Icons (Lucide) rendern
   if (window.lucide) window.lucide.createIcons({ attrs: { "stroke-width": 1.75 } });
 
+  // Inhalte einblenden, sobald sie in den Viewport kommen (Einschalten passiert früh im <head>)
+  var root = document.documentElement;
+  if (root.classList.contains("reveal") && "IntersectionObserver" in window) {
+    // Einheiten, die als Ganzes erscheinen; Karussells und Formulare nicht in Einzelteile zerlegen
+    var REVEAL = "main section :is(.kicker, h1, h2, h3, p, .btn, blockquote, figure, form, .choice, .a-card, .pf-stagewrap, [aria-live], " +
+      ".cards-3, .cards-4, .steps-4, .facts4, .hero__facts, .values__list, .timing__cards, .pf-points, .cband__cols, .window__list, .faq-list, .final__perks, .need__note, .stats)";
+    var units = Array.prototype.filter.call(document.querySelectorAll(REVEAL), function (el) {
+      return !el.parentElement.closest(REVEAL) && !el.closest(".fill, [hidden]");
+    });
+    var io = new IntersectionObserver(function (entries) {
+      var n = 0;
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.style.setProperty("--rv-d", Math.min(n++ * 90, 450) + "ms");
+        entry.target.classList.add("is-in");
+        io.unobserve(entry.target);
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.12 });
+    units.forEach(function (el) { el.classList.add("rv"); io.observe(el); });
+
+    // Bilder erst zeigen, wenn sie geladen sind (kein Aufbauen von oben nach unten)
+    document.querySelectorAll("main img").forEach(function (img) {
+      var done = function () { img.classList.add("is-loaded"); };
+      if (img.complete) done(); else { img.addEventListener("load", done); img.addEventListener("error", done); }
+    });
+    root.classList.add("rv-ready");
+  } else {
+    root.classList.remove("reveal");
+  }
+
   // Mobile Navigation
   var nav = document.querySelector(".nav");
   var toggle = document.querySelector(".nav-toggle");

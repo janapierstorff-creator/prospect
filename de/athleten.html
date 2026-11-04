@@ -3,6 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>(function (d) {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    d.classList.add("reveal");
+    setTimeout(function () { if (!d.classList.contains("rv-ready")) d.classList.remove("reveal"); }, 3000);
+  })(document.documentElement);</script>
   <title>Für Athleten – ProspectFuel</title>
   <meta name="description" content="Konstante Energie. Höhere Performance. Das Fueling System für deine nächste Stufe. Wir starten in Berlin mit 50 Plätzen.">
   <meta property="og:title" content="Dein Talent. Dein Tank. Dein Game. – ProspectFuel">

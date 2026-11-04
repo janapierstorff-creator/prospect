@@ -9,6 +9,11 @@
     if (pref === "de" || (pref !== "en" && /^de\b/i.test(lang))) location.replace("de/coaches.html" + location.search + location.hash);
   })();</script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>(function (d) {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    d.classList.add("reveal");
+    setTimeout(function () { if (!d.classList.contains("rv-ready")) d.classList.remove("reveal"); }, 3000);
+  })(document.documentElement);</script>
   <title>For coaches – ProspectFuel</title>
   <meta name="description" content="The fueling coach for your team. Ready when it counts. We're starting in Berlin with 50 spots.">
   <meta property="og:title" content="Ready when it counts. – ProspectFuel">
