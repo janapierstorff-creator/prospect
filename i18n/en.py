@@ -3,6 +3,7 @@
 # TEXT: einzelne Textstücke und Attribute (alt, placeholder, aria-label, Meta).
 
 SNIPPETS = {
+    '<h1 class="h1 h1--long">Ihr unterstützt<br>den Traum.<br><span class="accent">Wir unterstützen<br>euch.</span></h1>': '<h1 class="h1 h1--long">You support<br>the dream.<br><span class="accent">We support<br>you.</span></h1>',
     '<h1 class="h1">Dein Game.<br>Dein <span class="accent">nächstes Level.</span></h1>': '<h1 class="h1">Your game.<br>Your <span class="accent">next level.</span></h1>',
     '<h1 class="h1">Mehr Energie<br><span class="accent">für dein Game.</span></h1>': '<h1 class="h1">More energy<br><span class="accent">for your game.</span></h1>',
     '<h2 class="h2 upper">Berlin startet<br><span class="accent">zuerst.</span></h2>': '<h2 class="h2 upper">Berlin<br><span class="accent">goes first.</span></h2>',
@@ -80,6 +81,16 @@ SNIPPETS = {
 }
 
 TEXT = {
+    "Ihr tut alles, um euer Kind auf seinem sportlichen Weg zu unterstützen. Doch was braucht es bei Schule, Wachstum und Training wirklich – und wie bekommt ihr das im Alltag hin?": "You do everything to support your child on their sporting journey. But what do they really need with school, growth and training – and how do you manage it day to day?",
+    "ProspectFuel nimmt euch die Ernährungsplanung ab und hilft eurem Kind, gute Fueling-Gewohnheiten zu entwickeln.": "ProspectFuel takes nutrition planning off your plate and helps your child build good fueling habits.",
+    "Wissen, was euer Kind braucht.": "Know what your child needs.",
+    "Persönliche Pläne für Wachstum und Training.": "Personal plans for growth and training.",
+    "Weniger planen.": "Less planning.",
+    "Wochenpläne, Rezepte und Einkaufslisten.": "Weekly plans, recipes and shopping lists.",
+    "Weniger erinnern.": "Less nagging.",
+    "Fueling-Reminder direkt aufs Handy.": "Fueling reminders straight to their phone.",
+    "Mehr Selbstständigkeit.": "More independence.",
+    "Euer Kind lernt, sich selbst richtig zu versorgen.": "Your child learns to fuel themselves right.",
     "Berlin startet zuerst. Sichere dir die Chance, bei den ersten 50 Plätzen dabei zu sein.": "Berlin goes first. Get your chance at one of the first 50 spots.",
     "Unter 16?": "Under 16?",
     "Hol deine Eltern dazu.": "Bring your parents in.",
