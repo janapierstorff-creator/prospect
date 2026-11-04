@@ -3,6 +3,7 @@
 # TEXT: einzelne Textstücke und Attribute (alt, placeholder, aria-label, Meta).
 
 SNIPPETS = {
+    '<h2 class="h2 upper">Ein Plan. <br>Zwei Kanäle.</h2>': '<h2 class="h2 upper">One plan. <br>Two channels.</h2>',
     '<h2 class="h2 upper need__title">Wachsen. Lernen.<br>Trainieren.<br><span class="accent">Alles braucht Energie.</span></h2>': '<h2 class="h2 upper need__title">Growing. Learning.<br>Training.<br><span class="accent">It all takes energy.</span></h2>',
     '<h1 class="h1 h1--long">Ihr unterstützt<br>den Traum.<br><span class="accent">Wir unterstützen<br>euch.</span></h1>': '<h1 class="h1 h1--long">You support<br>the dream.<br><span class="accent">We support<br>you.</span></h1>',
     '<h1 class="h1">Dein Game.<br>Dein <span class="accent">nächstes Level.</span></h1>': '<h1 class="h1">Your game.<br>Your <span class="accent">next level.</span></h1>',
@@ -82,6 +83,11 @@ SNIPPETS = {
 }
 
 TEXT = {
+    "ProspectFuel macht die Ernährungsplanung einfacher und begleitet euer Kind im Alltag. Abgestimmt auf Schule, Training und Wachstum.": "ProspectFuel makes nutrition planning easier and supports your child day to day. Tailored to school, training and growth.",
+    "Für euch. Alles im Blick.": "For you. Everything at a glance.",
+    "Was steht an? Was muss vorbereitet werden? Was kommt in die Sporttasche? Euer Wochenplan gibt euch den Überblick.": "What's coming up? What needs prepping? What goes in the sports bag? Your weekly plan gives you the overview.",
+    "Für euer Kind. Immer dabei.": "For your child. Always there.",
+    "Ein persönlicher Fueling Coach direkt auf dem Handy. Mit Tipps, Antworten und Erinnerungen zum richtigen Zeitpunkt.": "A personal fueling coach right on their phone. With tips, answers and reminders at the right time.",
     "Schule, Hausaufgaben, Fahrwege, Training. Und mittendrin ein Körper, der noch wächst und besonders viel Energie braucht.": "School, homework, commutes, training. And in the middle of it all, a body that's still growing and needs a lot of energy.",
     "Doch zwischen all den Terminen bleibt die richtige Ernährung schnell auf der Strecke.": "But between all those commitments, good nutrition quickly falls by the wayside.",
     "Wisst ihr eigentlich, wie viel Energie euer Kind an Trainingstagen braucht?": "Do you actually know how much energy your child needs on training days?",

@@ -1566,3 +1566,6 @@ main .hero ~ * .h2 { font-size: clamp(36px, 3.6vw, 64px); line-height: .95; text
   .need--light .fill { -webkit-mask-image: linear-gradient(0deg, transparent 0%, #000 45%); mask-image: linear-gradient(0deg, transparent 0%, #000 45%); }
   .need--light .need__note { font-size: 23px; }
 }
+
+/* Lösung (Eltern): Einleitung unter der Headline */
+.pf__intro { margin-top: 16px; max-width: 460px; font-size: clamp(16px, 1.25vw, 18px); line-height: 1.5; color: var(--text-on-dark); }
