@@ -3,6 +3,7 @@
 # TEXT: einzelne Textstücke und Attribute (alt, placeholder, aria-label, Meta).
 
 SNIPPETS = {
+    '<h2 class="h2 upper">Gemeinsam mehr <span class="accent">erreichen.</span></h2>': '<h2 class="h2 upper">Achieve more <span class="accent">together.</span></h2>',
     '<h2 class="h2 upper">Mehr Energie fürs <br class="br-keep"><span class="accent">gemeinsame Ziel.</span></h2>': '<h2 class="h2 upper">More energy for <br class="br-keep"><span class="accent">the shared goal.</span></h2>',
     '<h2 class="h2 upper">Mehr Einblick. <br><span class="accent">Besser vorbereitet.</span></h2>': '<h2 class="h2 upper">More insight. <br><span class="accent">Better prepared.</span></h2>',
     '<h1 class="h1">Bereit,<br>wenn es <span class="accent">zählt.</span></h1>': '<h1 class="h1">Ready<br>when it <span class="accent">counts.</span></h1>',
@@ -87,6 +88,7 @@ SNIPPETS = {
 }
 
 TEXT = {
+    "Gute Vorbereitung beginnt vor dem Training. ProspectFuel hilft Spielern und Eltern, Fueling zur Routine zu machen – damit dein Team bereit ist, wenn es zählt.": "Good preparation starts before practice. ProspectFuel helps players and parents make fueling a routine – so your team is ready when it counts.",
     "ProspectFuel verbindet Spieler, Eltern und Coaches – damit deine Spieler besser vorbereitet ins Training kommen und du ihre Entwicklung im Blick behältst.": "ProspectFuel connects players, parents and coaches – so your players show up to practice better prepared and you can keep track of their development.",
     "Spieler begleiten": "Support players",
     "Persönliche Fueling-Pläne und Reminder für Training und Spiel.": "Personal fueling plans and reminders for practice and games.",

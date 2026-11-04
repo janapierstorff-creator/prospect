@@ -1604,3 +1604,8 @@ main .hero ~ * .h2 { font-size: clamp(36px, 3.6vw, 64px); line-height: .95; text
 .pf--static .pf__inner { align-items: center; }
 /* Umbruch, der auch auf dem Handy bleiben soll */
 .pf .h2 br.br-keep { display: inline; }
+
+/* Coaches: Team-Abschnitt mit Headline in Standardgröße wie die anderen Abschnitte */
+.team-band .h2 { font-size: clamp(36px, 3.4vw, 44px); line-height: .95; }
+@media (max-width: 760px) { .team-band .h2 { font-size: clamp(30px, 9vw, 34px); } }
+.team-band__inner p { font-size: clamp(16px, 1.25vw, 18px); line-height: 1.5; }
