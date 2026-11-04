@@ -68,8 +68,9 @@ def load_texts():
         where = " in Zeile %d" % (mark.line + 1) if mark else ""
         print("FEHLER in content/texts.yml%s: Die Datei ist nicht lesbar." % where)
         print("Häufigste Ursache: Ein Text enthält einen Doppelpunkt mit Leerzeichen dahinter (\": \")")
-        print("oder beginnt mit einem Sonderzeichen. Dann den ganzen Text in Anführungszeichen setzen:")
+        print("oder beginnt mit einem Sonderzeichen, z. B. **fett** oder *blau* am Anfang. Dann den ganzen Text in Anführungszeichen setzen:")
         print('    de: "So geht\'s: ganz einfach"')
+        print('    de: "**Fett am Anfang.** Rest vom Text"')
         print("Die Website wurde nicht verändert.")
         sys.exit(1)
 

@@ -95,8 +95,8 @@ start:
       de: Für Athleten
       en: For athletes
     text:
-      de: **Energie bis zur letzten Minute.** Hol mehr aus jedem Training und heb dein Spiel aufs nächste Level.
-      en: **Energy to the last minute.** Get more out of every session and take the next step as an athlete.
+      de: "**Energie bis zur letzten Minute.** Hol mehr aus jedem Training und heb dein Spiel aufs nächste Level."
+      en: "**Energy to the last minute.** Get more out of every session and take the next step as an athlete."
     image_alt_2:
       de: Mutter und Sohn bereiten gemeinsam eine Mahlzeit vor
       en: Mother and son preparing a meal together
@@ -104,8 +104,8 @@ start:
       de: Für Eltern
       en: For parents
     text_2:
-      de: **Ihr unterstützt den Traum.** Wir helfen euch, die Ernährung im Alltag richtig hinzubekommen.
-      en: **You support the dream.** We help you get nutrition right in everyday life.
+      de: "**Ihr unterstützt den Traum.** Wir helfen euch, die Ernährung im Alltag richtig hinzubekommen."
+      en: "**You support the dream.** We help you get nutrition right in everyday life."
     image_alt_3:
       de: Coach bespricht sich mit seinem Team
       en: Coach talking with his team
@@ -113,8 +113,8 @@ start:
       de: Für Coaches
       en: For coaches
     text_3:
-      de: **Mehr Energie fürs gemeinsame Ziel.** Damit dein Team vorbereitet ins Training kommt.
-      en: **More energy for the shared goal.** So your team shows up to practice ready.
+      de: "**Mehr Energie fürs gemeinsame Ziel.** Damit dein Team vorbereitet ins Training kommt."
+      en: "**More energy for the shared goal.** So your team shows up to practice ready."
 
   herausforderung:
     image_alt:
@@ -1065,8 +1065,8 @@ coaches:
       de: Du gibst deinem Team alles, was es auf dem Court braucht.
       en: You give your team everything they need on the court.
     sub_2:
-      de: **ProspectFuel** liefert die Energie dafür.
-      en: **ProspectFuel** brings the energy.
+      de: "**ProspectFuel** liefert die Energie dafür."
+      en: "**ProspectFuel** brings the energy."
     button:
       de: Team vormerken
       en: Register your team
@@ -1125,7 +1125,7 @@ coaches:
       en: Your team at a glance
     text_4:
       de: Sehen, wie gut dein Team versorgt ist und wo es Unterstützung braucht.
-      en: ee how well your team is fueled and where support is needed.
+      en: See how well your team is fueled and where support is needed.
     title_4:
       de: Entwicklung über die Saison
       en: Progress over the season
