@@ -81,8 +81,8 @@ SNIPPETS = {
 }
 
 TEXT = {
-    "Ihr tut alles, um euer Kind auf seinem sportlichen Weg zu unterstützen. Doch was braucht es bei Schule, Wachstum und Training wirklich – und wie bekommt ihr das im Alltag hin?": "You do everything to support your child on their sporting journey. But what do they really need with school, growth and training – and how do you manage it day to day?",
-    "ProspectFuel nimmt euch die Ernährungsplanung ab und hilft eurem Kind, gute Fueling-Gewohnheiten zu entwickeln.": "ProspectFuel takes nutrition planning off your plate and helps your child build good fueling habits.",
+    "Ihr tut alles, damit euer Kind seinen Weg im Sport gehen kann. Aber bekommt es auch die Energie, die es dafür braucht?": "You do everything so your child can follow their path in sport. But are they getting the energy they need for it?",
+    "ProspectFuel nimmt euch die Ernährungsplanung ab, ohne dass ihr Experten werden müsst. Gleichzeitig lernt euer Kind, selbst für seine Energie zu sorgen.": "ProspectFuel takes nutrition planning off your plate – no need to become experts. At the same time, your child learns to take care of their own energy.",
     "Wissen, was euer Kind braucht.": "Know what your child needs.",
     "Persönliche Pläne für Wachstum und Training.": "Personal plans for growth and training.",
     "Weniger planen.": "Less planning.",
