@@ -80,6 +80,12 @@ SNIPPETS = {
 }
 
 TEXT = {
+    "Dein Coach. Direkt auf WhatsApp.": "Your coach. Right on WhatsApp.",
+    "Erinnerungen, Tipps und Antworten genau dann, wenn du sie brauchst.": "Reminders, tips and answers exactly when you need them.",
+    "Dein Plan. Dein Training.": "Your plan. Your training.",
+    "Was essen? Wie viel? Und wann? Dein Fueling-Plan passt zu deinem Training, deinem Alltag und deinen Zielen.": "What to eat? How much? And when? Your fueling plan fits your training, your daily life and your goals.",
+    "Dein Fortschritt.": "Your progress.",
+    "Baue Routinen auf, bleib dran und sieh, wie sich deine Energie entwickelt.": "Build routines, stay consistent and see how your energy develops.",
     "Fuel wie die Pros – schon jetzt.": "Fuel like the pros – starting now.",
     "Heute alles geben. Morgen wieder fit.": "Give it everything today. Be fresh tomorrow.",
     "Jede Einheit zählt. Hol alles raus.": "Every session counts. Leave nothing out there.",
