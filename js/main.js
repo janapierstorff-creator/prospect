@@ -48,6 +48,14 @@
     root.classList.remove("reveal");
   }
 
+  // Navigation: erst beim Scrollen mit Hintergrund (auf dem Handy steht sie fest oben, siehe CSS)
+  var header = document.querySelector(".site-header");
+  if (header) {
+    var onScroll = function () { header.classList.toggle("is-scrolled", window.scrollY > 8); };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
+
   // Mobile Navigation
   var nav = document.querySelector(".nav");
   var toggle = document.querySelector(".nav-toggle");

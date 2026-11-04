@@ -1623,7 +1623,8 @@ main .hero ~ * .h2 { font-size: clamp(36px, 3.6vw, 64px); line-height: .95; text
 
 /* Handy: Navigation bleibt oben stehen, halbtransparent mit Unschärfe */
 @media (max-width: 760px) {
-  .site-header { position: fixed; background: rgba(8,14,19,.62); -webkit-backdrop-filter: blur(14px) saturate(140%); backdrop-filter: blur(14px) saturate(140%); border-bottom: 1px solid rgba(255,255,255,.08); }
+  .site-header { position: fixed; border-bottom: 1px solid transparent; transition: background-color .3s ease, border-color .3s ease, -webkit-backdrop-filter .3s ease, backdrop-filter .3s ease; }
+  .site-header.is-scrolled { background: rgba(8,14,19,.62); -webkit-backdrop-filter: blur(14px) saturate(140%); backdrop-filter: blur(14px) saturate(140%); border-bottom-color: rgba(255,255,255,.08); }
   .site-header.is-open { background: var(--bg); }
   .legal-page .site-header { position: sticky; top: 0; }
   .nav { background: var(--bg); }
