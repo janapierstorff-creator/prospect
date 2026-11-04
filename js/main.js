@@ -25,7 +25,7 @@
   });
 
   // Karussell-Punkte für die Karten (nur mobil sichtbar, siehe CSS)
-  document.querySelectorAll(".cards-3, .cards-4, .steps-4, .channels, .facts4, .hero__facts").forEach(function (track) {
+  document.querySelectorAll(".cards-3, .cards-4, .steps-4, .channels, .facts4, .hero__facts, .values__list").forEach(function (track) {
     var items = Array.prototype.slice.call(track.children);
     if (items.length < 2) return;
     var dots = document.createElement("div");
