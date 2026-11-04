@@ -1648,3 +1648,6 @@ html.reveal .fill:has(> img:not(.is-loaded)) .system__pin { opacity: 0; transiti
 /* Logo: PF-Zeichen und Wortmarke */
 .logo { display: inline-flex; align-items: center; gap: .38em; line-height: 1; }
 .logo__mark { display: block; flex: none; width: auto; height: 1em; }
+/* Nur das PF-Zeichen zeigen; der Name bleibt für Screenreader und Suchmaschinen erhalten */
+.logo__word { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.logo__mark { height: 1.25em; }
