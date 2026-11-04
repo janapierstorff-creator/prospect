@@ -1644,3 +1644,7 @@ html.reveal main .media { overflow: hidden; }
 }
 html.reveal .system__pin { transition: opacity .6s ease .5s; }
 html.reveal .fill:has(> img:not(.is-loaded)) .system__pin { opacity: 0; transition: none; }
+
+/* Logo: PF-Zeichen und Wortmarke */
+.logo { display: inline-flex; align-items: center; gap: .38em; line-height: 1; }
+.logo__mark { display: block; flex: none; width: auto; height: 1em; }
