@@ -88,6 +88,9 @@ SNIPPETS = {
 }
 
 TEXT = {
+    "Du investierst jede Einheit in die Entwicklung deiner Spieler. Wir helfen dir, Fueling zu einem festen Teil ihrer Vorbereitung zu machen.": "You put every session into your players' development. We help you make fueling a fixed part of their preparation.",
+    "Teste ProspectFuel mit deinem Team, gestalte die Lösung mit und hilf uns, gemeinsam die nächste Generation von Athleten zu fördern.": "Test ProspectFuel with your team, help shape the solution and help us support the next generation of athletes together.",
+    "Name": "Name",
     "Gute Vorbereitung beginnt vor dem Training. ProspectFuel hilft Spielern und Eltern, Fueling zur Routine zu machen – damit dein Team bereit ist, wenn es zählt.": "Good preparation starts before practice. ProspectFuel helps players and parents make fueling a routine – so your team is ready when it counts.",
     "ProspectFuel verbindet Spieler, Eltern und Coaches – damit deine Spieler besser vorbereitet ins Training kommen und du ihre Entwicklung im Blick behältst.": "ProspectFuel connects players, parents and coaches – so your players show up to practice better prepared and you can keep track of their development.",
     "Spieler begleiten": "Support players",
