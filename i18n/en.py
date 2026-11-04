@@ -84,6 +84,9 @@ SNIPPETS = {
 }
 
 TEXT = {
+    "Eure E-Mail-Adresse": "Your email address",
+    "Alter eures Kindes (optional)": "Your child's age (optional)",
+    "Alter eures Kindes": "Your child's age",
     "Wir starten mit 50 jungen Athleten und ihren Familien in Berlin.": "We're starting in Berlin with 50 young athletes and their families.",
     "Seid von Anfang an dabei, testet ProspectFuel als Erste und gestaltet mit, wie wir junge Athleten künftig unterstützen.": "Be there from day one, be the first to try ProspectFuel and help shape how we support young athletes in the future.",
     "Gut zu wissen.": "Good to know.",
