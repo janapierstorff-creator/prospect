@@ -26,10 +26,22 @@
     }, { rootMargin: "0px 0px -8% 0px", threshold: 0.12 });
     units.forEach(function (el) { el.classList.add("rv"); io.observe(el); });
 
-    // Bilder erst zeigen, wenn sie geladen sind (kein Aufbauen von oben nach unten)
+    // Bilder blenden mit leichtem Zoom ein, sobald sie im Viewport und fertig geladen sind
+    var showImg = function (img) {
+      if (img.dataset.inview && img.complete) img.classList.add("is-loaded");
+    };
+    var imgIO = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.dataset.inview = "1";
+        showImg(entry.target);
+        imgIO.unobserve(entry.target);
+      });
+    }, { rootMargin: "0px 0px -5% 0px", threshold: 0.1 });
     document.querySelectorAll("main img").forEach(function (img) {
-      var done = function () { img.classList.add("is-loaded"); };
-      if (img.complete) done(); else { img.addEventListener("load", done); img.addEventListener("error", done); }
+      img.addEventListener("load", function () { showImg(img); });
+      img.addEventListener("error", function () { img.classList.add("is-loaded"); });
+      imgIO.observe(img);
     });
     root.classList.add("rv-ready");
   } else {

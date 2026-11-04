@@ -1634,8 +1634,12 @@ html.reveal:not(.rv-ready) body { background: var(--bg); }
 html.reveal:not(.rv-ready) main, html.reveal:not(.rv-ready) .site-footer { opacity: 0; }
 html.reveal .rv { opacity: 0; transform: translateY(26px); transition: opacity .8s ease, transform .8s cubic-bezier(.2, .7, .2, 1); transition-delay: var(--rv-d, 0ms); }
 html.reveal .rv.is-in { opacity: 1; transform: none; }
-html.reveal main img { opacity: 0; transition: opacity .9s ease; }
-html.reveal main img.is-loaded { opacity: 1; }
+html.reveal main img { opacity: 0; transition: opacity 1s ease, transform 1.6s cubic-bezier(.2, .7, .2, 1); }
+html.reveal main :is(.fill, .media) > img { transform: scale(1.05); }
+html.reveal main img.is-loaded { opacity: 1; transform: none; }
+html.reveal main .media { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   html.reveal .rv, html.reveal main img { opacity: 1; transform: none; transition: none; }
 }
+html.reveal .system__pin { transition: opacity .6s ease .5s; }
+html.reveal .fill:has(> img:not(.is-loaded)) .system__pin { opacity: 0; transition: none; }
