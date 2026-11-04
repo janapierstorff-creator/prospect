@@ -104,8 +104,8 @@ start:
       de: Für Eltern
       en: For parents
     text_2:
-      de: "**Ihr unterstützt den Traum.** Wir helfen euch, die Ernährung im Alltag richtig hinzubekommen."
-      en: "**You support the dream.** We help you get nutrition right in everyday life."
+      de: "**Ihr unterstützt den Traum.** Wir sorgen dafür, dass die Ernährung im Alltag einfach klappt."
+      en: "**You support the dream.** We make fueling simple, every day."
     image_alt_3:
       de: Coach bespricht sich mit seinem Team
       en: Coach talking with his team
@@ -124,8 +124,8 @@ start:
       de: Die Herausforderung
       en: The challenge
     headline:
-      de: Talent braucht / *Energie.*
-      en: Talent runs / on *fuel.*
+      de: Talent braucht *Energie.*
+      en: Talent runs *on fuel.*
     sub:
       de: Am Willen fehlt es selten. Am Tank schon.
       en: Willpower is rarely the problem. The tank is.
@@ -140,13 +140,13 @@ start:
       en: The gap
     text_2:
       de: Zwischen Schule und Halle bleibt das Essen auf der Strecke.
-      en: Between school and practice, food falls by the wayside.
+      en: Between school and practice, food gets lost.
     title_3:
       de: Die Folge
       en: The result
     text_3:
       de: Das Talent ist da. Die Energie fehlt.
-      en: The talent is there. The energy is missing.
+      en: The talent is there. The energy isn't.
     quote:
       de: „Mein Kopf will noch. Aber mein Körper kann nicht mehr.“
       en: “My head wants to keep going. But my body is done.”
@@ -323,14 +323,14 @@ athleten:
       de: Für Athleten – ProspectFuel
       en: For athletes – ProspectFuel
     description:
-      de: Konstante Energie. Höhere Performance. Das Fueling System für deine nächste Stufe. Wir starten in Berlin mit 50 Plätzen.
-      en: Steady energy. Higher performance. The fueling system for your next level. We're starting in Berlin with 50 spots.
+      de: Dein Fueling-Coach für junge Athleten: Konstante Energie, mehr Performance, Sporternährung für dein nächstes Level. Start in Berlin mit 50 Plätzen.
+      en: Your fueling coach for young athletes: steady energy, better performance, sports nutrition for your next level. Starting in Berlin with 50 spots.
     share_title:
       de: Dein Talent. Dein Tank. Dein Game. – ProspectFuel
       en: Your talent. Your tank. Your game. – ProspectFuel
     share_description:
-      de: Das Fueling System für deine nächste Stufe. Wir starten in Berlin mit 50 Plätzen.
-      en: The fueling system for your next level. We're starting in Berlin with 50 spots.
+      de: Dein Fueling-Coach für dein nächstes Level. Wir starten in Berlin mit 50 Plätzen.
+      en: Your fueling coach for your next level. We’re starting in Berlin with 50 spots.
 
   hero:
     image_alt:
@@ -340,8 +340,8 @@ athleten:
       de: Dein Game. / Dein *nächstes Level.*
       en: Your game. / Your *next level.*
     sub:
-      de: "**Konstante Energie. Bessere Leistung. Schnellere Regeneration.** / Mit ProspectFuel bekommst du das richtige Fuel zur richtigen Zeit – damit du im Training mehr rausholst, im Spiel länger stark bleibst und dich Woche für Woche weiterentwickelst."
-      en: "**Steady energy. Better performance. Faster recovery.** / With ProspectFuel you get the right fuel at the right time – so you get more out of training, stay strong longer in games and keep improving week after week."
+      de: Mit ProspectFuel bekommst du das richtige Fuel zur richtigen Zeit für mehr Power im Training und im Spiel, Woche für Woche.
+      en: ProspectFuel gives you the right fuel at the right time for more power at practice and in games, week after week.
     button:
       de: Platz sichern
       en: Save your spot
@@ -349,52 +349,52 @@ athleten:
       de: Konstante Energie.
       en: Steady energy.
     text:
-      de: Vollgas bis zur letzten Sekunde – nicht nur in der ersten Halbzeit.
-      en: Full speed to the last second – not just in the first half.
+      de: Vollgas bis zur letzten Sekunde, nicht nur in der ersten Halbzeit.
+      en: Full speed to the last second, not just in the first half.
     headline_3:
       de: Mehr Performance.
-      en: More performance.
+      en: Perform better.
     text_2:
       de: Jede Einheit zählt. Hol alles raus.
-      en: Every session counts. Leave nothing out there.
+      en: Every session counts. Leave it all on the court.
     headline_4:
       de: Schneller regenerieren.
       en: Recover faster.
     text_3:
       de: Heute alles geben. Morgen wieder fit.
-      en: Give it everything today. Be fresh tomorrow.
+      en: Give it everything today. Fresh again tomorrow.
     headline_5:
       de: Step to Pro.
       en: Step to pro.
     text_4:
-      de: Fuel wie die Pros – schon jetzt.
-      en: Fuel like the pros – starting now.
+      de: Fuel wie die Pros. Schon jetzt.
+      en: Fuel like the pros. Starting now.
 
   coach_app:
     kicker:
-      de: Dein persönlicher Fueling Coach
+      de: Dein persönlicher Fueling-Coach
       en: Your personal fueling coach
     headline:
-      de: Immer wissen, / was jetzt dran ist.
-      en: Always know / what's next.
+      de: Immer wissen, *was jetzt dran ist.*
+      en: Always know *what's next.*
     title:
       de: Dein Coach. Direkt auf WhatsApp.
       en: Your coach. Right on WhatsApp.
     text:
       de: Erinnerungen, Tipps und Antworten genau dann, wenn du sie brauchst.
-      en: Reminders, tips and answers exactly when you need them.
+      en: Reminders, tips and answers right when you need them.
     title_2:
-      de: Dein Plan. Dein Training.
-      en: Your plan. Your training.
+      de: Dein Plan. Dein Alltag.
+      en: Your plan. Your schedule.
     text_2:
       de: Was essen? Wie viel? Und wann? Dein Fueling-Plan passt zu deinem Training, deinem Alltag und deinen Zielen.
-      en: What to eat? How much? And when? Your fueling plan fits your training, your daily life and your goals.
+      en: What to eat? How much? When? Your fueling plan fits your practice, your day and your goals.
     title_3:
       de: Dein Fortschritt.
       en: Your progress.
     text_3:
-      de: Baue Routinen auf, bleib dran und sieh, wie sich deine Energie entwickelt.
-      en: Build routines, stay consistent and see how your energy develops.
+      de: Baue Routinen auf, bleib dran und spür den Unterschied auf dem Spielfeld und im Alltag.
+      en: Build routines, stay consistent and feel the difference on the court and in everyday life.
     text_4:
       de: Beispielhafte Darstellung
       en: Illustrative example
@@ -477,7 +477,7 @@ athleten:
       en: Snack
     text_24:
       de: Joghurt & Beeren
-      en: Joghurt & Beeren
+      en: Yoghurt & berries
     text_25:
       de: Lunch
       en: Lunch
@@ -610,17 +610,17 @@ athleten:
       de: Junger Basketballspieler sitzt in der Halle auf der Bank und isst eine Banane
       en: Young basketball player sitting on a bench in a gym, eating a banana
     kicker:
-      de: Fuel is a skill.
-      en: Fuel is a skill.
+      de: Fueling is a skill.
+      en: Fueling is a skill.
     headline:
-      de: Jeder Vorteil / zählt.
+      de: Jeder Vorteil zählt.
       en: Every edge counts.
     text:
-      de: Du trainierst, um besser zu werden. Doch nicht nur dein Training entscheidet, wie weit du kommst.
+      de: Du trainierst, um besser zu werden. Doch wie weit du kommst, entscheidet nicht nur das Training.
       en: You train to get better. But training alone doesn't decide how far you go.
     text_2:
-      de: Lerne, deinen Körper richtig zu versorgen – damit du mehr aus jeder Einheit herausholen kannst.
-      en: Learn to fuel your body right – so you can get more out of every session.
+      de: Lerne, deinen Körper richtig zu versorgen, damit du mehr aus jeder Einheit herausholen kannst.
+      en: Learn to fuel your body right, so you can get more out of every session.
 
   warteliste:
     image_alt:
@@ -630,14 +630,14 @@ athleten:
       de: Bereit für dein / *nächstes Level?*
       en: Ready for your / *next level?*
     text:
-      de: Berlin startet zuerst. Sichere dir die Chance, bei den ersten 50 Plätzen dabei zu sein.
-      en: Berlin goes first. Get your chance at one of the first 50 spots.
+      de: Berlin startet zuerst. Sichere dir einen der ersten 50 Plätze.
+      en: Berlin goes first. Grab one of the first 50 spots.
     title:
       de: Unter 16?
       en: Under 16?
     text_2:
-      de: Hol deine Eltern dazu.
-      en: Bring your parents in.
+      de: Hol deine Eltern mit ins Boot.
+      en: Get your parents on board.
     button:
       de: Für Eltern
       en: For parents
@@ -645,8 +645,8 @@ athleten:
       de: Ab 16?
       en: 16 or older?
     text_3:
-      de: Trag dich auf die Warteliste ein.
-      en: Join the waitlist.
+      de: Sichere dir direkt deinen Platz.
+      en: Claim your spot right away.
     button_2:
       de: Platz sichern
       en: Save your spot
@@ -692,20 +692,20 @@ eltern:
       de: Ihr unterstützt / den Traum. / *Wir unterstützen / euch.*
       en: You support / the dream. / *We support / you.*
     sub:
-      de: Ihr tut alles, damit euer Kind seinen Weg im Sport gehen kann. Aber bekommt es auch die Energie, die es dafür braucht?
-      en: You do everything so your child can follow their path in sport. But are they getting the energy they need for it?
+      de: Fahrdienst, Fan, Koch: Ihr macht schon so viel.
+      en: Driver, fan, cook: you already do so much.
     sub_2:
-      de: ProspectFuel nimmt euch die Ernährungsplanung ab, ohne dass ihr Experten werden müsst. Gleichzeitig lernt euer Kind, selbst für seine Energie zu sorgen.
-      en: ProspectFuel takes nutrition planning off your plate – no need to become experts. At the same time, your child learns to take care of their own energy.
+      de: ProspectFuel nimmt euch die Ernährungsplanung ab, damit euer Kind gut versorgt ist, ohne dass ihr Experten werden müsst.
+      en: ProspectFuel takes nutrition planning off your plate, so your child is well fueled without you having to become experts.
     button:
       de: Platz sichern
       en: Save your spot
     headline_2:
-      de: Wissen, was euer Kind braucht.
-      en: Know what your child needs.
+      de: Mehr Sicherheit.
+      en: More confidence.
     text:
       de: Persönliche Pläne für Wachstum und Training.
-      en: Personal plans for growth and training.
+      en: Personalized plans for growth and training.
     headline_3:
       de: Weniger planen.
       en: Less planning.
@@ -713,11 +713,11 @@ eltern:
       de: Wochenpläne, Rezepte und Einkaufslisten.
       en: Weekly plans, recipes and shopping lists.
     headline_4:
-      de: Weniger erinnern.
+      de: Weniger nachhaken.
       en: Less nagging.
     text_3:
-      de: Fueling-Reminder direkt aufs Handy.
-      en: Fueling reminders straight to their phone.
+      de: Reminder gehen direkt an euer Kind.
+      en: Reminders go straight to your child.
     headline_5:
       de: Mehr Selbstständigkeit.
       en: More independence.
@@ -733,14 +733,14 @@ eltern:
       de: Die Herausforderung
       en: The challenge
     headline:
-      de: Wachsen. Lernen. / Trainieren. / *Alles braucht Energie.*
-      en: Growing. Learning. / Training. / *It all takes energy.*
+      de: Wachsen. Lernen. Trainieren. / *Alles braucht Energie.*
+      en: Growing. Learning. Training. / *It all takes energy.*
     text:
       de: Schule, Hausaufgaben, Fahrwege, Training. Und mittendrin ein Körper, der noch wächst und besonders viel Energie braucht.
-      en: School, homework, commutes, training. And in the middle of it all, a body that's still growing and needs a lot of energy.
+      en: School, homework, commuting, training. And in the middle of it all, a body that's still growing and needs a lot of energy.
     text_2:
       de: Doch zwischen all den Terminen bleibt die richtige Ernährung schnell auf der Strecke.
-      en: But between all those commitments, good nutrition quickly falls by the wayside.
+      en: But between all those commitments, the right nutrition easily gets lost.
     text_3:
       de: Wisst ihr eigentlich, wie viel Energie euer Kind an Trainingstagen braucht?
       en: Do you actually know how much energy your child needs on training days?
@@ -753,8 +753,8 @@ eltern:
       de: Ein Plan. *Zwei Kanäle.*
       en: One plan. *Two channels.*
     sub:
-      de: ProspectFuel macht die Ernährungsplanung einfacher und begleitet euer Kind im Alltag. Abgestimmt auf Schule, Training und Wachstum.
-      en: ProspectFuel makes nutrition planning easier and supports your child day to day. Tailored to school, training and growth.
+      de: ProspectFuel macht euch die Ernährungsplanung einfacher und begleitet euer Kind im Alltag. Abgestimmt auf Schule, Training und Wachstum.
+      en: ProspectFuel makes nutrition planning easier for you and supports your child day to day. Tailored to school, training and growth.
     title:
       de: Für euch. Alles im Blick.
       en: For you. Everything at a glance.
@@ -765,8 +765,8 @@ eltern:
       de: Für euer Kind. Immer dabei.
       en: For your child. Always there.
     text_2:
-      de: Ein persönlicher Fueling Coach direkt auf dem Handy. Mit Tipps, Antworten und Erinnerungen zum richtigen Zeitpunkt.
-      en: A personal fueling coach right on their phone. With tips, answers and reminders at the right time.
+      de: Ein persönlicher Fueling-Coach direkt auf WhatsApp. Mit Tipps, Antworten und Erinnerungen zum richtigen Zeitpunkt.
+      en: A personal fueling coach right on WhatsApp. With tips, answers and reminders at the right time.
     text_3:
       de: Beispielhafte Darstellung
       en: Illustrative example
@@ -825,7 +825,7 @@ eltern:
       en: Snack
     text_16:
       de: Joghurt & Beeren
-      en: Joghurt & Beeren
+      en: Yoghurt & Berries
     text_17:
       de: Lunch
       en: Lunch
@@ -923,13 +923,13 @@ eltern:
       en: Because talent takes more than training.
     text:
       de: "„Als ich ausgerechnet habe, wie viel Energie mein Sohn an Trainingstagen braucht, dachte ich: Das kann nicht stimmen."
-      en: "“When I worked out how much energy my son needs on training days, I thought: that can't be right."
+      en: "“When I figured out how much energy my son needs on training days, I thought: that can't be right."
     text_2:
       de: Es stimmte. Und wir lagen meilenweit daneben.
       en: It was right. And we were miles off.
     text_3:
       de: "Da wurde mir klar: Wir investieren so viel in Training und Entwicklung. Aber bei der Ernährung fehlt oft die richtige Unterstützung.“"
-      en: "That's when I realised: we invest so much in training and development. But when it comes to nutrition, the right support is often missing.”"
+      en: "That’s when I realized: we invest so much in training and development. But when it comes to nutrition, the right support is often missing.”"
     text_4:
       de: Jana Pierstorff
       en: Jana Pierstorff
@@ -943,19 +943,19 @@ eltern:
       en: Food first.
     text:
       de: Echte Lebensmittel, alltagstauglich.
-      en: Real food that works in daily life.
+      en: Real food that fits for everyday life.
     title_2:
       de: Keine Diät.
       en: No diets.
     text_2:
-      de: Richtige Energie für Wachstum, Training und Regeneration.
-      en: The right energy for growth, training and recovery.
+      de: Genug Energie für Wachstum, Training und Regeneration.
+      en: Enough energy for growth, training and recovery.
     title_3:
       de: Altersgerecht.
       en: Age-appropriate.
     text_3:
-      de: Abgestimmt auf die Bedürfnisse junger Athleten. Entwickelt mit Ernährungsexperten.
-      en: Tailored to the needs of young athletes. Developed with nutrition experts.
+      de: Abgestimmt auf die Bedürfnisse junger Athleten. Entwickelt im Austausch mit Ernährungsexperten.
+      en: Tailored to the needs of young athletes. Developed with input from nutrition experts.
 
   faq:
     kicker:
@@ -986,15 +986,32 @@ eltern:
       de: Ist ProspectFuel auf Jugendliche abgestimmt?
       en: Is ProspectFuel designed for teenagers?
     text_4:
-      de: Ja. Wir entwickeln ProspectFuel speziell für junge Athlet:innen und ihre Bedürfnisse während Wachstum und Training – im Austausch mit Expert:innen aus der Sporternährung.
-      en: Yes. We're building ProspectFuel specifically for young athletes and their needs during growth and training – together with sports nutrition experts.
+      de: Ja. Wir entwickeln ProspectFuel speziell für junge Athleten und ihre Bedürfnisse in Wachstum und Training im Austausch mit Experten aus der Sporternährung.
+      en: Yes. We’re building ProspectFuel specifically for young athletes and their needs during growth and training with input from sports nutrition experts.
     question_5:
       de: Was passiert nach der Anmeldung?
       en: What happens after I sign up?
     text_5:
-      de: Ihr kommt auf die Warteliste für unseren Berliner Start. Wir informieren euch, sobald es losgeht und wie ihr dabei sein könnt.
-      en: You'll join the waitlist for our Berlin launch. We'll let you know as soon as we start and how you can take part.
-
+      de: Ihr kommt auf die Warteliste für unseren Berliner Start. Wir melden uns, sobald es losgeht, und sagen euch, wie ihr dabei sein könnt.
+      en: You’ll join the waitlist for our Berlin launch. We’ll get in touch as soon as we start and let you know how to take part.
+    question_6:
+      de: Was kostet ProspectFuel?
+      en: How much does ProspectFuel cost?
+    text_6:
+      de: Die Pilotphase in Berlin ist kostenlos. Wie es danach weitergeht, erfahrt ihr rechtzeitig ohne automatische Verlängerung.
+      en: The Berlin pilot is free. We’ll let you know in good time what comes next with no automatic renewal.
+    question_7:
+      de: Was passiert mit den Daten meines Kindes?
+      en: What happens to my child’s data?
+    text_7:
+      de: Datenschutz hat für uns oberste Priorität. Wir speichern nur, was für den persönlichen Plan nötig ist, verarbeiten die Daten nach DSGVO und geben sie nicht an Dritte weiter.
+      en: Data protection is our top priority. We only store what’s needed for the personal plan, process data in line with GDPR and never share it with third parties.
+   question_8:
+      de: Was ist bei Allergien oder Unverträglichkeiten?
+      en: What about allergies or intolerances?
+    text_8:
+      de: Bei der Anmeldung könnt ihr Allergien, Unverträglichkeiten und Essgewohnheiten angeben. Die Pläne werden darauf abgestimmt. Eine ärztliche Beratung ersetzt ProspectFuel nicht.
+      en: When signing up, you can add allergies, intolerances and food preferences. The plans are tailored to them. ProspectFuel doesn’t replace medical advice.
   warteliste:
     image_alt:
       de: Berliner Skyline in der Dämmerung
@@ -1003,11 +1020,11 @@ eltern:
       de: Berlin startet. / *Seid dabei.*
       en: Berlin is starting. / *Join us.*
     text:
-      de: Wir starten mit 50 jungen Athleten und ihren Familien in Berlin.
-      en: We're starting in Berlin with 50 young athletes and their families.
+      de: 50 Plätze für junge Athleten und ihre Familien in Berlin.
+      en: 50 spots for young athletes and their families in Berlin.
     text_2:
-      de: Seid von Anfang an dabei, testet ProspectFuel als Erste und gestaltet mit, wie wir junge Athleten künftig unterstützen.
-      en: Be there from day one, be the first to try ProspectFuel and help shape how we support young athletes in the future.
+      de: Testet ProspectFuel als Erste und gestaltet mit, wie wir junge Athleten künftig unterstützen.
+      en: Be among the first to try ProspectFuel and help shape how we support young athletes.
     placeholder:
       de: Eure E-Mail-Adresse
       en: Your email address
