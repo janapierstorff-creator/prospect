@@ -24,7 +24,16 @@
         io.unobserve(entry.target);
       });
     }, { rootMargin: "0px 0px -8% 0px", threshold: 0.12 });
-    units.forEach(function (el) { el.classList.add("rv"); io.observe(el); });
+    // Was beim Laden schon (auch nur angeschnitten) im Bild ist, sofort einblenden
+    var vh = window.innerHeight, first = 0;
+    var aboveFold = function (el) { var r = el.getBoundingClientRect(); return r.top < vh && r.bottom > 0 && (r.width || r.height); };
+    units.forEach(function (el) {
+      el.classList.add("rv");
+      if (aboveFold(el)) {
+        el.style.setProperty("--rv-d", Math.min(first++ * 90, 450) + "ms");
+        requestAnimationFrame(function () { requestAnimationFrame(function () { el.classList.add("is-in"); }); });
+      } else io.observe(el);
+    });
 
     // Bilder blenden mit leichtem Zoom ein, sobald sie im Viewport und fertig geladen sind
     var showImg = function (img) {
@@ -41,7 +50,7 @@
     document.querySelectorAll("main img").forEach(function (img) {
       img.addEventListener("load", function () { showImg(img); });
       img.addEventListener("error", function () { img.classList.add("is-loaded"); });
-      imgIO.observe(img);
+      if (aboveFold(img)) { img.dataset.inview = "1"; showImg(img); } else imgIO.observe(img);
     });
     root.classList.add("rv-ready");
   } else {
