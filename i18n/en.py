@@ -83,6 +83,17 @@ SNIPPETS = {
 }
 
 TEXT = {
+    "Gut zu wissen.": "Good to know.",
+    "Für welches Alter ist ProspectFuel gedacht?": "What age is ProspectFuel for?",
+    "Für junge Athlet:innen zwischen 12 und 18 Jahren, die regelmäßig trainieren und sich sportlich weiterentwickeln wollen.": "For young athletes aged 12 to 18 who train regularly and want to keep developing in their sport.",
+    "Ist ProspectFuel nur für Basketball?": "Is ProspectFuel only for basketball?",
+    "Nein. Wir starten mit Basketball, entwickeln ProspectFuel aber für junge Athlet:innen verschiedener Sportarten.": "No. We're starting with basketball, but we're building ProspectFuel for young athletes across different sports.",
+    "Braucht mein Kind spezielle Produkte?": "Does my child need special products?",
+    "Nein. Normale Lebensmittel sind die Basis. Ergänzende Fueling-Produkte rund ums Training sind für später geplant.": "No. Everyday food is the foundation. Complementary fueling products around training are planned for later.",
+    "Ist ProspectFuel auf Jugendliche abgestimmt?": "Is ProspectFuel designed for teenagers?",
+    "Ja. Wir entwickeln ProspectFuel speziell für junge Athlet:innen und ihre Bedürfnisse während Wachstum und Training – im Austausch mit Expert:innen aus der Sporternährung.": "Yes. We're building ProspectFuel specifically for young athletes and their needs during growth and training – together with sports nutrition experts.",
+    "Was passiert nach der Anmeldung?": "What happens after I sign up?",
+    "Ihr kommt auf die Warteliste für unseren Berliner Start. Wir informieren euch, sobald es losgeht und wie ihr dabei sein könnt.": "You'll join the waitlist for our Berlin launch. We'll let you know as soon as we start and how you can take part.",
     "Abgestimmt auf die Bedürfnisse junger Athleten. Entwickelt mit Ernährungsexperten.": "Tailored to the needs of young athletes. Developed with nutrition experts.",
     "Richtige Energie für Wachstum, Training und Regeneration.": "The right energy for growth, training and recovery.",
     "Weil Talent mehr als Training braucht.": "Because talent takes more than training.",
