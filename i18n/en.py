@@ -39,7 +39,7 @@ SNIPPETS = {
     '<h2 class="h2 upper">Immer wissen, <br>was jetzt dran ist.</h2>': '<h2 class="h2 upper">Always know <br>what\'s next.</h2>',
     'Hey Alex 👋<br>Heute ist Training um 17:30. Hier ist dein Fueling Plan für den Tag.':
         'Hey Alex 👋<br>Training today at 17:30. Here\'s your fueling plan for the day.',
-    '<h2 class="h2 upper">Jeder Vorteil<br>zählt.</h2>': '<h2 class="h2 upper">Every edge<br>counts.</h2>',
+    '<h2 class="h2 upper">Jeder Vorteil<br>zählt.</h2>': '<h2 class="h2 upper">Every edge counts.</h2>',
     '<h2 class="h2 upper">Mehr als nur Essen.<br>Ein Skill für deine Zukunft.</h2>':
         '<h2 class="h2 upper">More than just food.<br>A skill for your future.</h2>',
     '<h2 class="h2 upper">Bereit für dein<br><span class="accent">nächstes Level?</span></h2>':
