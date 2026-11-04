@@ -26,7 +26,10 @@
     }, { rootMargin: "0px 0px -8% 0px", threshold: 0.12 });
     // Was beim Laden schon (auch nur angeschnitten) im Bild ist, sofort einblenden
     var vh = window.innerHeight, first = 0;
-    var aboveFold = function (el) { var r = el.getBoundingClientRect(); return r.top < vh && r.bottom > 0 && (r.width || r.height); };
+    var aboveFold = function (el) {
+      if (el.closest(".hero, .ath-hero")) return true; // Hero immer komplett laden, auch was unterhalb des Bildschirms liegt
+      var r = el.getBoundingClientRect(); return r.top < vh && r.bottom > 0 && (r.width || r.height);
+    };
     units.forEach(function (el) {
       el.classList.add("rv");
       if (aboveFold(el)) {
