@@ -80,6 +80,10 @@ SNIPPETS = {
 }
 
 TEXT = {
+    "Fuel wie die Pros – schon jetzt.": "Fuel like the pros – starting now.",
+    "Heute alles geben. Morgen wieder fit.": "Give it everything today. Be fresh tomorrow.",
+    "Jede Einheit zählt. Hol alles raus.": "Every session counts. Leave nothing out there.",
+    "Vollgas bis zur letzten Sekunde – nicht nur in der ersten Halbzeit.": "Full speed to the last second – not just in the first half.",
     "Konstante Energie. Bessere Leistung. Schnellere Regeneration.": "Steady energy. Better performance. Faster recovery.",
     "Mit ProspectFuel bekommst du das richtige Fuel zur richtigen Zeit – damit du im Training mehr rausholst, im Spiel länger stark bleibst und dich Woche für Woche weiterentwickelst.": "With ProspectFuel you get the right fuel at the right time – so you get more out of training, stay strong longer in games and keep improving week after week.",
     "Konstante Energie.": "Steady energy.",
