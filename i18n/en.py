@@ -3,6 +3,7 @@
 # TEXT: einzelne Textstücke und Attribute (alt, placeholder, aria-label, Meta).
 
 SNIPPETS = {
+    '<h1 class="h1">Dein Game.<br>Dein <span class="accent">nächstes Level.</span></h1>': '<h1 class="h1">Your game.<br>Your <span class="accent">next level.</span></h1>',
     '<h1 class="h1">Mehr Energie<br><span class="accent">für dein Game.</span></h1>': '<h1 class="h1">More energy<br><span class="accent">for your game.</span></h1>',
     '<h2 class="h2 upper">Berlin startet<br><span class="accent">zuerst.</span></h2>': '<h2 class="h2 upper">Berlin<br><span class="accent">goes first.</span></h2>',
     '<h2 class="h2">Dein Plan. Dein Coach.<br>Dein Fortschritt.</h2>': '<h2 class="h2">Your plan. Your coach.<br>Your progress.</h2>',
@@ -79,6 +80,16 @@ SNIPPETS = {
 }
 
 TEXT = {
+    "Konstante Energie. Bessere Leistung. Schnellere Regeneration.": "Steady energy. Better performance. Faster recovery.",
+    "Mit ProspectFuel bekommst du das richtige Fuel zur richtigen Zeit – damit du im Training mehr rausholst, im Spiel länger stark bleibst und dich Woche für Woche weiterentwickelst.": "With ProspectFuel you get the right fuel at the right time – so you get more out of training, stay strong longer in games and keep improving week after week.",
+    "Konstante Energie.": "Steady energy.",
+    "Bleib im Training und im Spiel bis zum Schluss leistungsfähig.": "Stay at your best in training and games, right to the end.",
+    "Mehr Performance.": "More performance.",
+    "Hol mehr aus jeder Einheit heraus.": "Get more out of every session.",
+    "Schneller regenerieren.": "Recover faster.",
+    "Fülle deine Reserven gezielt wieder auf.": "Refill your reserves the smart way.",
+    "Weiterentwickeln.": "Keep improving.",
+    "Ernährung als Trainingsfaktor für dein nächstes Level.": "Nutrition as a training factor for your next level.",
     "Du trainierst hart, willst dich weiterentwickeln und den nächsten Schritt machen.": "You train hard, want to keep improving and take the next step.",
     "Wir helfen dir, deinen Körper richtig zu versorgen – mit dem passenden Fuel zur richtigen Zeit.": "We help you fuel your body right – with the right fuel at the right time.",
     "Energie bis zum Schluss.": "Energy until the end.",
