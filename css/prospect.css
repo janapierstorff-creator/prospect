@@ -1593,3 +1593,12 @@ main .hero ~ * .h2 { font-size: clamp(36px, 3.6vw, 64px); line-height: .95; text
 }
 /* Mit Einleitung: Slide-Text im normalen Fluss unter dem Text statt auf Handy-Mitte */
 .pf__inner > div:first-child > .pf__intro + [aria-live] { position: static; transform: none; margin: clamp(24px, 3vw, 44px) 0 0; padding: 0; }
+
+/* Coaches: Lösung mit fester Copy links und statischen Screens rechts */
+.pf-points { list-style: none; margin: clamp(24px, 3vw, 40px) 0 0; padding: 0; counter-reset: none; }
+.pf-points li { display: grid; grid-template-columns: 40px 1fr; gap: 12px; padding: 14px 0; border-top: 1px solid rgba(255,255,255,.12); }
+.pf-points li:last-child { border-bottom: 1px solid rgba(255,255,255,.12); }
+.pf-points span { font: 800 20px/1.1 var(--font-head); color: var(--accent); }
+.pf-points h3 { font-size: 17px; font-weight: 700; color: #fff; }
+.pf-points p { margin-top: 4px; font-size: 15px; line-height: 1.45; color: var(--text-on-dark); }
+.pf--static .pf__inner { align-items: center; }

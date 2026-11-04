@@ -3,6 +3,7 @@
 # TEXT: einzelne Textstücke und Attribute (alt, placeholder, aria-label, Meta).
 
 SNIPPETS = {
+    '<h2 class="h2 upper">Mehr Energie fürs <br><span class="accent">gemeinsame Ziel.</span></h2>': '<h2 class="h2 upper">More energy for <br><span class="accent">the shared goal.</span></h2>',
     '<h2 class="h2 upper">Mehr Einblick. <br><span class="accent">Besser vorbereitet.</span></h2>': '<h2 class="h2 upper">More insight. <br><span class="accent">Better prepared.</span></h2>',
     '<h1 class="h1">Bereit,<br>wenn es <span class="accent">zählt.</span></h1>': '<h1 class="h1">Ready<br>when it <span class="accent">counts.</span></h1>',
     '<h2 class="h2 upper">Berlin startet.<br><span class="accent">Seid dabei.</span></h2>': '<h2 class="h2 upper">Berlin is starting.<br><span class="accent">Join us.</span></h2>',
@@ -86,6 +87,15 @@ SNIPPETS = {
 }
 
 TEXT = {
+    "ProspectFuel verbindet Spieler, Eltern und Coaches – damit deine Spieler besser vorbereitet ins Training kommen und du ihre Entwicklung im Blick behältst.": "ProspectFuel connects players, parents and coaches – so your players show up to practice better prepared and you can keep track of their development.",
+    "Spieler begleiten": "Support players",
+    "Persönliche Fueling-Pläne und Reminder für Training und Spiel.": "Personal fueling plans and reminders for practice and games.",
+    "Eltern einbinden": "Involve parents",
+    "Wochenpläne und Tipps für die richtige Versorgung im Alltag.": "Weekly plans and tips for the right nutrition at home.",
+    "Dein Team im Blick": "Your team at a glance",
+    "Fueling-Routinen erkennen und Unterstützungsbedarf sehen.": "Spot fueling routines and see where support is needed.",
+    "Entwicklung über die Saison": "Progress over the season",
+    "Fueling, Energie und Trainingsqualität im Zeitverlauf verfolgen.": "Track fueling, energy and training quality over time.",
     "Die Lösung · Team Insights": "The solution · Team insights",
     "ProspectFuel begleitet deine Spieler beim Fueling im Alltag. Du siehst, wie sich ihre Routinen und ihre Energie entwickeln – und wo dein Team Unterstützung braucht.": "ProspectFuel supports your players with fueling in everyday life. You see how their routines and energy develop – and where your team needs support.",
     "01 · Dein Team im Blick": "01 · Your team at a glance",
