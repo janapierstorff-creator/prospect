@@ -75,8 +75,8 @@ start:
       de: Fueling Next Gen Athletes
       en: Fueling Next Gen Athletes
     headline:
-      de: Real fuel. / *Real progress.*
-      en: Real fuel. / *Real progress.*
+      de: Right fuel. / *Real progress.*
+      en: Right fuel. / *Real progress.*
     sub:
       de: Dein Fueling Coach für mehr Energie im Training, im Spiel und auf dem Weg zu deinem nächsten Level.
       en: Your fueling coach for more energy in training, on game day and on the way to your next level.
@@ -95,8 +95,8 @@ start:
       de: Für Athleten
       en: For athletes
     text:
-      de: Energie bis zum Schluss. Hol mehr aus deinem Training heraus und arbeite an deinem nächsten Level.
-      en: Energy until the final whistle. Get more out of your training and work on your next level.
+      de: **Energie bis zur letzten Minute.** Hol mehr aus jedem Training und heb dein Spiel aufs nächste Level.
+      en: **Energy to the last minute.** Get more out of every session and take the next step as an athlete.
     image_alt_2:
       de: Mutter und Sohn bereiten gemeinsam eine Mahlzeit vor
       en: Mother and son preparing a meal together
@@ -133,8 +133,8 @@ start:
       de: Der Bedarf
       en: The demand
     text:
-      de: Training, Schule und Wachstum – alles gleichzeitig.
-      en: Training, school and growth – all at once.
+      de: Training, Schule und Wachstum. Alles gleichzeitig.
+      en: Training, school and growth. All at once.
     title_2:
       de: Die Lücke
       en: The gap
@@ -1062,38 +1062,38 @@ coaches:
       de: Bereit, / wenn es *zählt.*
       en: Ready / when it *counts.*
     sub:
-      de: Du gibst deinem Team alles mit, was es auf dem Court braucht.
+      de: Du gibst deinem Team alles, was es auf dem Court braucht.
       en: You give your team everything they need on the court.
     sub_2:
-      de: ProspectFuel unterstützt deine Spieler beim richtigen Fueling – und hilft dir, dein Team besser auf Training und Wettkampf vorzubereiten.
-      en: ProspectFuel supports your players in fueling right – and helps you prepare your team better for practice and competition.
+      de: **ProspectFuel** liefert die Energie dafür.
+      en: **ProspectFuel** brings the energy.
     button:
       de: Team vormerken
       en: Register your team
     headline_2:
-      de: Ready fürs Training.
+      de: Fit fürs Training.
       en: Ready for training.
     text:
       de: Spieler kommen besser vorbereitet in die Halle.
       en: Players show up to the gym better prepared.
     headline_3:
       de: Energie bis zum Schluss.
-      en: Energy until the end.
+      en: Energy to the final buzzer.
     text_2:
-      de: Damit dein Team auch am Ende noch alles geben kann.
-      en: So your team can still give it everything in the final minutes.
+      de: Damit dein Team auch in den letzten Minuten alles geben kann.
+      en: So your team can still give everything in the final minutes.
     headline_4:
       de: Weniger Aufwand für dich.
       en: Less work for you.
     text_3:
-      de: Fueling-Begleitung außerhalb der Halle.
-      en: Fueling support outside the gym.
+      de: Wir begleiten deine Spieler beim Fueling, auch außerhalb der Halle.
+      en: We support your players’ fueling, on and off the court.
     headline_5:
       de: Gemeinsam besser werden.
       en: Get better together.
     text_4:
       de: Gute Fueling-Gewohnheiten im ganzen Team etablieren.
-      en: Build good fueling habits across the whole team.
+      en: Build strong fueling habits across the whole team.
 
   loesung:
     kicker:
@@ -1106,8 +1106,8 @@ coaches:
       de: gemeinsame Ziel.
       en: the shared goal.
     sub:
-      de: ProspectFuel verbindet Spieler, Eltern und Coaches – damit deine Spieler besser vorbereitet ins Training kommen und du ihre Entwicklung im Blick behältst.
-      en: ProspectFuel connects players, parents and coaches – so your players show up to practice better prepared and you can keep track of their development.
+      de: ProspectFuel verbindet Spieler, Eltern und Coaches, damit deine Spieler besser vorbereitet ins Training kommen und du siehst, wo du unterstützen kannst.
+      en: ProspectFuel connects players, parents and coaches, so your team shows up ready and you can see where to help.
     title:
       de: Spieler begleiten
       en: Support players
@@ -1119,19 +1119,19 @@ coaches:
       en: Involve parents
     text_3:
       de: Wochenpläne und Tipps für die richtige Versorgung im Alltag.
-      en: Weekly plans and tips for the right nutrition at home.
+      en: Weekly plans and tips for the right everyday nutrition.
     title_3:
       de: Dein Team im Blick
       en: Your team at a glance
     text_4:
-      de: Fueling-Routinen erkennen und Unterstützungsbedarf sehen.
-      en: Spot fueling routines and see where support is needed.
+      de: Sehen, wie gut dein Team versorgt ist und wo es Unterstützung braucht.
+      en: ee how well your team is fueled and where support is needed.
     title_4:
       de: Entwicklung über die Saison
       en: Progress over the season
     text_5:
-      de: Fueling, Energie und Trainingsqualität im Zeitverlauf verfolgen.
-      en: Track fueling, energy and training quality over time.
+      de: Fueling, Energie und Trainingsqualität im Saisonverlauf.
+      en: Fueling, energy and training quality across the season.
     text_6:
       de: Beispielhafte Darstellung
       en: Illustrative example
@@ -1323,8 +1323,8 @@ coaches:
       de: Jugendteam legt in der Halle die Hände zusammen
       en: Youth team putting their hands together in a gym
     headline:
-      de: Gemeinsam mehr *erreichen.*
-      en: Achieve more *together.*
+      de: Gewonnen wird auch *zuhause.*
+      en: Games are won *at home,* too.
     text:
       de: Gute Vorbereitung beginnt vor dem Training. ProspectFuel hilft Spielern und Eltern, Fueling zur Routine zu machen – damit dein Team bereit ist, wenn es zählt.
       en: Good preparation starts before practice. ProspectFuel helps players and parents make fueling a routine – so your team is ready when it counts.
@@ -1337,11 +1337,11 @@ coaches:
       de: Berlin startet zuerst. / *Werdet Pilotteam.*
       en: Berlin goes first. / *Become a pilot team.*
     sub:
-      de: Du investierst jede Einheit in die Entwicklung deiner Spieler. Wir helfen dir, Fueling zu einem festen Teil ihrer Vorbereitung zu machen.
-      en: You put every session into your players' development. We help you make fueling a fixed part of their preparation.
+      de: Du steckst jede Einheit in die Entwicklung deiner Spieler. Wir sorgen dafür, dass auch die Vorbereitung abseits der Halle stimmt.
+      en: You invest every session in your players’ development. We make sure their preparation off the court matches it.
     sub_2:
-      de: Teste ProspectFuel mit deinem Team, gestalte die Lösung mit und hilf uns, gemeinsam die nächste Generation von Athleten zu fördern.
-      en: Test ProspectFuel with your team, help shape the solution and help us support the next generation of athletes together.
+      de: Teste ProspectFuel mit deinem Team und gestalte die Lösung mit.
+      en: Try ProspectFuel with your team and help shape what comes next.
     placeholder:
       de: Name
       en: Name
