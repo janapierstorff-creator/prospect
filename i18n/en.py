@@ -80,6 +80,8 @@ SNIPPETS = {
 }
 
 TEXT = {
+    "Du trainierst, um besser zu werden. Doch nicht nur dein Training entscheidet, wie weit du kommst.": "You train to get better. But training alone doesn't decide how far you go.",
+    "Lerne, deinen Körper richtig zu versorgen – damit du mehr aus jeder Einheit herausholen kannst.": "Learn to fuel your body right – so you can get more out of every session.",
     "Dein Coach. Direkt auf WhatsApp.": "Your coach. Right on WhatsApp.",
     "Erinnerungen, Tipps und Antworten genau dann, wenn du sie brauchst.": "Reminders, tips and answers exactly when you need them.",
     "Dein Plan. Dein Training.": "Your plan. Your training.",

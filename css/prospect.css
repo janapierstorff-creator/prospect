@@ -1554,3 +1554,11 @@ main .hero ~ * .h2 { font-size: clamp(36px, 3.6vw, 64px); line-height: .95; text
   .ath-hero .ath-hero__sub { max-width: 780px; font-size: clamp(17px, 1.35vw, 24px); line-height: 1.45; }
 }
 .ath-hero .sketch--hero { display: none; }
+
+/* Athleten: Fuel is a skill auf Weiß, Bild rechts läuft nach Weiß aus */
+.ath-why--white { background: #fff; }
+.ath-why--white > .media::after { background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,.85) 18%, rgba(255,255,255,0) 55%); }
+.ath-why--white .kicker { color: var(--ink); }
+@media (max-width: 760px) {
+  .ath-why--white > .media::after { background: linear-gradient(0deg, #fff 0%, rgba(255,255,255,0) 45%); }
+}
