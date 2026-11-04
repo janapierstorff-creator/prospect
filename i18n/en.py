@@ -216,7 +216,7 @@ TEXT = {
     # Copy-Update Startseite (Copy-Doc)
     "ProspectFuel – Der Fueling Coach für junge Athleten": "ProspectFuel – The fueling coach for young athletes",
     "Der Trainingsplan steht – die Energie dafür auch? ProspectFuel ist der Fueling Coach für junge Athleten und ihre Eltern. Jetzt Platz sichern.": "The training plan is set – is the fuel? ProspectFuel is the fueling coach for young athletes and their parents. Save your spot.",
-    "ProspectFuel – Elite habits start early.": "ProspectFuel – Elite habits start early.",
+    "ProspectFuel – Fueling Next Gen Athletes": "ProspectFuel – Fueling Next Gen Athletes",
     "Der Fueling Coach für junge Athleten, ihre Eltern und Coaches. Erste Kohorte in Berlin.": "The fueling coach for young athletes, their parents and coaches. First cohort in Berlin.",
     "Platz sichern": "Save your spot",
     "ProspectFuel ist der Fueling Coach für junge Athleten: Erinnerungen per WhatsApp für Spieler, ein Plan in der App für Eltern – abgestimmt auf Training, Schule und Wachstum.": "ProspectFuel is the fueling coach for young athletes: WhatsApp reminders for players, a plan in the app for parents – matched to training, school and growth.",
