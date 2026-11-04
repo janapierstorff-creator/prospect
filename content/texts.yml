@@ -78,10 +78,10 @@ start:
       de: Right fuel. / *Real progress.*
       en: Right fuel. / *Real progress.*
     sub:
-      de: Dein Fueling Coach für mehr Energie im Training, im Spiel und auf dem Weg zu deinem nächsten Level.
-      en: Your fueling coach for more energy in training, on game day and on the way to your next level.
+      de: Dein Fueling-Coach für mehr Energie im Training, im Spiel und auf dem Weg nach oben.
+      en: Your fueling coach for more energy at practice, on game day and on your way up.
     button:
-      de: Platz sichern
+      de: Jetzt Platz sichern
       en: Save your spot
 
   zielgruppen:
@@ -104,8 +104,8 @@ start:
       de: Für Eltern
       en: For parents
     text_2:
-      de: Ihr unterstützt den Traum. Wir helfen euch, die Ernährung im Alltag richtig hinzubekommen.
-      en: You support the dream. We help you get nutrition right in everyday life.
+      de: **Ihr unterstützt den Traum.** Wir helfen euch, die Ernährung im Alltag richtig hinzubekommen.
+      en: **You support the dream.** We help you get nutrition right in everyday life.
     image_alt_3:
       de: Coach bespricht sich mit seinem Team
       en: Coach talking with his team
@@ -113,8 +113,8 @@ start:
       de: Für Coaches
       en: For coaches
     text_3:
-      de: Mehr Energie fürs gemeinsame Ziel. Damit dein Team vorbereitet ins Training kommt.
-      en: More energy for the shared goal. So your team shows up to practice ready.
+      de: **Mehr Energie fürs gemeinsame Ziel.** Damit dein Team vorbereitet ins Training kommt.
+      en: **More energy for the shared goal.** So your team shows up to practice ready.
 
   herausforderung:
     image_alt:
@@ -163,13 +163,13 @@ start:
       en: The solution
     headline:
       de: Wir denken dran. / *Du spielst.*
-      en: We remember. / *You play.*
+      en: We’ve got it covered. / *You play.*
     text_2:
       de: Damit junge Athleten mit Energie ins Training starten und bis zum Schluss alles geben können.
       en: So young athletes start training with energy and give it everything right to the end.
     text_3:
-      de: ProspectFuel verbindet persönliche Fueling-Pläne, einen Coach für den Alltag und bald auch passende Produkte rund ums Training. Abgestimmt auf die Bedürfnisse junger Athleten – mit Unterstützung für Eltern und Coaches.
-      en: ProspectFuel combines personal fueling plans, an everyday coach and, soon, matching products around training. Built for the needs of young athletes – with support for parents and coaches.
+      de: ProspectFuel verbindet persönliche Fueling-Pläne, einen digitalen Coach für den Alltag und bald auch passende Produkte rund ums Training. Abgestimmt auf die Bedürfnisse junger Athleten mit Unterstützung für Eltern und Coaches.
+      en: ProspectFuel combines personal fueling plans, a digital everyday coach and, soon, products made for practice and game days. Built for the needs of young athletes with support for parents and coaches.
 
   timing:
     aria_label:
@@ -186,13 +186,13 @@ start:
       en: During.
     text_2:
       de: Energie bis zum Schluss. / Stark bleiben.
-      en: Energy until the end. / Stay strong.
+      en: Energy to the final buzzer. / Stay strong.
     title_3:
       de: Danach.
       en: After.
     text_3:
       de: Auftanken. / Bereit fürs nächste Mal.
-      en: Refuel. / Ready for next time.
+      en: Refuel. / Ready for the next one.
 
   so_funktionierts:
     kicker:
@@ -218,7 +218,7 @@ start:
       en: See your progress
     text_3:
       de: Routinen aufbauen und sehen, wie sich deine Energie entwickelt.
-      en: Build routines and see how your energy develops.
+      en: Build routines and watch your energy grow.
 
   warum:
     image_alt:
@@ -234,8 +234,8 @@ start:
       de: Als Mutter eines jungen Basketballspielers habe ich erlebt, wie schwer es ist, Schule, Training und die richtige Ernährung unter einen Hut zu bekommen.
       en: As the mother of a young basketball player, I've seen how hard it is to juggle school, training and the right nutrition.
     text_2:
-      de: "Genau deshalb entwickeln wir ProspectFuel: Damit junge Athleten die Energie bekommen, die sie für ihre Entwicklung brauchen."
-      en: "That's exactly why we're building ProspectFuel: so young athletes get the energy they need to develop."
+      de: "Genau deshalb entwickeln wir ProspectFuel: Damit junge Athleten die Energie bekommen, die sie brauchen, um ihr Potenzial auszuschöpfen."
+      en: "That's exactly why we're building ProspectFuel: so young athletes get the energy they need to reach their potential."
     text_3:
       de: Entwickelt im Austausch mit Experten aus der Sporternährung.
       en: Developed with input from sports nutrition experts.
@@ -257,8 +257,8 @@ start:
       de: 50 Plätze für junge Athleten und ihre Familien.
       en: 50 spots for young athletes and their families.
     text:
-      de: Seid von Anfang an dabei, testet ProspectFuel als Erste und gestaltet mit, wie es weitergeht.
-      en: Be there from day one, test ProspectFuel first and help shape what comes next.
+      de: Testet ProspectFuel als Erste und gestaltet mit, wie es weitergeht.
+      en: Be among the first to try ProspectFuel and help shape what comes next.
     text_2:
       de: Ich bin …
       en: I am …
