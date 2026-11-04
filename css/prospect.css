@@ -1602,3 +1602,5 @@ main .hero ~ * .h2 { font-size: clamp(36px, 3.6vw, 64px); line-height: .95; text
 .pf-points h3 { font-size: 17px; font-weight: 700; color: #fff; }
 .pf-points p { margin-top: 4px; font-size: 15px; line-height: 1.45; color: var(--text-on-dark); }
 .pf--static .pf__inner { align-items: center; }
+/* Umbruch, der auch auf dem Handy bleiben soll */
+.pf .h2 br.br-keep { display: inline; }

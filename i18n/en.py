@@ -3,7 +3,7 @@
 # TEXT: einzelne Textstücke und Attribute (alt, placeholder, aria-label, Meta).
 
 SNIPPETS = {
-    '<h2 class="h2 upper">Mehr Energie fürs <br><span class="accent">gemeinsame Ziel.</span></h2>': '<h2 class="h2 upper">More energy for <br><span class="accent">the shared goal.</span></h2>',
+    '<h2 class="h2 upper">Mehr Energie fürs <br class="br-keep"><span class="accent">gemeinsame Ziel.</span></h2>': '<h2 class="h2 upper">More energy for <br class="br-keep"><span class="accent">the shared goal.</span></h2>',
     '<h2 class="h2 upper">Mehr Einblick. <br><span class="accent">Besser vorbereitet.</span></h2>': '<h2 class="h2 upper">More insight. <br><span class="accent">Better prepared.</span></h2>',
     '<h1 class="h1">Bereit,<br>wenn es <span class="accent">zählt.</span></h1>': '<h1 class="h1">Ready<br>when it <span class="accent">counts.</span></h1>',
     '<h2 class="h2 upper">Berlin startet.<br><span class="accent">Seid dabei.</span></h2>': '<h2 class="h2 upper">Berlin is starting.<br><span class="accent">Join us.</span></h2>',
