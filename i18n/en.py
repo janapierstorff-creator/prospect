@@ -88,7 +88,7 @@ TEXT = {
     "Hol mehr aus jeder Einheit heraus.": "Get more out of every session.",
     "Schneller regenerieren.": "Recover faster.",
     "Fülle deine Reserven gezielt wieder auf.": "Refill your reserves the smart way.",
-    "Weiterentwickeln.": "Keep improving.",
+    "Step to Pro.": "Step to pro.",
     "Ernährung als Trainingsfaktor für dein nächstes Level.": "Nutrition as a training factor for your next level.",
     "Du trainierst hart, willst dich weiterentwickeln und den nächsten Schritt machen.": "You train hard, want to keep improving and take the next step.",
     "Wir helfen dir, deinen Körper richtig zu versorgen – mit dem passenden Fuel zur richtigen Zeit.": "We help you fuel your body right – with the right fuel at the right time.",
