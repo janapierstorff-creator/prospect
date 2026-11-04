@@ -83,7 +83,7 @@ TEXT = {
     "Wir helfen dir, deinen Körper richtig zu versorgen – mit dem passenden Fuel zur richtigen Zeit.": "We help you fuel your body right – with the right fuel at the right time.",
     "Energie bis zum Schluss.": "Energy until the end.",
     "Ready fürs Training.": "Ready for training.",
-    "Mit Energie in jede Einheit.": "Bring energy to every session.",
+    "Mit vollem Akku in jede Einheit.": "Fully charged for every session.",
     "Wissen, was du brauchst.": "Know what you need.",
     "Das richtige Fuel zur richtigen Zeit.": "The right fuel at the right time.",
     "Näher an dein Ziel.": "Closer to your goal.",
