@@ -83,6 +83,11 @@ SNIPPETS = {
 }
 
 TEXT = {
+    "Weil Talent mehr als Training braucht.": "Because talent takes more than training.",
+    "„Als ich ausgerechnet habe, wie viel Energie mein Sohn an Trainingstagen braucht, dachte ich: Das kann nicht stimmen.": "“When I worked out how much energy my son needs on training days, I thought: that can't be right.",
+    "Es stimmte. Und wir lagen meilenweit daneben.": "It was right. And we were miles off.",
+    "Da wurde mir klar: Wir investieren so viel in Training und Entwicklung. Aber bei der Ernährung fehlt oft die richtige Unterstützung.“": "That's when I realised: we invest so much in training and development. But when it comes to nutrition, the right support is often missing.”",
+    "Gründerin von ProspectFuel · Basketball-Mutter": "Founder of ProspectFuel · Basketball mom",
     "ProspectFuel macht die Ernährungsplanung einfacher und begleitet euer Kind im Alltag. Abgestimmt auf Schule, Training und Wachstum.": "ProspectFuel makes nutrition planning easier and supports your child day to day. Tailored to school, training and growth.",
     "Für euch. Alles im Blick.": "For you. Everything at a glance.",
     "Was steht an? Was muss vorbereitet werden? Was kommt in die Sporttasche? Euer Wochenplan gibt euch den Überblick.": "What's coming up? What needs prepping? What goes in the sports bag? Your weekly plan gives you the overview.",

@@ -1569,3 +1569,15 @@ main .hero ~ * .h2 { font-size: clamp(36px, 3.6vw, 64px); line-height: .95; text
 
 /* Lösung (Eltern): Einleitung unter der Headline */
 .pf__intro { margin-top: 16px; max-width: 460px; font-size: clamp(16px, 1.25vw, 18px); line-height: 1.5; color: var(--text-on-dark); }
+
+/* Eltern: Warum-Abschnitt mit Kicker, Headline und Zitat in drei Absätzen */
+.motive { padding-top: clamp(48px, 5vw, 80px); padding-bottom: clamp(48px, 5vw, 80px); }
+.motive__grid { align-items: center; }
+.motive .h2 { margin-top: 6px; color: var(--ink); }
+.motive figure { margin-top: 22px; }
+.motive blockquote { font-size: clamp(17px, 1.4vw, 20px); font-weight: 500; line-height: 1.5; }
+.motive blockquote p + p { margin-top: 12px; }
+.motive figcaption { margin-top: 20px; }
+.motive figcaption b { display: block; font-weight: 700; }
+.motive figcaption span { display: block; margin-top: 2px; }
+@media (max-width: 760px) { .motive { padding-top: 40px; padding-bottom: 40px; } }
