@@ -3,6 +3,7 @@
 # TEXT: einzelne Textstücke und Attribute (alt, placeholder, aria-label, Meta).
 
 SNIPPETS = {
+    '<h1 class="h1">Bereit,<br>wenn es <span class="accent">zählt.</span></h1>': '<h1 class="h1">Ready<br>when it <span class="accent">counts.</span></h1>',
     '<h2 class="h2 upper">Berlin startet.<br><span class="accent">Seid dabei.</span></h2>': '<h2 class="h2 upper">Berlin is starting.<br><span class="accent">Join us.</span></h2>',
     '<h2 class="h2 upper">Ein Plan. <span class="accent">Zwei Kanäle.</span></h2>': '<h2 class="h2 upper">One plan. <span class="accent">Two channels.</span></h2>',
     '<h2 class="h2 upper need__title">Wachsen. Lernen.<br>Trainieren.<br><span class="accent">Alles braucht Energie.</span></h2>': '<h2 class="h2 upper need__title">Growing. Learning.<br>Training.<br><span class="accent">It all takes energy.</span></h2>',
@@ -84,6 +85,14 @@ SNIPPETS = {
 }
 
 TEXT = {
+    "Du gibst deinem Team alles mit, was es auf dem Court braucht. Aber kommen deine Spieler auch mit der Energie ins Training, die sie brauchen?": "You give your team everything they need on the court. But are your players showing up to practice with the energy they need?",
+    "ProspectFuel unterstützt deine Spieler beim richtigen Fueling – und hilft dir, dein Team besser auf Training und Wettkampf vorzubereiten.": "ProspectFuel supports your players in fueling right – and helps you prepare your team better for practice and competition.",
+    "Spieler kommen besser vorbereitet in die Halle.": "Players show up to the gym better prepared.",
+    "Damit dein Team auch am Ende noch alles geben kann.": "So your team can still give it everything in the final minutes.",
+    "Weniger Aufwand für dich.": "Less work for you.",
+    "Fueling-Begleitung außerhalb der Halle.": "Fueling support outside the gym.",
+    "Gemeinsam besser werden.": "Get better together.",
+    "Gute Fueling-Gewohnheiten im ganzen Team etablieren.": "Build good fueling habits across the whole team.",
     "Eure E-Mail-Adresse": "Your email address",
     "Alter eures Kindes (optional)": "Your child's age (optional)",
     "Alter eures Kindes": "Your child's age",
