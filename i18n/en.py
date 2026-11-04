@@ -88,6 +88,7 @@ SNIPPETS = {
 }
 
 TEXT = {
+    "Coach geht lachend mit drei jungen Basketballspielern durch die Halle": "Coach walking through the gym, laughing with three young basketball players",
     "Du investierst jede Einheit in die Entwicklung deiner Spieler. Wir helfen dir, Fueling zu einem festen Teil ihrer Vorbereitung zu machen.": "You put every session into your players' development. We help you make fueling a fixed part of their preparation.",
     "Teste ProspectFuel mit deinem Team, gestalte die Lösung mit und hilf uns, gemeinsam die nächste Generation von Athleten zu fördern.": "Test ProspectFuel with your team, help shape the solution and help us support the next generation of athletes together.",
     "Name": "Name",

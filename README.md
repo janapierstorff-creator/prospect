@@ -26,7 +26,7 @@ Alle Bilder liegen in `assets/img/prospect/`. Fehlt ein Bild, zeigt die Seite ei
 | Startseite | `hero.jpg`, `challenge.jpg`, `system.jpg`, `jana.jpg`, `final.jpg` |
 | Athleten | `athlet-hero.jpg`, `athlet-skill.jpg`, `athlet-final.jpg` |
 | Eltern | `eltern-hero.jpg`, `eltern-challenge.jpg`, `eltern-motivation.jpg`, `eltern-final.jpg` |
-| Coaches | `coach-hero.jpg`, `coach-band.jpg`, `coach-band2.jpg` |
+| Coaches | `coach-hero.jpg`, `coach-band.jpg`, `coach-final.jpg` |
 | Alle | `og-image.jpg` (1200 × 630, Vorschaubild beim Teilen, fehlt noch) |
 
 Die drei Karten „Für Athleten / Eltern / Coaches“ auf der Startseite nutzen die Hero-Bilder der Unterseiten. Der Ausschnitt steht direkt am Bild als `object-position`.
