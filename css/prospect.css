@@ -1692,3 +1692,8 @@ html.reveal .fill:has(> img:not(.is-loaded)) .system__pin { opacity: 0; transiti
 .confirm .h2 { margin-bottom: 18px; color: var(--ink); }
 .confirm__text { margin-bottom: 28px; font-size: 18px; line-height: 1.5; color: var(--text); }
 .confirm__loading { font-size: 18px; color: var(--muted); }
+
+/* Startseiten-Hero (Desktop): Inhalt genauso tief wie auf den Unterseiten */
+@media (min-width: 761px) {
+  .hero__inner { padding-top: clamp(150px, 13vw, 230px); }
+}
