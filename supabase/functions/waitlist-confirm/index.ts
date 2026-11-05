@@ -2,7 +2,7 @@
 // Die Bestätigungsseite (de/bestaetigen.html, confirm.html) schickt den Token aus dem Mail-Link hierher.
 // Danach ist die Anmeldung bestätigt und es geht eine Willkommens-Mail raus.
 
-import { cors, db, fill, footer, json, layout, plain, sendMail, SITE, texts, type Lang } from "../_shared/mail.ts";
+import { cors, db, fill, footer, footerText, json, layout, plain, sendMail, SITE, texts, type Lang } from "../_shared/mail.ts";
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const escHtml = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -48,7 +48,7 @@ Deno.serve(async (req) => {
         after: [w.text_3].filter(Boolean),
         footer: footer(t),
       });
-      const text = plain([greeting, w.text, roleText, w.text_2, `${w.button}: ${site}`, w.text_3, ...footer(t)]);
+      const text = plain([greeting, w.text, roleText, w.text_2, `${w.button}: ${site}`, w.text_3, ...footerText(t)]);
       await sendMail(row.email, w.betreff, html, text);
     } catch (mailErr) {
       console.error("Willkommens-Mail:", mailErr);

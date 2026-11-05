@@ -114,6 +114,16 @@ export async function sendMail(to: string, subject: string, html: string, text: 
   if (!res.ok) throw new Error(`Resend: HTTP ${res.status} ${await res.text()}`);
 }
 
+// Fußzeile: Hinweis + Links zu Impressum und Datenschutz (die Rechtstexte gibt es nur auf Deutsch)
+const LEGAL = { impressum: `${SITE}/de/impressum.html`, datenschutz: `${SITE}/de/datenschutz.html` };
+
 export function footer(t: Texts): string[] {
-  return [t.footer.text, t.footer.adresse];
+  const f = t.footer;
+  const a = (label: string, url: string) => `<a href="${url}" style="color:#6b7280;text-decoration:underline">${label}</a>`;
+  return [f.text, `ProspectFuel · ${a(f.impressum || "Impressum", LEGAL.impressum)} · ${a(f.datenschutz || "Datenschutz", LEGAL.datenschutz)}`];
+}
+
+export function footerText(t: Texts): string[] {
+  const f = t.footer;
+  return [f.text, `${f.impressum || "Impressum"}: ${LEGAL.impressum}`, `${f.datenschutz || "Datenschutz"}: ${LEGAL.datenschutz}`];
 }

@@ -2,7 +2,7 @@
 // Speichert die Anmeldung als unbestätigt und schickt eine Mail mit Bestätigungslink.
 // Aufruf von der Website: POST /functions/v1/waitlist-signup (siehe js/main.js)
 
-import { cors, db, fill, footer, json, layout, plain, sendMail, SITE, texts, type Lang } from "../_shared/mail.ts";
+import { cors, db, fill, footer, footerText, json, layout, plain, sendMail, SITE, texts, type Lang } from "../_shared/mail.ts";
 
 const ROLES = ["eltern", "coach", "spieler"];
 const RESEND_AFTER_MS = 2 * 60 * 1000; // Bestätigungsmail höchstens alle 2 Minuten erneut schicken
@@ -89,7 +89,7 @@ Deno.serve(async (req) => {
       after: [linkNote, m.hinweis],
       footer: footer(t),
     });
-    const text = plain([greeting, m.text, `${m.button}: ${link}`, m.hinweis, ...footer(t)]);
+    const text = plain([greeting, m.text, `${m.button}: ${link}`, m.hinweis, ...footerText(t)]);
     await sendMail(email, m.betreff, html, text);
 
     return json(req, { ok: true });

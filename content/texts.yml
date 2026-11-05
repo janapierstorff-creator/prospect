@@ -147,9 +147,13 @@ emails:
     text:
       de: Du bekommst diese E-Mail, weil du dich auf prospect-fuel.com für die Warteliste angemeldet hast. Abmelden kannst du dich jederzeit mit einer kurzen Antwort auf diese E-Mail.
       en: You're receiving this email because you joined the waitlist on prospect-fuel.com. You can unsubscribe at any time by replying to this email.
-    adresse:
-      de: ProspectFuel · Jana Pierstorff · Wallstraße 86 · 10179 Berlin
-      en: ProspectFuel · Jana Pierstorff · Wallstraße 86 · 10179 Berlin, Germany
+    # Links unter jeder Mail (führen auf die Seiten de/impressum.html und de/datenschutz.html)
+    impressum:
+      de: Impressum
+      en: Legal notice
+    datenschutz:
+      de: Datenschutz
+      en: Privacy policy
 
 start:
 
