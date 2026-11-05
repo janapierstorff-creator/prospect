@@ -2,6 +2,10 @@
   "use strict";
 
   var EN = document.documentElement.lang === "en";
+  // Texte aus content/texts.yml (Abschnitt "meldungen"), beim Bauen in die Seite geschrieben
+  var TEXT = window.PF_TEXT || {};
+  var t = function (key) { return TEXT[key] || ""; };
+  var esc = function (s) { return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); };
 
   // Icons (Lucide) rendern
   if (window.lucide) window.lucide.createIcons({ attrs: { "stroke-width": 1.75 } });
@@ -102,7 +106,7 @@
     items.forEach(function (item, i) {
       var b = document.createElement("button");
       b.type = "button";
-      b.setAttribute("aria-label", (EN ? "Show card " : "Karte ") + (i + 1) + (EN ? "" : " anzeigen"));
+      b.setAttribute("aria-label", t("karussell.punkt_vorlesetext").replace("#", i + 1));
       b.addEventListener("click", function () {
         track.scrollTo({ left: item.offsetLeft - items[0].offsetLeft, behavior: "smooth" });
       });
@@ -152,9 +156,7 @@
     btn.addEventListener("click", function (e) {
       e.preventDefault();
       var url = new URL((EN ? "parents.html" : "eltern.html") + "?ref=spieler", location.href).href;
-      var text = EN
-        ? "Hey, I want to join ProspectFuel. Can you sign me up here?"
-        : "Hey, ich will bei ProspectFuel mitmachen. Kannst du mich hier eintragen?";
+      var text = t("teilen.text");
       if (navigator.share) {
         navigator.share({ title: "ProspectFuel", text: text, url: url }).catch(function () {});
       } else {
@@ -176,12 +178,10 @@
   var cfg = window.PF_CONFIG || {};
 
   function successMarkup(role) {
-    var text = EN
-      ? (role === "coach" ? "We'll be in touch as soon as the pilot starts." : "We'll be in touch when we start.")
-      : (role === "coach" ? "Wir melden uns bei dir, sobald die Pilotphase startet." : "Wir melden uns, sobald es losgeht.");
+    var text = t(role === "coach" ? "formular.erfolg_text_coach" : "formular.erfolg_text");
     return '<div class="form-success" role="status">' +
       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>' +
-      '<h3>' + (EN ? "Your spot is saved." : "Dein Platz ist gesichert.") + '</h3><p>' + text + "</p></div>";
+      '<h3>' + esc(t("formular.erfolg_titel")) + '</h3><p>' + esc(text) + "</p></div>";
   }
 
   function send(payload) {
@@ -222,7 +222,7 @@
 
       var role = data.get("role") || form.dataset.role;
       if (!role) {
-        if (msg) { msg.textContent = EN ? "Please choose who you are." : "Bitte wähle aus, wer du bist."; msg.classList.add("is-error"); }
+        if (msg) { msg.textContent = t("formular.fehler_rolle"); msg.classList.add("is-error"); }
         return;
       }
       var age = parseInt(data.get("child_age"), 10);
@@ -249,7 +249,7 @@
         console.error(err);
         btn.disabled = false;
         if (msg) {
-          msg.textContent = EN ? "Something went wrong. Please try again in a moment." : "Das hat leider nicht geklappt. Bitte versuch es gleich noch einmal.";
+          msg.textContent = t("formular.fehler_senden");
           msg.classList.add("is-error");
         }
       });

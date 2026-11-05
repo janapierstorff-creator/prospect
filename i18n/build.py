@@ -12,6 +12,7 @@ Platzhalter in den Vorlagen:
   {{seite.abschnitt.feld}}  reiner Text (Attribute, Seitentitel)
 """
 import html
+import json
 import os
 import re
 import sys
@@ -119,6 +120,18 @@ def fill(template, texts, lang, page, warnings):
     return PLACEHOLDER.sub(repl, template)
 
 
+def inject_messages(page_html, texts, lang):
+    """Meldungen für js/main.js (Formular, Teilen) als window.PF_TEXT vor main.js einfügen."""
+    msgs = {}
+    for section, entries in texts.get("meldungen", {}).items():
+        for key, entry in entries.items():
+            value = entry.get(lang) or entry.get("de", "")
+            msgs["%s.%s" % (section, key)] = str(value)
+    data = json.dumps(msgs, ensure_ascii=False).replace("</", "<\\/")
+    return page_html.replace('<script src="../js/main.js"></script>',
+                             '<script>window.PF_TEXT = %s;</script>\n<script src="../js/main.js"></script>' % data, 1)
+
+
 def to_english(html_src, page):
     """Struktur der deutschen Seite (de/) für das Hauptverzeichnis auf Englisch umstellen."""
     s = html_src.replace('<html lang="de">', '<html lang="en">', 1)
@@ -154,9 +167,9 @@ def main():
         with open(os.path.join(ROOT, "src", page), encoding="utf-8") as f:
             template = f.read()
         with open(os.path.join(ROOT, "de", page), "w", encoding="utf-8") as f:
-            f.write(fill(template, texts, "de", page, warnings))
+            f.write(inject_messages(fill(template, texts, "de", page, warnings), texts, "de"))
         if page in PAGES:
-            en = to_english(fill(template, texts, "en", page, warnings), page)
+            en = to_english(inject_messages(fill(template, texts, "en", page, warnings), texts, "en"), page)
             with open(os.path.join(ROOT, PAGES[page]), "w", encoding="utf-8") as f:
                 f.write(en)
     for old, target in REDIRECTS.items():

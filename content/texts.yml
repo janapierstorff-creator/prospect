@@ -51,6 +51,35 @@ global:
 
 # ─── STARTSEITE ────────────────────────────────────────
 
+meldungen:
+  # Texte, die erst durch eine Aktion erscheinen (nach dem Absenden, beim Teilen). Gelten für alle Seiten.
+  formular:
+    erfolg_titel:
+      de: Dein Platz ist gesichert.
+      en: Your spot is saved.
+    erfolg_text:
+      de: Wir melden uns, sobald es losgeht.
+      en: We'll be in touch when we start.
+    erfolg_text_coach:
+      de: Wir melden uns bei dir, sobald die Pilotphase startet.
+      en: We'll be in touch as soon as the pilot starts.
+    fehler_rolle:
+      de: Bitte wähle aus, wer du bist.
+      en: Please choose who you are.
+    fehler_senden:
+      de: Das hat leider nicht geklappt. Bitte versuch es gleich noch einmal.
+      en: Something went wrong. Please try again in a moment.
+  teilen:
+    # Nachricht, wenn Athleten unter 16 die Eltern-Seite an ihre Eltern schicken (der Link wird automatisch angehängt)
+    text:
+      de: Hey, ich will bei ProspectFuel mitmachen. Kannst du mich hier eintragen?
+      en: Hey, I want to join ProspectFuel. Can you sign me up here?
+  karussell:
+    # Vorlesetext für die Punkte unter den Karten auf dem Handy, # wird durch die Nummer ersetzt
+    punkt_vorlesetext:
+      de: "Karte # anzeigen"
+      en: "Show card #"
+
 start:
 
   meta:

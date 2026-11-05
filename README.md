@@ -47,6 +47,8 @@ Tipp: Bilder vorher auf etwa 1800 bis 2400 px Breite verkleinern und komprimiere
 
 Alle Texte stehen in **`content/texts.yml`**, sortiert nach Seite → Abschnitt → Element, Deutsch (`de`) und Englisch (`en`) untereinander.
 
+Ganz oben unter `meldungen` stehen die Texte, die erst durch eine Aktion erscheinen: Bestätigung und Fehler beim Formular, die Nachricht zum Teilen mit den Eltern. Sie gelten für alle Seiten.
+
 **Auf github.com (ohne Programm auf dem Rechner):**
 1. Im Repository `content/texts.yml` öffnen und oben rechts auf das Stift-Symbol klicken.
 2. Text ändern. Mit `Strg/Cmd + F` findest du die Stelle schnell, einfach nach dem alten Text suchen.
