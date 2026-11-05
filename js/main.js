@@ -184,27 +184,38 @@
       '<h3>' + esc(t("formular.erfolg_titel")) + '</h3><p>' + esc(text) + "</p></div>";
   }
 
+  // Anmeldung über die Supabase-Funktion "waitlist-signup": speichert unbestätigt und schickt die
+  // Bestätigungs-Mail (Double-Opt-in, siehe supabase/functions)
+  function callFunction(name, body) {
+    return fetch(cfg.supabaseUrl.replace(/\/$/, "") + "/functions/v1/" + name, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", apikey: cfg.supabaseAnonKey },
+      body: JSON.stringify(body)
+    });
+  }
+
   function send(payload) {
     if (!cfg.supabaseUrl || !cfg.supabaseAnonKey) {
       console.warn("[ProspectFuel] Testmodus: Supabase ist nicht konfiguriert (js/config.js). Daten:", payload);
       return new Promise(function (resolve) { setTimeout(resolve, 500); });
     }
-    return fetch(cfg.supabaseUrl.replace(/\/$/, "") + "/rest/v1/" + (cfg.table || "waitlist"), {
-      method: "POST",
-      headers: Object.assign({
-        "Content-Type": "application/json",
-        apikey: cfg.supabaseAnonKey,
-        Prefer: "return=minimal"
-      // Alter anon-Key (JWT, beginnt mit "eyJ") braucht zusätzlich den Authorization-Header,
-      // der neue Publishable Key ("sb_publishable_…") nicht
-      }, /^eyJ/.test(cfg.supabaseAnonKey) ? { Authorization: "Bearer " + cfg.supabaseAnonKey } : {}),
-      body: JSON.stringify(payload)
-    }).then(function (res) {
-      // 409 = E-Mail ist für diese Rolle schon eingetragen → für die Person trotzdem ein Erfolg
-      if (res.ok || res.status === 409) return;
-      throw new Error("HTTP " + res.status);
+    return callFunction("waitlist-signup", payload).then(function (res) {
+      if (!res.ok) throw new Error("HTTP " + res.status);
     });
   }
+
+  // Bestätigungsseite (de/bestaetigen.html, confirm.html): Token aus dem Mail-Link bestätigen
+  document.querySelectorAll("[data-confirm]").forEach(function (box) {
+    var show = function (state) {
+      box.querySelectorAll("[data-state]").forEach(function (el) { el.hidden = el.dataset.state !== state; });
+    };
+    var token = new URLSearchParams(location.search).get("t") || "";
+    if (!/^[0-9a-f-]{36}$/i.test(token)) return show("invalid");
+    callFunction("waitlist-confirm", { token: token })
+      .then(function (res) { return res.json().catch(function () { return { status: "error" }; }); })
+      .then(function (data) { show(["confirmed", "already", "invalid"].indexOf(data.status) >= 0 ? data.status : "error"); })
+      .catch(function () { show("error"); });
+  });
 
   document.querySelectorAll("form[data-waitlist]").forEach(function (form) {
     // Kompaktes E-Mail-Formular: Rolle und Einwilligung erst beim Ausfüllen einblenden
@@ -236,6 +247,7 @@
         sport: data.get("sport") ? String(data.get("sport")).trim() : null,
         consent: !!data.get("consent"),
         source_page: form.dataset.source || location.pathname,
+        lang: EN ? "en" : "de",
         referrer: document.referrer ? document.referrer.slice(0, 300) : null,
         utm_source: utm.utm_source || null,
         utm_medium: utm.utm_medium || null,
