@@ -1697,3 +1697,8 @@ html.reveal .fill:has(> img:not(.is-loaded)) .system__pin { opacity: 0; transiti
 @media (min-width: 761px) {
   .hero__inner { padding-top: clamp(150px, 13vw, 230px); }
 }
+
+/* Abschluss-Headlines auf Desktop: Zeilen nur an den gesetzten Umbrüchen trennen (rechts ist das Bild, Platz genug) */
+@media (min-width: 761px) {
+  .ath-final .final-loud .h2 { white-space: nowrap; }
+}

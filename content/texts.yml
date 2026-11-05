@@ -304,7 +304,7 @@ start:
       en: How it works
     headline:
       de: Dein Plan. Dein Coach. / Dein Fortschritt.
-      en: Your plan. Your coach. / Your progress.
+      en: Your plan. Your coach. / *Your progress.*
     title:
       de: Profil erstellen
       en: Create a profile
@@ -333,7 +333,7 @@ start:
       en: Why we're building ProspectFuel
     headline:
       de: Talent braucht mehr / als Training.
-      en: Talent takes more / than training.
+      en: Talent takes more / than *training.*
     text:
       de: Als Mutter eines jungen Basketballspielers habe ich erlebt, wie schwer es ist, Schule, Training und die richtige Ernährung unter einen Hut zu bekommen.
       en: As the mother of a young basketball player, I've seen how hard it is to juggle school, training and the right nutrition.
@@ -442,7 +442,7 @@ athleten:
       en: Young basketball player dribbling with focus in a gym
     headline:
       de: Dein Game. / Dein *nächstes Level.*
-      en: Your game. / Your *next level.*
+      en: Your game. / *Your next level.*
     sub:
       de: Mit **ProspectFuel** bekommst du das richtige Fuel zur richtigen Zeit für mehr Power im Training und im Spiel, Woche für Woche.
       en: "**ProspectFuel** gives you the right fuel at the right time for more power at practice and in games, week after week."
@@ -718,7 +718,7 @@ athleten:
       en: Fueling is a skill.
     headline:
       de: Jeder Vorteil zählt.
-      en: Every edge counts.
+      en: Every edge *counts.*
     text:
       de: Du trainierst, um besser zu werden. Doch wie weit du kommst, entscheidet nicht nur das Training.
       en: You train to get better. But training alone doesn't decide how far you go.
@@ -1024,7 +1024,7 @@ eltern:
       en: Why we're building ProspectFuel
     headline:
       de: Weil Talent mehr als Training braucht.
-      en: Because talent takes more than training.
+      en: Because talent takes *more than training.*
     text:
       de: "„Als ich ausgerechnet habe, wie viel Energie mein Sohn an Trainingstagen braucht, dachte ich: Das kann nicht stimmen."
       en: "“When I figured out how much energy my son needs on training days, I thought: that can't be right."
@@ -1067,7 +1067,7 @@ eltern:
       en: FAQ
     headline:
       de: Gut zu wissen.
-      en: Good to know.
+      en: Good to *know.*
     question:
       de: Für welches Alter ist ProspectFuel gedacht?
       en: What age is ProspectFuel for?
@@ -1122,7 +1122,7 @@ eltern:
       en: Berlin skyline at dusk
     headline:
       de: Berlin startet. / *Seid dabei.*
-      en: Berlin is starting. / *Join us.*
+      en: Berlin is starting. / *Join us.*
     text:
       de: 50 Plätze für junge Athleten und ihre Familien in Berlin.
       en: 50 spots for young athletes and their families in Berlin.
@@ -1445,7 +1445,7 @@ coaches:
       en: Youth team putting their hands together in a gym
     headline:
       de: Gewonnen wird auch *zuhause.*
-      en: Games are won *at home,* too.
+      en: Games are won *at home, too.*
     text:
       de: Gute Vorbereitung beginnt vor dem Training. ProspectFuel hilft Spielern und Eltern, Fueling zur Routine zu machen – damit dein Team bereit ist, wenn es zählt.
       en: Good preparation starts before practice. ProspectFuel helps players and parents make fueling a routine – so your team is ready when it counts.
