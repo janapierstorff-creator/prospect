@@ -1702,3 +1702,8 @@ html.reveal .fill:has(> img:not(.is-loaded)) .system__pin { opacity: 0; transiti
 @media (min-width: 761px) {
   .ath-final .final-loud .h2 { white-space: nowrap; }
 }
+
+/* "Jeder Vorteil zählt" (Athleten): auf Desktop mehr Höhe, damit das Bild nicht so stark beschnitten wird */
+@media (min-width: 761px) {
+  .ath-why--fade { min-height: clamp(440px, 34vw, 620px); }
+}
