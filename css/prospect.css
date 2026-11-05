@@ -1668,3 +1668,19 @@ html.reveal .fill:has(> img:not(.is-loaded)) .system__pin { opacity: 0; transiti
 @media (min-width: 761px) {
   .ath-hero__inner { padding-top: clamp(150px, 13vw, 230px); }
 }
+
+/* Einheitlicher Abstand über Kicker/Headline in allen Abschnitten (Maß der weißen Bereiche) */
+:root { --sec-top: clamp(48px, 5vw, 80px); }
+@media (min-width: 761px) {
+  .cband__inner, .need--light .need__inner, .motive, .system__inner, .why__inner, .final__inner,
+  .pf__inner, .ath-why--light .ath-why__inner, .ath-final__inner, .faq-block, .team-band__inner, .pilot__inner { padding-top: var(--sec-top) !important; }
+  .why__text > .kicker:first-child { margin-top: 0; }
+}
+@media (max-width: 760px) {
+  .pf__inner, .faq-block { padding-top: var(--sec-top) !important; }
+}
+@media (min-width: 761px) {
+  .system { align-items: flex-start; }
+  .pf__inner { align-items: start; }
+  .pf__inner > div:first-child { padding-top: 0; }
+}
