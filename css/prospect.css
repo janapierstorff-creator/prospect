@@ -1663,3 +1663,8 @@ html.reveal .fill:has(> img:not(.is-loaded)) .system__pin { opacity: 0; transiti
   .hero .h1--long, .ath-hero .h1--long { font-size: clamp(34px, 10.3vw, 42px); }
   .hero__sub, .ath-hero__sub { font-size: 17px; }
 }
+
+/* Unterseiten-Hero (Desktop): Inhalt mehr Luft nach oben, Headline sitzt nicht direkt unter der Navigation */
+@media (min-width: 761px) {
+  .ath-hero__inner { padding-top: clamp(150px, 13vw, 230px); }
+}
