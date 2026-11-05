@@ -1684,3 +1684,11 @@ html.reveal .fill:has(> img:not(.is-loaded)) .system__pin { opacity: 0; transiti
   .pf__inner { align-items: start; }
   .pf__inner > div:first-child { padding-top: 0; }
 }
+
+/* Bestätigungsseite (Double-Opt-in) */
+.confirm { min-height: 62vh; display: flex; flex-direction: column; justify-content: center; padding-top: var(--sec-top); padding-bottom: var(--sec-top); }
+.confirm__state { max-width: 620px; }
+.confirm__state[hidden], .confirm__loading[hidden] { display: none; }
+.confirm .h2 { margin-bottom: 18px; color: var(--ink); }
+.confirm__text { margin-bottom: 28px; font-size: 18px; line-height: 1.5; color: var(--text); }
+.confirm__loading { font-size: 18px; color: var(--muted); }

@@ -22,7 +22,10 @@ import yaml
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Deutsche Seite (de/) → englische Seite (Hauptverzeichnis); Rechtliches gibt es nur auf Deutsch
-PAGES = {"index.html": "index.html", "athleten.html": "athletes.html", "eltern.html": "parents.html", "coaches.html": "coaches.html"}
+PAGES = {"index.html": "index.html", "athleten.html": "athletes.html", "eltern.html": "parents.html", "coaches.html": "coaches.html",
+         "bestaetigen.html": "confirm.html"}
+# Seiten ohne automatische Sprachweiterleitung (Link aus der Mail soll in der Sprache der Anmeldung bleiben)
+NO_LANG_REDIRECT = ["bestaetigen.html"]
 LEGAL = ["impressum.html", "datenschutz.html"]
 # Alte Adressen → neue Ziele (Weiterleitungsseiten, damit geteilte Links weiter funktionieren)
 REDIRECTS = {
@@ -132,10 +135,30 @@ def inject_messages(page_html, texts, lang):
                              '<script>window.PF_TEXT = %s;</script>\n<script src="../js/main.js"></script>' % data, 1)
 
 
+def write_emails(texts, warnings):
+    """Mail-Texte (Abschnitt "emails") für die Supabase-Funktionen nach assets/emails.json schreiben.
+    Betreff und Vorschau bleiben reiner Text, alles andere wird wie auf der Seite ausgezeichnet."""
+    out = {}
+    for lang in ("de", "en"):
+        out[lang] = {}
+        for group, entries in texts.get("emails", {}).items():
+            out[lang][group] = {}
+            for key, entry in entries.items():
+                value = entry.get(lang)
+                if value is None:
+                    warnings.append("emails: noch keine englische Übersetzung für %s.%s" % (group, key))
+                    value = entry.get("de", "")
+                value = str(value)
+                out[lang][group][key] = value if key in ("betreff", "vorschau") else rich(value)
+    with open(os.path.join(ROOT, "assets", "emails.json"), "w", encoding="utf-8") as f:
+        json.dump(out, f, ensure_ascii=False, indent=1)
+
+
 def to_english(html_src, page):
     """Struktur der deutschen Seite (de/) für das Hauptverzeichnis auf Englisch umstellen."""
     s = html_src.replace('<html lang="de">', '<html lang="en">', 1)
-    s = s.replace('<meta charset="utf-8">', '<meta charset="utf-8">\n  ' + LANG_REDIRECT % page, 1)
+    if page not in NO_LANG_REDIRECT:
+        s = s.replace('<meta charset="utf-8">', '<meta charset="utf-8">\n  ' + LANG_REDIRECT % page, 1)
     # Pfade: die englischen Seiten liegen eine Ebene höher als die deutschen
     s = re.sub(r'\b(href|src|content)="\.\./(css/|js/|assets/)', r'\1="\2', s)
     # Sprachwechsel und hreflang umdrehen (deutsche Vorlage zeigt auf ../<englisch>)
@@ -172,6 +195,7 @@ def main():
             en = to_english(inject_messages(fill(template, texts, "en", page, warnings), texts, "en"), page)
             with open(os.path.join(ROOT, PAGES[page]), "w", encoding="utf-8") as f:
                 f.write(en)
+    write_emails(texts, warnings)
     for old, target in REDIRECTS.items():
         path = os.path.join(ROOT, old)
         os.makedirs(os.path.dirname(path), exist_ok=True)

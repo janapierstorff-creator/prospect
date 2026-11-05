@@ -80,6 +80,77 @@ meldungen:
       de: "Karte # anzeigen"
       en: "Show card #"
 
+emails:
+  # Texte der automatischen E-Mails. Platzhalter in geschweiften Klammern ({name}, {link}) nicht ändern.
+  # Betreff und Vorschau (die graue Zeile im Posteingang) ohne * und /.
+  anrede:
+    mit_name:
+      de: Hi {name},
+      en: Hi {name},
+    ohne_name:
+      de: Hi,
+      en: Hi,
+  bestaetigung:
+    betreff:
+      de: Bitte bestätige deine Anmeldung bei ProspectFuel
+      en: Please confirm your ProspectFuel sign-up
+    vorschau:
+      de: Ein Klick noch, dann ist dein Platz auf der Warteliste gesichert.
+      en: One more click and your spot on the waitlist is saved.
+    headline:
+      de: Ein Klick noch.
+      en: One more click.
+    text:
+      de: danke für dein Interesse an ProspectFuel! Bitte bestätige kurz deine E-Mail-Adresse, damit wir dich auf die Warteliste für unseren Start in Berlin setzen können.
+      en: thanks for your interest in ProspectFuel! Please confirm your email address so we can add you to the waitlist for our Berlin launch.
+    button:
+      de: Anmeldung bestätigen
+      en: Confirm sign-up
+    link_hinweis:
+      de: "Falls der Button nicht funktioniert, kopiere diesen Link in deinen Browser: {link}"
+      en: "If the button doesn't work, copy this link into your browser: {link}"
+    hinweis:
+      de: Du hast dich nicht angemeldet? Dann ignoriere diese E-Mail einfach. Ohne Bestätigung speichern wir nichts dauerhaft.
+      en: Didn't sign up? Just ignore this email. Without confirmation we won't keep your details.
+  willkommen:
+    betreff:
+      de: Du bist dabei! Willkommen bei ProspectFuel
+      en: You're in! Welcome to ProspectFuel
+    vorschau:
+      de: Deine Anmeldung ist bestätigt. Hier erfährst du, wie es weitergeht.
+      en: Your sign-up is confirmed. Here's what happens next.
+    headline:
+      de: Du bist *dabei.*
+      en: You're *in.*
+    text:
+      de: deine Anmeldung ist bestätigt. Du stehst jetzt auf der Warteliste für den Start von ProspectFuel in Berlin.
+      en: your sign-up is confirmed. You're now on the waitlist for the ProspectFuel launch in Berlin.
+    text_spieler:
+      de: Wir bauen gerade deinen persönlichen Fueling-Coach, damit du mit vollem Akku in jedes Training und jedes Spiel gehst.
+      en: We're building your personal fueling coach so you can go into every practice and every game fully charged.
+    text_eltern:
+      de: Wir bauen gerade die Unterstützung, die euch die Ernährungsplanung abnimmt, damit euer Kind gut versorgt ist, ohne dass ihr Experten werden müsst.
+      en: We're building the support that takes nutrition planning off your plate, so your child is well fueled without you having to become experts.
+    text_coach:
+      de: Wir bauen gerade die Lösung, mit der deine Spieler besser vorbereitet ins Training kommen und du siehst, wo du unterstützen kannst.
+      en: We're building the solution that helps your players show up better prepared and shows you where to help.
+    text_2:
+      de: "**Wie geht es weiter?** Sobald die Pilotphase startet, melden wir uns bei dir mit allen Infos, wie du dabei sein kannst."
+      en: "**What's next?** As soon as the pilot starts, we'll get in touch with everything you need to take part."
+    button:
+      de: Zur Website
+      en: Visit the website
+    text_3:
+      de: Fragen oder Ideen? Antworte einfach auf diese E-Mail, wir lesen alles.
+      en: Questions or ideas? Just reply to this email, we read everything.
+  footer:
+    text:
+      de: Du bekommst diese E-Mail, weil du dich auf prospect-fuel.com für die Warteliste angemeldet hast. Abmelden kannst du dich jederzeit mit einer kurzen Antwort auf diese E-Mail.
+      en: You're receiving this email because you joined the waitlist on prospect-fuel.com. You can unsubscribe at any time by replying to this email.
+    adresse:
+      de: ProspectFuel · Jana Pierstorff · Wallstraße 86 · 10179 Berlin
+      en: ProspectFuel · Jana Pierstorff · Wallstraße 86 · 10179 Berlin, Germany
+
 start:
 
   meta:
@@ -1497,6 +1568,8 @@ datenschutz:
       de: Wenn du dich für die ProspectFuel-Warteliste anmeldest, verarbeiten wir deine E-Mail-Adresse, deine angegebene Rolle (Elternteil, Athlet:in ab 16 Jahren oder Coach) sowie freiwillige Angaben wie Alter des Kindes, Sportart, Name oder Verein. Außerdem speichern wir den Zeitpunkt der Anmeldung und deine Einwilligung.
     text_7:
       de: Sofern technisch erfasst, speichern wir zusätzlich, über welche Seite oder welchen Anmeldelink du zu uns gekommen bist. Dazu gehören die Seite, auf der du dich angemeldet hast, die zuvor besuchte Seite (Referrer) und Kampagnenkennungen im Link (sogenannte UTM-Parameter).
+    text_doi:
+      de: "Nach dem Absenden schicken wir dir eine E-Mail mit einem Bestätigungslink (Double-Opt-in). Erst wenn du darauf klickst, nehmen wir dich in die Warteliste auf. Zum Nachweis deiner Einwilligung speichern wir den Zeitpunkt der Anmeldung, des Versands der Bestätigungs-E-Mail und deiner Bestätigung. Anmeldungen, die nicht innerhalb von 30 Tagen bestätigt werden, löschen wir automatisch. Nach der Bestätigung erhältst du eine Willkommens-E-Mail."
     text_8:
       de: Wir verwenden diese Angaben, um dich über den Start von ProspectFuel, die Pilotphase und deine Teilnahmemöglichkeiten zu informieren sowie das Interesse an unserem Angebot auszuwerten.
     text_9:
@@ -1517,8 +1590,16 @@ datenschutz:
       de: "Supabase:"
     text_16:
       de: Für die Speicherung der Wartelisten-Anmeldungen nutzen wir Supabase (Supabase, Inc., USA). Die Datenbank wird in der Region Frankfurt am Main (EU) betrieben. Beim Absenden des Formulars verarbeitet Supabase technisch bedingt auch deine IP-Adresse. Mit Supabase besteht ein Vertrag zur Auftragsverarbeitung nach Art. 28 DSGVO.
+    text_resend_title:
+      de: "Resend:"
+    text_resend:
+      de: Für den Versand der Bestätigungs-, Willkommens- und Informations-E-Mails nutzen wir Resend (Plus Five Five, Inc., USA). Die E-Mails werden über Server in der EU (Irland) versendet. Dabei verarbeitet Resend deine E-Mail-Adresse, den Inhalt der E-Mail sowie technische Versanddaten wie Zustellstatus und Zeitpunkt. Mit Resend besteht ein Vertrag zur Auftragsverarbeitung nach Art. 28 DSGVO.
+    text_google_title:
+      de: "Google Workspace:"
+    text_google:
+      de: Für unser E-Mail-Postfach nutzen wir Google Workspace (Google Cloud EMEA Limited, Irland). Wenn du uns schreibst oder auf eine unserer E-Mails antwortest, wird deine Nachricht dort verarbeitet. Mit Google besteht ein Vertrag zur Auftragsverarbeitung nach Art. 28 DSGVO.
     text_17:
-      de: "Bei der Nutzung unserer Dienstleister kann es zu Datenübermittlungen außerhalb der EU beziehungsweise des EWR kommen. Soweit erforderlich, erfolgen diese auf Grundlage geeigneter datenschutzrechtlicher Garantien: GitHub ist unter dem EU-U.S. Data Privacy Framework zertifiziert, für Übermittlungen an GitHub gilt damit der Angemessenheitsbeschluss der EU-Kommission (Art. 45 DSGVO). Für Übermittlungen an Supabase gelten die EU-Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO), die Bestandteil des Auftragsverarbeitungsvertrags sind."
+      de: "Bei der Nutzung unserer Dienstleister kann es zu Datenübermittlungen außerhalb der EU beziehungsweise des EWR kommen. Soweit erforderlich, erfolgen diese auf Grundlage geeigneter datenschutzrechtlicher Garantien: GitHub ist unter dem EU-U.S. Data Privacy Framework zertifiziert, für Übermittlungen an GitHub gilt damit der Angemessenheitsbeschluss der EU-Kommission (Art. 45 DSGVO). Google ist ebenfalls unter dem EU-U.S. Data Privacy Framework zertifiziert. Für Übermittlungen an Supabase und Resend gelten die EU-Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO), die Bestandteil der jeweiligen Auftragsverarbeitungsverträge sind."
     headline_5:
       de: 4. Schriften und Icons
     text_18:
@@ -1550,3 +1631,46 @@ datenschutz:
     text_26:
       de: Eine automatisierte Entscheidungsfindung einschließlich Profiling gemäß Art. 22 DSGVO findet nicht statt.
 
+bestaetigen:
+  # Seite, auf die der Link in der Bestätigungs-Mail führt (de/bestaetigen.html, confirm.html)
+  meta:
+    title:
+      de: Anmeldung bestätigen – ProspectFuel
+      en: Confirm sign-up – ProspectFuel
+  inhalt:
+    laden:
+      de: Einen Moment, wir bestätigen deine Anmeldung …
+      en: One moment, we're confirming your sign-up …
+    kicker:
+      de: Warteliste
+      en: Waitlist
+    erfolg_headline:
+      de: Du bist / *dabei.*
+      en: You're / *in.*
+    erfolg_text:
+      de: Deine Anmeldung ist bestätigt. Wir haben dir eine Willkommens-Mail geschickt und melden uns, sobald die Pilotphase in Berlin startet.
+      en: Your sign-up is confirmed. We've sent you a welcome email and will be in touch as soon as the Berlin pilot starts.
+    schon_headline:
+      de: Schon / *bestätigt.*
+      en: Already / *confirmed.*
+    schon_text:
+      de: Diese Anmeldung hast du bereits bestätigt. Du stehst auf der Warteliste, du musst nichts weiter tun.
+      en: You've already confirmed this sign-up. You're on the waitlist, nothing else to do.
+    ungueltig_headline:
+      de: Link / *abgelaufen.*
+      en: Link / *expired.*
+    ungueltig_text:
+      de: Dieser Bestätigungslink ist ungültig oder abgelaufen. Melde dich einfach noch einmal an, dann schicken wir dir einen neuen Link.
+      en: This confirmation link is invalid or has expired. Just sign up again and we'll send you a new link.
+    fehler_headline:
+      de: Das hat / *nicht geklappt.*
+      en: Something / *went wrong.*
+    fehler_text:
+      de: Bitte versuch es in ein paar Minuten noch einmal oder schreib uns an support@prospect-fuel.com.
+      en: Please try again in a few minutes or email us at support@prospect-fuel.com.
+    button:
+      de: Zur Startseite
+      en: Back to the homepage
+    button_2:
+      de: Neu anmelden
+      en: Sign up again

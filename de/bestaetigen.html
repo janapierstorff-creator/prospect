@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>(function (d) {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    d.classList.add("reveal");
+    setTimeout(function () { if (!d.classList.contains("rv-ready")) d.classList.remove("reveal"); }, 3000);
+  })(document.documentElement);</script>
+  <title>Anmeldung bestätigen – ProspectFuel</title>
+  <link rel="icon" href="../assets/favicon-prospect.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/prospect.css">
+  <meta name="robots" content="noindex">
+</head>
+<body class="legal-page confirm-page">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html" aria-label="ProspectFuel Startseite"><svg class="logo__mark" viewBox="0 0 902 423" aria-hidden="true" focusable="false"><path fill="currentColor" d="M61.8 1.0L82.0 0.3L365.0 0.3L388.0 1.7L403.0 4.6L413.0 7.8L428.0 13.8L442.0 21.9L452.9 30.0L461.0 37.6L477.0 57.2L484.8 44.0L492.0 35.0L500.0 26.9L509.0 19.5L518.0 13.7L530.0 8.0L552.0 1.7L571.0 0.5L900.0 0.4L900.8 2.0L900.8 46.0L900.7 95.0L900.0 96.4L565.0 96.2L549.0 97.7L534.0 103.4L521.3 113.0L515.6 120.0L511.7 127.0L508.7 135.0L504.2 154.0L495.4 183.0L486.5 202.0L477.3 217.0L463.0 234.8L448.0 248.2L432.0 259.4L411.0 269.9L389.0 277.4L363.0 281.5L130.0 281.9L128.8 283.0L128.6 289.0L128.7 410.0L128.0 421.7L2.0 421.8L1.2 421.0L1.1 412.0L1.0 297.0L1.2 280.0L2.8 267.0L7.8 248.0L15.8 231.0L23.6 220.0L32.0 210.8L39.0 204.8L50.0 197.7L60.0 192.9L74.0 188.9L84.0 187.8L350.0 187.0L367.0 181.2L381.4 170.0L390.3 156.0L393.2 146.0L393.6 135.0L392.3 127.0L389.3 120.0L384.3 112.0L377.0 105.5L371.0 101.6L365.0 98.9L357.0 96.9L310.0 96.1L63.0 96.2L61.8 95.0L61.7 90.0L61.8 1.0ZM565.5 187.0L839.0 187.0L843.0 187.1L844.2 188.0L844.0 280.7L610.0 281.2L595.0 281.2L593.9 283.0L593.9 408.0L593.7 421.0L593.0 421.7L468.0 421.8L466.5 421.0L466.5 298.0L469.7 275.0L475.7 256.0L483.7 239.0L492.0 227.2L502.0 215.8L514.3 205.0L524.0 198.8L539.0 191.8L550.0 188.7L565.5 187.0Z"/></svg><span class="logo__word">ProspectFuel</span></a>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="athleten.html">Athleten</a>
+      <a href="eltern.html">Eltern</a>
+      <a href="coaches.html">Coaches</a>
+      <a class="lang-switch" href="../index.html" hreflang="en" lang="en">EN</a>
+    </nav>
+    <a class="btn btn--white" href="index.html#warteliste">Platz sichern <span aria-hidden="true">→</span></a>
+    <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false"><i data-lucide="menu"></i></button>
+  </div>
+</header>
+
+<main>
+  <section class="container confirm" data-confirm>
+    <p class="confirm__loading" data-state="loading" role="status">Einen Moment, wir bestätigen deine Anmeldung …</p>
+    <div class="confirm__state" data-state="confirmed" hidden>
+      <p class="kicker">Warteliste</p>
+      <h1 class="h2 upper">Du bist <br><span class="accent">dabei.</span></h1>
+      <p class="confirm__text">Deine Anmeldung ist bestätigt. Wir haben dir eine Willkommens-Mail geschickt und melden uns, sobald die Pilotphase in Berlin startet.</p>
+      <a class="btn" href="index.html">Zur Startseite <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="confirm__state" data-state="already" hidden>
+      <p class="kicker">Warteliste</p>
+      <h1 class="h2 upper">Schon <br><span class="accent">bestätigt.</span></h1>
+      <p class="confirm__text">Diese Anmeldung hast du bereits bestätigt. Du stehst auf der Warteliste, du musst nichts weiter tun.</p>
+      <a class="btn" href="index.html">Zur Startseite <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="confirm__state" data-state="invalid" hidden>
+      <p class="kicker">Warteliste</p>
+      <h1 class="h2 upper">Link <br><span class="accent">abgelaufen.</span></h1>
+      <p class="confirm__text">Dieser Bestätigungslink ist ungültig oder abgelaufen. Melde dich einfach noch einmal an, dann schicken wir dir einen neuen Link.</p>
+      <a class="btn" href="index.html#warteliste">Neu anmelden <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="confirm__state" data-state="error" hidden>
+      <p class="kicker">Warteliste</p>
+      <h1 class="h2 upper">Das hat <br><span class="accent">nicht geklappt.</span></h1>
+      <p class="confirm__text">Bitte versuch es in ein paar Minuten noch einmal oder schreib uns an support@prospect-fuel.com.</p>
+      <a class="btn" href="index.html">Zur Startseite <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer dark">
+  <div class="container footer-inner">
+    <a class="logo" href="index.html"><svg class="logo__mark" viewBox="0 0 902 423" aria-hidden="true" focusable="false"><path fill="currentColor" d="M61.8 1.0L82.0 0.3L365.0 0.3L388.0 1.7L403.0 4.6L413.0 7.8L428.0 13.8L442.0 21.9L452.9 30.0L461.0 37.6L477.0 57.2L484.8 44.0L492.0 35.0L500.0 26.9L509.0 19.5L518.0 13.7L530.0 8.0L552.0 1.7L571.0 0.5L900.0 0.4L900.8 2.0L900.8 46.0L900.7 95.0L900.0 96.4L565.0 96.2L549.0 97.7L534.0 103.4L521.3 113.0L515.6 120.0L511.7 127.0L508.7 135.0L504.2 154.0L495.4 183.0L486.5 202.0L477.3 217.0L463.0 234.8L448.0 248.2L432.0 259.4L411.0 269.9L389.0 277.4L363.0 281.5L130.0 281.9L128.8 283.0L128.6 289.0L128.7 410.0L128.0 421.7L2.0 421.8L1.2 421.0L1.1 412.0L1.0 297.0L1.2 280.0L2.8 267.0L7.8 248.0L15.8 231.0L23.6 220.0L32.0 210.8L39.0 204.8L50.0 197.7L60.0 192.9L74.0 188.9L84.0 187.8L350.0 187.0L367.0 181.2L381.4 170.0L390.3 156.0L393.2 146.0L393.6 135.0L392.3 127.0L389.3 120.0L384.3 112.0L377.0 105.5L371.0 101.6L365.0 98.9L357.0 96.9L310.0 96.1L63.0 96.2L61.8 95.0L61.7 90.0L61.8 1.0ZM565.5 187.0L839.0 187.0L843.0 187.1L844.2 188.0L844.0 280.7L610.0 281.2L595.0 281.2L593.9 283.0L593.9 408.0L593.7 421.0L593.0 421.7L468.0 421.8L466.5 421.0L466.5 298.0L469.7 275.0L475.7 256.0L483.7 239.0L492.0 227.2L502.0 215.8L514.3 205.0L524.0 198.8L539.0 191.8L550.0 188.7L565.5 187.0Z"/></svg><span class="logo__word">ProspectFuel</span></a>
+    <nav aria-label="Rechtliches">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="../js/vendor/lucide-0.453.0.min.js"></script>
+<script src="../js/config.js"></script>
+<script>window.PF_TEXT = {"formular.erfolg_titel": "Dein Platz ist gesichert.", "formular.erfolg_text": "Wir melden uns, sobald es losgeht.", "formular.erfolg_text_coach": "Wir melden uns bei dir, sobald die Pilotphase startet.", "formular.fehler_rolle": "Bitte wähle aus, wer du bist.", "formular.fehler_senden": "Das hat leider nicht geklappt. Bitte versuch es gleich noch einmal.", "teilen.text": "Hey, ich will bei ProspectFuel mitmachen. Kannst du mich hier eintragen?", "karussell.punkt_vorlesetext": "Karte # anzeigen"};</script>
+<script src="../js/main.js"></script>
+</body>
+</html>
