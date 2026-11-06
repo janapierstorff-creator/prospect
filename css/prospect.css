@@ -1708,6 +1708,3 @@ html.reveal .fill:has(> img:not(.is-loaded)) .system__pin { opacity: 0; transiti
 @media (min-width: 761px) {
   .ath-why--fade, .team-band--light { min-height: clamp(440px, 34vw, 620px); }
 }
-
-/* Keine Trennlinien über Abschnitten (einheitlich auf allen Seiten) */
-.pf, .final, .faq-block { border-top: 0; }
