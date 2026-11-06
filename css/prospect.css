@@ -1728,5 +1728,5 @@ html.reveal .fill:has(> img:not(.is-loaded)) .system__pin { opacity: 0; transiti
   .site-header .logo > .logo__mark { animation: pf-logo-mark var(--logo-cycle) ease-in-out infinite; }
   .site-header .logo > .logo__word { animation: pf-logo-word var(--logo-cycle) ease-in-out infinite; }
 }
-@keyframes pf-logo-mark { 0%, 34% { opacity: 1; } 50%, 84% { opacity: 0; } 100% { opacity: 1; } }
-@keyframes pf-logo-word { 0%, 34% { opacity: 0; } 50%, 84% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes pf-logo-mark { 0%, 30% { opacity: 1; } 50%, 80% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes pf-logo-word { 0%, 30% { opacity: 0; } 50%, 80% { opacity: 1; } 100% { opacity: 0; } }
