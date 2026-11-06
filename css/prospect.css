@@ -1714,3 +1714,19 @@ html.reveal .fill:has(> img:not(.is-loaded)) .system__pin { opacity: 0; transiti
   margin: 0 0 12px; max-width: none; font-size: 12px; font-weight: 600; line-height: 1.4; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.88);
 }
 .team-band--light .team-band__inner > p.kicker { color: var(--ink); }
+
+/* Navi-Logo: PF-Zeichen und Name „ProspectFuel“ blenden im Wechsel ineinander über.
+   Intervall über --logo-cycle steuern (ein kompletter Durchlauf = Zeichen + Name). */
+.site-header .logo { --logo-cycle: 10s; display: inline-grid; justify-items: start; align-items: center; }
+.site-header .logo > .logo__mark,
+.site-header .logo > .logo__word { grid-area: 1 / 1; }
+.site-header .logo > .logo__word {
+  position: static; width: auto; height: auto; overflow: visible; clip: auto;
+  white-space: nowrap; font-size: .9em; letter-spacing: .02em; opacity: 0;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .site-header .logo > .logo__mark { animation: pf-logo-mark var(--logo-cycle) ease-in-out infinite; }
+  .site-header .logo > .logo__word { animation: pf-logo-word var(--logo-cycle) ease-in-out infinite; }
+}
+@keyframes pf-logo-mark { 0%, 42% { opacity: 1; } 50%, 92% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes pf-logo-word { 0%, 42% { opacity: 0; } 50%, 92% { opacity: 1; } 100% { opacity: 0; } }
