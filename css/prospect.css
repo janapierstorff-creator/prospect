@@ -1746,7 +1746,7 @@ html.reveal .fill:has(> img:not(.is-loaded)) .system__pin { opacity: 0; transiti
 
 /* Hero-Copy (Kicker, Headline, Text) als Block so breit wie die Headline; der Text bricht auf deren Breite um.
    Mindestbreite, damit der Text bei kurzen Headlines nicht zu schmal wird. */
-@media (min-width: 761px) {
-  .hero-copy { width: fit-content; min-width: min(100%, 560px); max-width: 100%; }
-  .hero-copy > .hero__sub, .hero-copy > .ath-hero__sub { width: 0; min-width: 100%; max-width: none; }
-}
+/* gilt auf allen Breiten (auch Tablet/Handy) */
+.hero-copy { width: fit-content; min-width: min(100%, 300px); max-width: 100%; }
+@media (min-width: 761px) { .hero-copy { min-width: min(100%, 440px); } }
+.hero-copy > .hero__sub, .hero-copy > .ath-hero__sub { width: 0; min-width: 100%; max-width: none; }
