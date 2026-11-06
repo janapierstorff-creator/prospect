@@ -354,6 +354,9 @@ start:
     image_alt:
       de: Gruppe junger Athletinnen und Athleten auf dem Weg zum Training, im Hintergrund der Berliner Fernsehturm
       en: Group of young athletes on their way to training, with Berlin's TV tower in the background
+    kicker:
+      de: Pilotphase Berlin
+      en: Berlin pilot
     headline:
       de: Berlin startet / *zuerst.*
       en: Berlin / *goes first.*
@@ -440,6 +443,9 @@ athleten:
     image_alt:
       de: Junger Basketballspieler dribbelt konzentriert in der Halle
       en: Young basketball player dribbling with focus in a gym
+    kicker:
+      de: Fuel like a pro
+      en: Fuel like a pro
     headline:
       de: Dein Game. / Dein *nächstes Level.*
       en: Your game. / *Your next level.*
@@ -730,6 +736,9 @@ athleten:
     image_alt:
       de: Berliner Skyline in der Dämmerung, davor ein Basketballplatz
       en: Berlin skyline at dusk with a basketball court in front
+    kicker:
+      de: Sei von Anfang an dabei
+      en: Be there from day one
     headline:
       de: Bereit für dein / *nächstes Level?*
       en: Ready for your / *next level?*
@@ -792,6 +801,9 @@ eltern:
     image_alt:
       de: Mutter und Sohn bereiten gemeinsam eine Mahlzeit zu
       en: Mother and son preparing a meal together
+    kicker:
+      de: Ernährung ohne Stress
+      en: Nutrition made easy
     headline:
       de: Ihr unterstützt / den Traum. / *Wir unterstützen / euch.*
       en: You support / the dream. / *We support / you.*
@@ -1120,6 +1132,9 @@ eltern:
     image_alt:
       de: Berliner Skyline in der Dämmerung
       en: Berlin skyline at dusk
+    kicker:
+      de: 50 Plätze in Berlin
+      en: 50 spots in Berlin
     headline:
       de: Berlin startet. / *Seid dabei.*
       en: Berlin is starting. / *Join us.*
@@ -1179,6 +1194,9 @@ coaches:
     image_alt:
       de: Coach bespricht sich mit seinem Team
       en: Coach talking with his team
+    kicker:
+      de: Team Performance
+      en: Team performance
     headline:
       de: Bereit, / wenn es *zählt.*
       en: Ready / when it *counts.*
@@ -1443,6 +1461,9 @@ coaches:
     image_alt:
       de: Jugendteam legt in der Halle die Hände zusammen
       en: Youth team putting their hands together in a gym
+    kicker:
+      de: Abseits der Halle
+      en: Off the court
     headline:
       de: Gewonnen wird auch *zuhause.*
       en: Games are won *at home, too.*
@@ -1454,6 +1475,9 @@ coaches:
     image_alt:
       de: Coach geht lachend mit drei jungen Basketballspielern durch die Halle
       en: Coach walking through the gym, laughing with three young basketball players
+    kicker:
+      de: Für Vereine und Teams
+      en: For clubs and teams
     headline:
       de: Berlin startet zuerst. / *Werdet Pilotteam.*
       en: Berlin goes first. / *Become a pilot team.*
