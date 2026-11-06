@@ -1744,9 +1744,8 @@ html.reveal .fill:has(> img:not(.is-loaded)) .system__pin { opacity: 0; transiti
 }
 @keyframes pf-hero-alt { 0%, 34% { opacity: 0; } 50%, 84% { opacity: 1; } 100% { opacity: 0; } }
 
-/* Hero-Copy (Kicker, Headline, Text) als Block so breit wie die Headline; der Text bricht auf deren Breite um.
-   Mindestbreite, damit der Text bei kurzen Headlines nicht zu schmal wird. */
-/* gilt auf allen Breiten (auch Tablet/Handy) */
-.hero-copy { width: fit-content; min-width: min(100%, 300px); max-width: 100%; }
-@media (min-width: 761px) { .hero-copy { min-width: min(100%, 440px); } }
+/* Hero-Copy (Kicker, Headline, Text) als ein Block; der Text bricht auf dessen Breite um. */
+/* Copy-Block nutzt mindestens die linke Hälfte; ist die Headline breiter, so breit wie die Headline. Auf dem Handy volle Breite. */
+.hero-copy { width: fit-content; min-width: 50%; max-width: 100%; }
+@media (max-width: 600px) { .hero-copy { width: auto; min-width: 0; } }
 .hero-copy > .hero__sub, .hero-copy > .ath-hero__sub { width: 0; min-width: 100%; max-width: none; }
