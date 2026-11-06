@@ -1749,3 +1749,8 @@ html.reveal .fill:has(> img:not(.is-loaded)) .system__pin { opacity: 0; transiti
 .hero-copy { width: fit-content; min-width: 50%; max-width: 100%; }
 @media (max-width: 600px) { .hero-copy { width: auto; min-width: 0; } }
 .hero-copy > .hero__sub, .hero-copy > .ath-hero__sub { width: 0; min-width: 100%; max-width: none; }
+
+/* Handy/Tablet: Bild läuft unten weicher in den Hintergrund aus (auch bei hellen Bildrändern keine Kante) */
+@media (max-width: 760px) {
+  .hero .fill::after, .ath-hero .fill::after { background: linear-gradient(0deg, var(--bg) 0%, rgba(8,14,19,.92) 14%, rgba(8,14,19,.55) 40%, rgba(8,14,19,0) 68%), linear-gradient(180deg, rgba(8,14,19,.55) 0%, rgba(8,14,19,0) 22%); }
+}
