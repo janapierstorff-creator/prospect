@@ -1731,16 +1731,18 @@ html.reveal .fill:has(> img:not(.is-loaded)) .system__pin { opacity: 0; transiti
 @keyframes pf-logo-mark { 0%, 30% { opacity: 1; } 50%, 80% { opacity: 0; } 100% { opacity: 1; } }
 @keyframes pf-logo-word { 0%, 30% { opacity: 0; } 50%, 80% { opacity: 1; } 100% { opacity: 0; } }
 
-/* Athleten-Hero: Athlet und Athletin blenden langsam ineinander über.
+/* Athleten- und Start-Hero: Athlet und Athletin blenden langsam ineinander über.
    Intervall über --hero-cycle steuern (ein Durchlauf = beide Bilder). */
-.ath-hero .fill > img.hero-alt { position: absolute; inset: 0; opacity: 0; }
+.ath-hero .fill > img.hero-alt, .hero .fill > img.hero-alt { position: absolute; inset: 0; opacity: 0; }
 /* Desktop: Bild etwas nach rechts versetzt, damit das Gesicht nicht hinter der Headline liegt; linker Rand weich ausgeblendet */
 @media (min-width: 761px) {
   .ath-hero .fill > img.hero-alt { left: 22%; width: 78%; -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 30%); mask-image: linear-gradient(90deg, transparent 0, #000 30%); }
 }
 @media (prefers-reduced-motion: no-preference) {
   html.reveal main .ath-hero .fill > img.hero-alt.is-loaded,
-  html:not(.reveal) .ath-hero .fill > img.hero-alt { --hero-cycle: 16s; animation: pf-hero-alt var(--hero-cycle) ease-in-out infinite; }
+  html:not(.reveal) .ath-hero .fill > img.hero-alt,
+  html.reveal main .hero .fill > img.hero-alt.is-loaded,
+  html:not(.reveal) .hero .fill > img.hero-alt { --hero-cycle: 16s; animation: pf-hero-alt var(--hero-cycle) ease-in-out infinite; }
 }
 @keyframes pf-hero-alt { 0%, 34% { opacity: 0; } 50%, 84% { opacity: 1; } 100% { opacity: 0; } }
 
