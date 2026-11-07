@@ -863,6 +863,12 @@ eltern:
     text_3:
       de: Wisst ihr eigentlich, wie viel Energie euer Kind an Trainingstagen braucht?
       en: Do you actually know how much energy your child needs on training days?
+    info:
+      de: "Viele junge Athleten essen weniger, als sie verbrauchen – meist ohne es zu merken. Hält das an, sprechen Sportmediziner von **RED-S:** einem Energiemangel, der die Knochen schwächen, das Verletzungsrisiko erhöhen und die Erholung bremsen kann. Die gute Nachricht: Dafür braucht es kein Spezialwissen, sondern genug Essen zur richtigen Zeit."
+      en: "Many young athletes eat less than they burn – usually without noticing. If that lasts, sports doctors call it **RED-S:** an energy deficiency that can weaken bones, raise injury risk and slow recovery. The good news: the fix isn’t expert knowledge – it’s eating enough, at the right times."
+    info_quelle:
+      de: "Quelle: IOC-Konsenserklärung zu RED-S, 2023"
+      en: "Source: IOC consensus statement on REDs, 2023"
 
   loesung:
     kicker:
@@ -1131,6 +1137,12 @@ eltern:
     text_8:
       de: Bei der Anmeldung könnt ihr Allergien, Unverträglichkeiten und Essgewohnheiten angeben. Die Pläne werden darauf abgestimmt. Eine ärztliche Beratung ersetzt ProspectFuel nicht.
       en: When signing up, you can add allergies, intolerances and food preferences. The plans are tailored to them. ProspectFuel doesn’t replace medical advice.
+    question_9:
+      de: Was ist RED-S?
+      en: What is RED-S?
+    text_9:
+      de: "RED-S steht für „Relative Energy Deficiency in Sport“: Sportler nehmen regelmäßig weniger Energie auf, als sie verbrauchen. Bei Jugendlichen kann das Knochenentwicklung, Verletzungsrisiko und Erholung beeinträchtigen. ProspectFuel hilft, dass Mahlzeiten und Snacks zur Trainingslast passen."
+      en: "RED-S stands for Relative Energy Deficiency in Sport: when athletes regularly take in less energy than they use. In teens, it can affect bone development, injury risk and recovery. ProspectFuel helps make sure everyday meals and snacks match training load."
   warteliste:
     image_alt:
       de: Berliner Skyline in der Dämmerung
