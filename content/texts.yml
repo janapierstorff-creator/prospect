@@ -808,8 +808,11 @@ eltern:
 
   hero:
     image_alt:
-      de: Mutter und Sohn bereiten gemeinsam eine Mahlzeit zu
-      en: Mother and son preparing a meal together
+      de: Mutter und Sohn mit Basketball gehen lachend über einen Freiplatz
+      en: Mother and son with a basketball walking and laughing across an outdoor court
+    image_alt_2:
+      de: Mutter und Tochter mit Basketball gehen lachend über einen Freiplatz
+      en: Mother and daughter with a basketball walking and laughing across an outdoor court
     kicker:
       de: Ernährung ohne Stress
       en: Nutrition made easy
